@@ -685,8 +685,10 @@ class AIManager:
         # Check if the topic is a symbol
         if topic in symbols:
             symbol_data = symbols[topic]
-            return f"Symbol: {topic}\nName: {symbol_data['name']}\nFunction: {symbol_data['function']}"
+            return f"Symbol: {topic}\nName: {symbol_data['name']}\nFunction: {symbol_data['function']}\nExamples: {', '.join(symbol_data['examples'])}"
 
         # Proceed with regular research if not a symbol
         research_results = self.research_rampage(topic, depth=3)
+        if not research_results:
+            return f"No information found for '{topic}'."
         return research_results

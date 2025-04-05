@@ -6,6 +6,7 @@ from PyQt6.QtGui import QFont, QPalette, QColor
 from PyQt6.QtCore import QThread, pyqtSignal
 import sys
 from ai_manager import AIManager
+import re  # Import regex for sanitizing words
 
 
 class ResearchThread(QThread):
@@ -147,18 +148,21 @@ class AIGui(QMainWindow):
         words = question.lower().split()
         predefined_words = self.ai_manager.predefined_words.keys()  # Load predefined words
         core_words = [word for word in words if word in predefined_words]
-        focus_words = [word for word in words if word not in predefined_words]
 
-        # Step 2: Log the breakdown
+        # Step 2: Sanitize focus words (remove punctuation)
+        focus_words = [re.sub(r'[^\w\s]', '', word) for word in words if word not in predefined_words]
+
+        # Step 3: Log the breakdown
         print(f"Core words: {core_words}")
         print(f"Focus words: {focus_words}")
 
-        # Step 3: Research focus words
+        # Step 4: Research focus words
         research_results = {}
         for word in focus_words:
-            research_results[word] = self.ai_manager.research_topic(word)
+            if word:  # Ensure the word is not empty after sanitization
+                research_results[word] = self.ai_manager.research_topic(word)
 
-        # Step 4: Formulate an answer
+        # Step 5: Formulate an answer
         if research_results:
             answer = f"Core words: {' '.join(core_words)}\n\n"
             for word, result in research_results.items():
@@ -166,7 +170,7 @@ class AIGui(QMainWindow):
         else:
             answer = "Sorry, I couldn't find any relevant information."
 
-        # Step 5: Display the answer
+        # Step 6: Display the answer
         self.answer_display.setText(answer)
 
     def research_topic(self):
