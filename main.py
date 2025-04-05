@@ -7,6 +7,8 @@ from ui_manager import UIManager
 from powerup_manager import PowerUpManager
 from generate_images import create_hangman_images  # Import the image generation function
 from time import time
+from theme_manager import ThemeManager
+from voice_input import VoiceInput
 
 # Ensure Hangman images exist
 if not os.path.exists("assets/images"):
@@ -27,6 +29,9 @@ player_name = ""  # Store the player's name
 difficulty = 1
 game = None
 ui = UIManager(screen)
+theme_manager = ThemeManager()
+voice_input = VoiceInput()
+paused = False
 
 start_time = time()
 time_limit = 60  # 60 seconds for timed mode
@@ -72,6 +77,29 @@ def handle_power_up(power_up):
     if game.use_power_up(power_up):
         print(f"Used power-up: {power_up}")
 
+def handle_voice_guess():
+    guess = voice_input.get_voice_input()
+    if guess and guess.isalpha():
+        game.guess_letter(guess[0])
+
+def toggle_pause():
+    global paused
+    paused = not paused
+
+def show_achievements():
+    global game_mode
+    game_mode = "achievements"
+
+def change_theme():
+    available_themes = theme_manager.get_available_themes()
+    current_index = available_themes.index(theme_manager.current_theme)
+    next_index = (current_index + 1) % len(available_themes)
+    theme_manager.load_theme(available_themes[next_index])
+    ui.load_theme_assets()
+
+def create_menu_buttons():
+    ui.create_menu_buttons(start_word_guess, start_riddle_time, set_difficulty, show_achievements, change_theme)
+
 # Main game loop
 running = True
 while running:
@@ -84,12 +112,12 @@ while running:
             if game_mode == "name_input" and ui.buttons:
                 if ui.buttons[0].is_clicked(event) and player_name.strip():
                     game_mode = "menu"
-                    ui.create_menu_buttons(start_word_guess, start_riddle_time, set_difficulty)
+                    create_menu_buttons()
             # Handle play again button
             if game_mode == "game_over" and ui.buttons:
                 if ui.buttons[0].is_clicked(event):
                     game_mode = "menu"
-                    ui.create_menu_buttons(start_word_guess, start_riddle_time, set_difficulty)
+                    create_menu_buttons()
         elif event.type == pygame.KEYDOWN:
             if game_mode == "name_input":
                 # Handle typing for the player's name
@@ -102,6 +130,12 @@ while running:
                 if event.unicode.isalpha() and len(event.unicode) == 1:
                     guessed_letter = event.unicode.upper()
                     game.guess_letter(guessed_letter)
+            if event.key == pygame.K_p:
+                toggle_pause()
+
+    if paused:
+        ui.draw_pause_screen()
+        continue
 
     # Update game state
     if game_mode in ["word_guess", "riddle_time"]:
@@ -126,6 +160,8 @@ while running:
         ui.draw_buttons()
     elif game_mode == "game_over":
         ui.draw_game_over(game, win=False)
+    elif game_mode == "achievements":
+        ui.draw_achievements(game.achievements_manager.achievements)
 
     pygame.display.flip()
     clock.tick(FPS)

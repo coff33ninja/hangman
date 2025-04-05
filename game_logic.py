@@ -6,6 +6,8 @@ import hashlib  # Reintroduced for daily challenge
 
 from datetime import date  # Reintroduced for daily challenge
 
+from time import time
+
 from config import DIFFICULTY_ATTEMPTS, HINTS_PER_GAME
 
 from content_manager import (
@@ -66,6 +68,32 @@ class AchievementsManager:
 
         return [key for key, value in self.achievements.items() if value["unlocked"]]
 
+    def save_achievements(self, filepath="data/achievements.json"):
+        """
+
+        Save the achievements to a file.
+
+        """
+
+        try:
+            with open(filepath, "w") as f:
+                json.dump(self.achievements, f)
+        except IOError as e:
+            print(f"Error saving achievements: {e}")
+
+    def load_achievements(self, filepath="data/achievements.json"):
+        """
+
+        Load the achievements from a file.
+
+        """
+
+        try:
+            with open(filepath, "r") as f:
+                self.achievements = json.load(f)
+        except (IOError, json.JSONDecodeError) as e:
+            print(f"Error loading achievements: {e}")
+
 
 class HangmanGame:
 
@@ -106,7 +134,13 @@ class HangmanGame:
 
         self.achievements_manager = AchievementsManager()
 
+        self.achievements_manager.load_achievements()
+
         self.current_definition = None
+
+        self.time_limit = 60 - (difficulty - 1) * 10  # 60s easy, 50s med, 40s hard
+
+        self.start_time = None
 
         self.reset_game()
 
@@ -149,6 +183,33 @@ class HangmanGame:
 
         self.attempts_left = DIFFICULTY_ATTEMPTS[self.difficulty]
 
+        self.hangman_stage = 0
+
+        self.start_time = time()
+
+    def get_time_left(self):
+        """
+
+        Get the remaining time for the current game.
+
+        """
+
+        if self.start_time:
+            return max(0, self.time_limit - int(time() - self.start_time))
+        return self.time_limit
+
+    def start_two_player(self, player1_word):
+        """
+
+        Start a two-player game with a word provided by Player 1.
+
+        """
+
+        self.mode = "word_guess"
+        self.current_word = player1_word.upper()
+        self.current_riddle = None
+        self.guessed_letters.clear()
+        self.attempts_left = DIFFICULTY_ATTEMPTS[self.difficulty]
         self.hangman_stage = 0
 
     def guess_letter(self, letter):
@@ -202,6 +263,13 @@ class HangmanGame:
         score = 100 if win else 0  # Example scoring logic
 
         score_manager.add_score(player_name, score)
+
+        self.achievements_manager.check_achievements({
+            "win": win,
+            "hints_used": HINTS_PER_GAME - self.hint_count,
+            "streak": 5,  # Example streak logic
+        })
+        self.achievements_manager.save_achievements()
 
     def get_display_word(self):
         """

@@ -47,12 +47,12 @@ class AIManager:
                 result = self.text_generator(
                     f"Hint for the word '{word}':",
                     max_length=50,
-                    truncation=True  # Explicitly enable truncation
+                    truncation=True
                 )
                 return result[0]["generated_text"]
-            except Exception as e:
-                print(f"Error generating hint: {e}")
-        return "No hint available."
+            except Exception:
+                pass
+        return f"The word has {len(word)} letters."
 
     def generate_riddle(self, word):
         """
@@ -63,9 +63,9 @@ class AIManager:
                 result = self.text_generator(
                     f"Create a riddle for the word '{word}':",
                     max_length=50,
-                    truncation=True  # Explicitly enable truncation
+                    truncation=True
                 )
                 return result[0]["generated_text"]
-            except Exception as e:
-                print(f"Error generating riddle: {e}")
-        return f"What is related to '{word}'?"
+            except Exception:
+                pass
+        return f"I am something you call a '{word}'. What am I?"

@@ -28,11 +28,12 @@ class Button:
         return event.type == pygame.MOUSEBUTTONDOWN and self.rect.collidepoint(event.pos)
 
 class UIManager:
-    def __init__(self, screen):
+    def __init__(self, screen, theme_manager):
         """
-        Initialize UI with screen and preloaded assets.
+        Initialize UI with screen, preloaded assets, and theme manager.
         """
         self.screen = screen
+        self.theme_manager = theme_manager
         self.font = pygame.font.SysFont(None, int(HEIGHT * 0.05))  # Dynamic font size
         self.small_font = pygame.font.SysFont(None, int(HEIGHT * 0.03))
         self.image_sets = {
@@ -51,6 +52,27 @@ class UIManager:
         }
         self.last_hint = None
         self.buttons = []
+        pygame.mixer.init()
+        self.bg_music = None
+        self.correct_sound = None
+        self.wrong_sound = None
+        self.load_theme_assets()
+
+    def load_theme_assets(self):
+        """
+        Load theme-specific assets including sounds.
+        """
+        theme = self.theme_manager.current_theme
+        self.bg_music = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/background.wav")
+        self.correct_sound = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/correct.wav")
+        self.wrong_sound = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/wrong.wav")
+        self.bg_music.play(loops=-1)
+
+    def play_sound(self, correct):
+        """
+        Play sound effect based on correctness.
+        """
+        (self.correct_sound if correct else self.wrong_sound).play()
 
     def draw_game(self, game):
         """
@@ -170,7 +192,8 @@ class UIManager:
         """
         Draw the countdown timer on the screen.
         """
-        timer_text = self.font.render(f"Time Left: {time_left}s", True, BLACK)
+        color = (255, 0, 0) if time_left < 10 else BLACK
+        timer_text = self.font.render(f"Time Left: {time_left}s", True, color)
         self.screen.blit(timer_text, (WIDTH - 200, 50))
 
     def draw_power_up_buttons(self, power_ups):
@@ -195,7 +218,7 @@ class UIManager:
             self.screen.blit(text, (int(WIDTH * 0.05), y))
             y += int(HEIGHT * 0.05)
 
-    def create_menu_buttons(self, start_word_guess, start_riddle_time, set_difficulty):
+    def create_menu_buttons(self, start_word_guess, start_riddle_time, set_difficulty, show_achievements, change_theme):
         """
         Create buttons for the main menu.
         """
@@ -208,6 +231,8 @@ class UIManager:
             Button(WIDTH // 2 - button_width // 2, int(HEIGHT * 0.3) + 2 * (button_height + spacing), button_width, button_height, "Easy", self.font, GRAY, WHITE, lambda: set_difficulty(1)),
             Button(WIDTH // 2 - button_width // 2, int(HEIGHT * 0.3) + 3 * (button_height + spacing), button_width, button_height, "Medium", self.font, GRAY, WHITE, lambda: set_difficulty(2)),
             Button(WIDTH // 2 - button_width // 2, int(HEIGHT * 0.3) + 4 * (button_height + spacing), button_width, button_height, "Hard", self.font, GRAY, WHITE, lambda: set_difficulty(3)),
+            Button(WIDTH // 2 - button_width // 2, int(HEIGHT * 0.3) + 5 * (button_height + spacing), button_width, button_height, "Achievements", self.font, GRAY, WHITE, show_achievements),
+            Button(WIDTH // 2 - button_width // 2, int(HEIGHT * 0.3) + 6 * (button_height + spacing), button_width, button_height, "Change Theme", self.font, GRAY, WHITE, change_theme),
         ]
 
     def create_game_buttons(self, use_hint, use_reveal_letter, use_extra_attempt):
