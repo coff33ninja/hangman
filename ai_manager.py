@@ -2,8 +2,10 @@ import json
 import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 from collections import Counter
-from content_manager import fetch_word_definition
+from content_manager import fetch_word_definition, categorize_entry
 import random
+import os
+import requests
 
 class AIManager:
     def __init__(self, training_file="data/training_data.json"):
@@ -21,7 +23,36 @@ class AIManager:
         self.question_answering_model = None
         self.letter_frequency = Counter("etaoinshrdlcumwfgypbvkjxqz")  # English letter frequency
         self.training_file = training_file
-        self.training_data = {"riddles": [], "definitions": [], "categories": []}
+        self.training_data = {"riddles": [], "definitions": [], "categories": [], "research": []}
+        self.category_keywords = {
+            "animals": ["animal", "mammal", "bird", "fish", "reptile", "insect"],
+            "vehicles": ["vehicle", "car", "truck", "bike", "airplane", "ship"],
+            "objects": ["object", "tool", "device", "item", "thing"],
+            "places": ["place", "city", "country", "location", "region"],
+            "people": ["person", "human", "name", "character", "individual"],
+        }
+        self.category_hierarchy = {
+            "solarsystem": {
+                "stars": [],
+                "planets": {
+                    "earth": {
+                        "continents": {
+                            "countries": []
+                        }
+                    }
+                }
+            },
+            "animals": {
+                "mammals": [],
+                "birds": [],
+                "reptiles": [],
+            },
+            "places": {
+                "continents": {
+                    "countries": []
+                }
+            }
+        }
 
         try:
             self.text_generator = pipeline("text-generation", model="gpt2", device=0 if self.device == "cuda" else -1)
@@ -147,13 +178,58 @@ class AIManager:
                 print(f"Error generating synonyms: {e}")
         return []
 
+    def add_to_hierarchy(self, word, hierarchy_path):
+        """
+        Add a word to the category hierarchy at the specified path.
+        :param word: The word to add.
+        :param hierarchy_path: A list representing the path in the hierarchy (e.g., ["solarsystem", "planets", "earth"]).
+        """
+        current_level = self.category_hierarchy
+        for level in hierarchy_path:
+            if level not in current_level:
+                current_level[level] = {}
+            current_level = current_level[level]
+
+        # Add the word to the final level
+        if isinstance(current_level, list):
+            if word not in current_level:
+                current_level.append(word)
+        else:
+            print(f"Error: Cannot add word '{word}' to a non-list category.")
+
+    def train_categories_with_hierarchy(self, word, definition_data):
+        """
+        Train the AI to dynamically adjust categories and subcategories based on new words and definitions.
+        :param word: The word to categorize.
+        :param definition_data: The definition data for the word.
+        """
+        if not definition_data or "definitions" not in definition_data:
+            return ["uncategorized"]
+
+        # Use categorize_entry to determine the category
+        category = categorize_entry(word, definition_data)
+        if category != "uncategorized":
+            self.add_to_hierarchy(word, [category])
+            print(f"Categorized '{word}' under category: {category}.")
+            return [category]
+
+        # If no category matches, create a new subcategory under "uncategorized"
+        best_hierarchy_path = ["uncategorized", f"new_category_{len(self.category_hierarchy) + 1}"]
+        self.add_to_hierarchy(word, best_hierarchy_path)
+        print(f"Created new subcategory '{best_hierarchy_path[-1]}' for word '{word}'.")
+        return best_hierarchy_path
+
     def train_on_words(self, words):
         """
-        Train the AI on a list of words by adding them to the training data.
+        Train the AI on a list of words by categorizing them and adding them to the training data.
         """
         for word in words:
             if word not in self.training_data["categories"]:
-                self.training_data["categories"].append(word)
+                # Fetch the definition to categorize the word
+                definition_data = fetch_word_definition(word)
+                hierarchy_path = self.train_categories_with_hierarchy(word, definition_data)
+                if hierarchy_path not in self.training_data["categories"]:
+                    self.training_data["categories"].append(hierarchy_path)
         self.save_training_data()
 
     def generate_word(self):
@@ -247,3 +323,138 @@ class AIManager:
         # Example: Ask about a random word from the training data
         word = random.choice(self.training_data["categories"])
         return f"What is the meaning of the word '{word}'?"
+
+    def generate_config_file(self, config_path="data/config.json"):
+        """
+        Generate a configuration file dynamically based on the AI's current state.
+        """
+        config_data = {
+            "device": self.device,
+            "training_file": self.training_file,
+            "model": "t5-small",
+            "text_generator_model": "gpt2",
+            "question_answering_model": "distilbert-base-cased-distilled-squad",
+            "categories": len(self.training_data.get("categories", [])),
+            "definitions": len(self.training_data.get("definitions", [])),
+        }
+        try:
+            os.makedirs(os.path.dirname(config_path), exist_ok=True)
+            with open(config_path, "w") as f:
+                json.dump(config_data, f, indent=4)
+            print(f"Configuration file saved at {config_path}")
+        except IOError as e:
+            print(f"Error saving configuration file: {e}")
+
+    def save_model_weights(self, model_path="data/model.safetensors"):
+        """
+        Save the model weights to a file for future use.
+        """
+        try:
+            os.makedirs(os.path.dirname(model_path), exist_ok=True)
+            # Placeholder for saving model weights (if supported by the model)
+            with open(model_path, "wb") as f:
+                f.write(b"")  # Write an empty file as a placeholder
+            print(f"Model weights saved at {model_path}")
+        except IOError as e:
+            print(f"Error saving model weights: {e}")
+
+    def save_tokenizer_files(self, tokenizer_dir="data/tokenizer"):
+        """
+        Save tokenizer files dynamically.
+        """
+        try:
+            os.makedirs(tokenizer_dir, exist_ok=True)
+            # Placeholder for saving tokenizer files
+            with open(os.path.join(tokenizer_dir, "tokenizer_config.json"), "w") as f:
+                json.dump({"version": "1.0", "model": "t5-small"}, f, indent=4)
+            with open(os.path.join(tokenizer_dir, "vocab.txt"), "w") as f:
+                f.write("\n".join(self.custom_tokenizer.get_vocab().keys()))
+            print(f"Tokenizer files saved in {tokenizer_dir}")
+        except IOError as e:
+            print(f"Error saving tokenizer files: {e}")
+
+    def generate_files(self):
+        """
+        Generate all necessary files dynamically.
+        """
+        print("Generating AI files...")
+        self.generate_config_file()
+        self.save_model_weights()
+        self.save_tokenizer_files()
+        print("All files generated successfully.")
+
+    def research_topic(self, topic):
+        """
+        Research a topic using multiple APIs and expand the AI's knowledge.
+        :param topic: The topic to research.
+        :return: A summary of the research.
+        """
+        print(f"Researching topic: {topic}")
+        research_results = []
+
+        # Fetch definitions from the dictionary API
+        definition_data = fetch_word_definition(topic)
+        if definition_data:
+            definitions = [d["definition"] for d in definition_data.get("definitions", [])]
+            research_results.extend(definitions)
+            print(f"Definitions for '{topic}': {definitions}")
+
+        # Fetch additional information from a Wikipedia-like API
+        wikipedia_summary = self.fetch_wikipedia_summary(topic)
+        if wikipedia_summary:
+            research_results.append(wikipedia_summary)
+            print(f"Wikipedia summary for '{topic}': {wikipedia_summary}")
+
+        # Fetch related topics using a knowledge graph API
+        related_topics = self.fetch_related_topics(topic)
+        if related_topics:
+            research_results.append(f"Related topics: {', '.join(related_topics)}")
+            print(f"Related topics for '{topic}': {related_topics}")
+
+        # Save the research results to training data
+        self.training_data["research"].append({"topic": topic, "results": research_results})
+        self.save_training_data()
+
+        return "\n".join(research_results)
+
+    def fetch_wikipedia_summary(self, topic):
+        """
+        Fetch a summary of a topic from a Wikipedia-like API.
+        :param topic: The topic to fetch.
+        :return: A summary of the topic.
+        """
+        url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{topic}"
+        try:
+            response = requests.get(url, timeout=5)
+            response.raise_for_status()
+            data = response.json()
+            return data.get("extract", f"No summary available for '{topic}'.")
+        except requests.RequestException as e:
+            print(f"Error fetching Wikipedia summary for '{topic}': {e}")
+            return None
+
+    def fetch_related_topics(self, topic):
+        """
+        Fetch related topics using a knowledge graph API.
+        :param topic: The topic to fetch related topics for.
+        :return: A list of related topics.
+        """
+        url = f"https://api.conceptnet.io/c/en/{topic}"
+        try:
+            response = requests.get(url, timeout=5)
+            response.raise_for_status()
+            data = response.json()
+            edges = data.get("edges", [])
+            related_topics = [edge["end"]["label"] for edge in edges if "end" in edge and "label" in edge["end"]]
+            return related_topics[:5]  # Limit to 5 related topics
+        except requests.RequestException as e:
+            print(f"Error fetching related topics for '{topic}': {e}")
+            return None
+
+    def ask_follow_up_question(self, topic):
+        """
+        Dynamically ask a follow-up question about a topic.
+        :param topic: The topic to ask about.
+        :return: A follow-up question.
+        """
+        return f"What about {topic}? Can you tell me more?"

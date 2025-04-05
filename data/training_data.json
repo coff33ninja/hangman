@@ -39,5 +39,12 @@
             ]
         }
     ],
-    "categories": []
+    "categories": [
+        "CAT",
+        "DOG",
+        "APPLE",
+        "BANANA",
+        "CANADA",
+        "JAPAN"
+    ]
 }

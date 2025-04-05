@@ -215,6 +215,8 @@ class HangmanGame:
 
         self.start_time = time()
 
+        self.ai_manager.generate_files()  # Save AI state dynamically
+
     def get_time_left(self):
         """
 
@@ -473,3 +475,10 @@ class HangmanGame:
             print("Correct!")
         else:
             print(f"Wrong! The correct answer was: {correct_answer}")
+
+    def research_word(self, word):
+        """
+        Research a word and display the results.
+        """
+        research_results = self.ai_manager.research_topic(word)
+        print(f"Research results for '{word}':\n{research_results}")
