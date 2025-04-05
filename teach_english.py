@@ -172,11 +172,45 @@ class TeachEnglish:
             "Creative Writing: Poetry, stories, and imaginative expression.",
             "Editing: Proofreading and refining written work.",
         ]
-        cultural_context_data = [
-            "Cultural Norms: Etiquette, values, and traditions tied to the language.",
-            "Historical Influence: Events shaping language development.",
-            "Proverbs and Sayings: Culturally specific expressions.",
-            "Identity: Language’s role in regional or ethnic identity.",
+        speaking_and_listening_data = [
+            "Pronunciation: Correct articulation and stress patterns.",
+            "Intonation: Pitch and rhythm in speech.",
+            "Fluency: Speaking smoothly and clearly.",
+            "Listening Skills: Understanding spoken language, including accents and dialects.",
+            "Conversation: Turn-taking, interruptions, and politeness.",
+        ]
+        literature_data = [
+            "Genres: Prose, poetry, drama, non-fiction.",
+            "Literary Devices: Metaphors, similes, alliteration, etc.",
+            "Analysis: Themes, characters, plots, and symbolism.",
+            "Context: Historical and cultural influences on texts.",
+            "Interpretation: Understanding author intent and reader perspectives.",
+        ]
+        linguistics_data = [
+            "Phonetics: Study of speech sounds.",
+            "Phonology: Sound patterns and rules.",
+            "Sociolinguistics: Language variation by region, class, or group.",
+            "Psycholinguistics: How the brain processes language.",
+            "Historical Linguistics: Language evolution over time.",
+        ]
+        practical_language_applications_data = [
+            "Translation: Converting text between languages.",
+            "Interpretation: Real-time spoken language conversion.",
+            "Specialized Language: Business, technical, legal, or medical terminology.",
+            "Media and Technology: Language use in digital or broadcast contexts.",
+        ]
+        language_acquisition_data = [
+            "Theories: How humans learn languages (e.g., second language acquisition).",
+            "Strategies: Mnemonics, repetition, immersion techniques.",
+            "Tools: Dictionaries, thesauruses, and language apps.",
+            "Self-Assessment: Evaluating progress and setting goals.",
+        ]
+        additional_training_data = [
+            "Assessment Standards: Familiarity with language tests (e.g., TOEFL, IELTS).",
+            "Digital Literacy: Language use in emails, social media, and online platforms.",
+            "Language Variation: Dialects, sociolects, and registers (e.g., slang vs. academic language).",
+            "Error Analysis: Common mistakes in grammar, spelling, or usage.",
+            "Multimodal Language: Integrating text with visuals, audio, or gestures (e.g., captions, emojis).",
         ]
 
         self.train_language_component("Grammar", grammar_data)
@@ -185,7 +219,12 @@ class TeachEnglish:
         self.train_language_component("Punctuation", punctuation_data)
         self.train_language_component("Reading Comprehension", reading_comprehension_data)
         self.train_language_component("Writing", writing_data)
-        self.train_language_component("Cultural Context", cultural_context_data)
+        self.train_language_component("Speaking and Listening", speaking_and_listening_data)
+        self.train_language_component("Literature", literature_data)
+        self.train_language_component("Linguistics", linguistics_data)
+        self.train_language_component("Practical Language Applications", practical_language_applications_data)
+        self.train_language_component("Language Acquisition", language_acquisition_data)
+        self.train_language_component("Additional Training", additional_training_data)
 
 if __name__ == "__main__":
     # Example usage
