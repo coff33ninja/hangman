@@ -136,14 +136,37 @@ class AIGui(QMainWindow):
 
     def ask_ai_question(self):
         """
-        Ask the AI a question and display its answer.
+        Ask the AI a question, break it into core words and research the rest.
         """
         question = self.question_input.text().strip()
         if not question:
             QMessageBox.warning(self, "Input Error", "Please enter a question.")
             return
 
-        answer = self.ai_manager.answer_question(question)
+        # Step 1: Break the question into words
+        words = question.lower().split()
+        predefined_words = self.ai_manager.predefined_words.keys()  # Load predefined words
+        core_words = [word for word in words if word in predefined_words]
+        focus_words = [word for word in words if word not in predefined_words]
+
+        # Step 2: Log the breakdown
+        print(f"Core words: {core_words}")
+        print(f"Focus words: {focus_words}")
+
+        # Step 3: Research focus words
+        research_results = {}
+        for word in focus_words:
+            research_results[word] = self.ai_manager.research_topic(word)
+
+        # Step 4: Formulate an answer
+        if research_results:
+            answer = f"Core words: {' '.join(core_words)}\n\n"
+            for word, result in research_results.items():
+                answer += f"Research on '{word}':\n{result}\n\n"
+        else:
+            answer = "Sorry, I couldn't find any relevant information."
+
+        # Step 5: Display the answer
         self.answer_display.setText(answer)
 
     def research_topic(self):

@@ -8,3 +8,5 @@ philosophy,PHILOSOPHY
 serendipity,SERENDIPITY
 ephemeral,EPHEMERAL
 resilience,RESILIENCE
+uncategorized,COFFEE?
+uncategorized,COFFEE?

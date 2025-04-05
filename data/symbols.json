@@ -1,0 +1,590 @@
+{
+    "?": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates a question or inquiry.",
+                "example": "What is your name?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["What is your name?", "Are you coming?"],
+        "related_topics": ["End Punctuation: Periods, question marks, exclamation points."]
+    },
+    "!": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Expresses strong emotion or emphasis.",
+                "example": "Watch out!"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Watch out!", "That's amazing!"],
+        "related_topics": ["End Punctuation: Periods, question marks, exclamation points."]
+    },
+    ".": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Marks the end of a declarative sentence or represents a decimal point.",
+                "example": "This is a sentence."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["This is a sentence.", "The cost is 3.14."],
+        "related_topics": ["End Punctuation: Periods, question marks, exclamation points.", "Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    ",": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Separates elements in a list or clauses in a sentence.",
+                "example": "I bought apples, oranges, and bananas."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I bought apples, oranges, and bananas.", "After the rain, the sun came out."],
+        "related_topics": ["Internal Punctuation: Commas, semicolons, colons."]
+    },
+    "@": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Used in email addresses or to indicate location.",
+                "example": "Contact me at example@example.com."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Contact me at example@example.com.", "Meet me @ the park."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "#": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Used for numbering or hashtags.",
+                "example": "#1 in the competition."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["#1 in the competition.", "Follow the trend #AI."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "$": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the US dollar currency or monetary values.",
+                "example": "The price is $10."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The price is $10.", "I saved $50."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "%": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents a percentage or proportion.",
+                "example": "50% off sale."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["50% off sale.", "The battery is 80% charged."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "&": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents 'and' in a concise form.",
+                "example": "Tom & Jerry."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Tom & Jerry.", "Salt & Pepper."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "*": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Used for emphasis, footnotes, or multiplication.",
+                "example": "*Important*"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["*Important*", "2 * 3 = 6."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "-": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Joins words or separates syllables.",
+                "example": "Well-known author."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Well-known author.", "Re-enter the password."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "_": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Used in filenames or to indicate spaces in text.",
+                "example": "file_name.txt"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["file_name.txt", "hello_world."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    ":": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Introduces a list, explanation, or quotation.",
+                "example": "Here are the items: apples, oranges, bananas."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Here are the items: apples, oranges, bananas.", "He said: 'Hello!'"],
+        "related_topics": ["Internal Punctuation: Commas, semicolons, colons."]
+    },
+    ";": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Connects closely related independent clauses.",
+                "example": "I have a big test tomorrow; I can't go out tonight."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I have a big test tomorrow; I can't go out tonight.", "She loves coffee; he prefers tea."],
+        "related_topics": ["Internal Punctuation: Commas, semicolons, colons."]
+    },
+    "\"": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates direct speech or quotations.",
+                "example": "She said, 'Hello!'"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She said, 'Hello!'", "The sign read 'No Entry'."],
+        "related_topics": ["Quotation and Possession: Quotation marks and apostrophes."]
+    },
+    "'": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates possession or contractions.",
+                "example": "John's book."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["John's book.", "It's a sunny day."],
+        "related_topics": ["Quotation and Possession: Quotation marks and apostrophes."]
+    },
+    "/": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates alternatives or fractions.",
+                "example": "And/or options."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["And/or options.", "1/2 of the cake."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "\\": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Used in file paths or escape sequences.",
+                "example": "C:\\Users\\Documents"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["C:\\Users\\Documents", "Escape sequences like \\n."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "(": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Begins a parenthetical expression or grouping.",
+                "example": "She (my sister) called."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She (my sister) called.", "Use (2 + 3) in math."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    ")": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Ends a parenthetical expression or grouping.",
+                "example": "He smiled (happy at last)."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["He smiled (happy at last).", "Solve 5 * (4 - 2)."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "[": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Begins a bracketed clarification or list.",
+                "example": "The book [1984] is a classic."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The book [1984] is a classic.", "Items [a, b, c] listed."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "]": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Ends a bracketed clarification or list.",
+                "example": "See the notes [below]."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["See the notes [below].", "Array [1, 2, 3] ends."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "{": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Begins a set or block, often in programming or notation.",
+                "example": "The set {1, 2, 3} is finite."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The set {1, 2, 3} is finite.", "Code block {x = 5} starts."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "}": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Ends a set or block, often in programming or notation.",
+                "example": "End with } after the code."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["End with } after the code.", "Set {a, b} closes."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "…": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates an omission or trailing off in thought.",
+                "example": "I wonder what happens next…"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I wonder what happens next…", "She paused, thinking…"],
+        "related_topics": ["Punctuation in Dialogue: Rules for punctuating spoken words."]
+    },
+    "–": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents a range or connects related items (en dash).",
+                "example": "Pages 10–15 are missing."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Pages 10–15 are missing.", "The London–Paris flight."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "—": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Sets off a parenthetical phrase or dramatic pause (em dash).",
+                "example": "She decided—finally—to leave."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She decided—finally—to leave.", "The answer—no surprise—was yes."],
+        "related_topics": ["Connectors: Hyphens, dashes, parentheses for clarity and structure."]
+    },
+    "^": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates exponentiation or a caret in text.",
+                "example": "2^3 equals 8."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["2^3 equals 8.", "Insert text ^here^."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "~": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates approximation or a tilde in computing.",
+                "example": "It weighs ~5 pounds."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It weighs ~5 pounds.", "Home directory ~user."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "`": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Marks inline code or a grave accent.",
+                "example": "Use `print()` in Python."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Use `print()` in Python.", "Type `cmd` to start."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "|": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents a pipe in computing or separation.",
+                "example": "ls | grep in Unix."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["ls | grep in Unix.", "Options: yes | no."],
+        "related_topics": ["Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "=": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates equality or assignment.",
+                "example": "2 + 2 = 4."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["2 + 2 = 4.", "Set x = 10 in code."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "+": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates addition or a positive value.",
+                "example": "3 + 5 = 8."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["3 + 5 = 8.", "Temperature is +10°C."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "<": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates less than or an opening angle bracket.",
+                "example": "5 < 10 is true."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["5 < 10 is true.", "<div> in HTML."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology.", "Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    ">": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates greater than or a closing angle bracket.",
+                "example": "15 > 7 is true."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["15 > 7 is true.", "</div> in HTML."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology.", "Media and Technology: Language use in digital or broadcast contexts."]
+    },
+    "°": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents degrees of temperature or angle.",
+                "example": "It’s 25°C outside."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It’s 25°C outside.", "A 90° turn."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "•": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Marks a bullet point in lists.",
+                "example": "• First item."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["• First item.", "• Next step."],
+        "related_topics": ["Text Structure: Understanding narrative, expository, or persuasive formats."]
+    },
+    "±": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Indicates plus or minus, showing a range or tolerance.",
+                "example": "The result is 10 ± 2."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The result is 10 ± 2.", "Voltage is 5V ± 0.1V."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "×": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents multiplication.",
+                "example": "4 × 6 = 24."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["4 × 6 = 24.", "Area is 3 × 5 meters."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "÷": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents division.",
+                "example": "12 ÷ 3 = 4."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["12 ÷ 3 = 4.", "Share 20 ÷ 5 ways."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "∞": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents infinity, an unbounded quantity.",
+                "example": "The universe seems ∞."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The universe seems ∞.", "Limits approach ∞."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "€": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the Euro currency.",
+                "example": "The ticket costs €20."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The ticket costs €20.", "I spent €100 in Paris."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "£": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the British Pound currency.",
+                "example": "It’s £5 per hour."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It’s £5 per hour.", "The book is £12.99."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "¥": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the Japanese Yen or Chinese Yuan currency.",
+                "example": "The meal costs ¥1000."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The meal costs ¥1000.", "I paid ¥500 in Tokyo."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "₹": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the Indian Rupee currency.",
+                "example": "The price is ₹500."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The price is ₹500.", "She saved ₹2000."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "¢": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents cents, a subunit of currency.",
+                "example": "It costs 99¢."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It costs 99¢.", "I found 50¢ on the ground."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "₩": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the South Korean Won currency.",
+                "example": "The fare is ₩2000."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The fare is ₩2000.", "He spent ₩50000."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "₽": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the Russian Ruble currency.",
+                "example": "The cost is ₽300."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The cost is ₽300.", "I paid ₽1500 in Moscow."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology."]
+    },
+    "₿": {
+        "definitions": [
+            {
+                "type": "punctuation",
+                "definition": "Represents the Bitcoin cryptocurrency.",
+                "example": "It’s worth ₿0.01."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It’s worth ₿0.01.", "I bought ₿1 last year."],
+        "related_topics": ["Specialized Language: Business, technical, legal, or medical terminology.", "Media and Technology: Language use in digital or broadcast contexts."]
+    }
+}

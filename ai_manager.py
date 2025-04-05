@@ -60,6 +60,19 @@ class AIManager:
             print(f"Predefined words file not found or invalid: {filepath}")
             return {}
 
+    def load_symbols(self, filepath="data/symbols.json"):
+        """
+        Load symbols and their functions from a JSON file.
+        :param filepath: Path to the symbols.json file.
+        :return: A dictionary of symbols and their functions.
+        """
+        try:
+            with open(filepath, "r") as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            print(f"Symbols file not found or invalid: {filepath}")
+            return {}
+
     def load_training_data(self):
         """
         Load existing training data from the training file.
@@ -632,3 +645,43 @@ class AIManager:
         # Replace the old research results with the updated list
         self.training_data["research"] = new_research_results
         self.save_training_data()
+
+    def learn_from_riddles(self, riddles):
+        """
+        Learn from riddles by processing their answers and training the AI.
+        :param riddles: A dictionary of riddles categorized by difficulty or topic.
+        """
+        print("Learning from riddles...")
+        for category, riddle_list in riddles.items():
+            for riddle, answer in riddle_list:
+                # Process the answer
+                answer_data = self.filter_and_reference_data(answer)
+                if answer_data:
+                    # Save the processed data
+                    self.training_data["riddles"].append({
+                        "riddle": riddle,
+                        "answer": answer,
+                        "data": answer_data
+                    })
+                    print(f"Learned from riddle: {riddle} -> {answer}")
+
+        # Save the updated training data
+        self.save_training_data()
+
+    def research_topic(self, topic):
+        """
+        Research a topic by fetching definitions, synonyms, examples, and related topics.
+        :param topic: The topic to research.
+        :return: A summary of the research.
+        """
+        print(f"Researching topic: {topic}")
+        symbols = self.load_symbols()
+
+        # Check if the topic is a symbol
+        if topic in symbols:
+            symbol_data = symbols[topic]
+            return f"Symbol: {topic}\nName: {symbol_data['name']}\nFunction: {symbol_data['function']}\nExamples: {', '.join(symbol_data['examples'])}"
+
+        # Proceed with regular research if not a symbol
+        research_results = self.research_rampage(topic, depth=3)
+        return research_results

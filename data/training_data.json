@@ -46,7 +46,11 @@
         "BANANA",
         "CANADA",
         "JAPAN",
-        "computer"
+        "computer",
+        "new_category_7044",
+        "new_category_2184",
+        "animals",
+        "places"
     ],
     "research": [],
     "research_results": {
@@ -6553,7 +6557,8 @@
             "synonyms": [],
             "antonyms": [],
             "related_topics": []
-        }
+        },
+        "coffee?": {}
     },
     "filtered_data": {
         "ephemeral": {

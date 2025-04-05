@@ -5,6 +5,7 @@ import requests
 import os
 import json
 import time  # Reintroduced for delay handling
+import re  # Import regex for sanitizing filenames
 
 
 def categorize_entry(entry, dictionary_data):
@@ -160,6 +161,11 @@ def fetch_word_definition(word):
     :param word: The word to look up.
     :return: A dictionary containing the word's definition, synonyms, and example usage.
     """
+    # Ensure the input is a single word
+    if not word.isalpha():
+        print(f"Skipping unsupported input: '{word}'")
+        return None
+
     # Primary API: DictionaryAPI
     url_primary = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
     try:
@@ -272,7 +278,9 @@ def save_topic_to_file(topic_name, data, folder="data/topics"):
     :param folder: The folder where topic files are stored.
     """
     os.makedirs(folder, exist_ok=True)
-    filepath = os.path.join(folder, f"{topic_name.replace(' ', '_')}.json")
+    # Sanitize the filename by replacing invalid characters with underscores
+    sanitized_name = re.sub(r'[<>:"/\\|?*]', '_', topic_name)
+    filepath = os.path.join(folder, f"{sanitized_name}.json")
     try:
         with open(filepath, "w") as f:
             json.dump(data, f, indent=4)
