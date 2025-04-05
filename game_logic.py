@@ -176,7 +176,6 @@ class HangmanGame:
                 self.current_word = random.choice(self.words[category])
             self.current_riddle = None
 
-            # Use fetch_word_definition for training and gameplay
             definition_data = fetch_word_definition(self.current_word)
             if definition_data:
                 self.ai_manager.training_data["definitions"].append(definition_data)
@@ -492,3 +491,12 @@ class HangmanGame:
                 print(f"Synonyms for '{self.current_word}': {synonyms}")
             else:
                 print(f"No synonyms found for '{self.current_word}'.")
+
+    def research_current_word(self):
+        """
+        Trigger a research rampage for the current word.
+        """
+        if self.current_word:
+            print(f"Starting research rampage for '{self.current_word}'...")
+            self.ai_manager.research_rampage(self.current_word, depth=3)
+            print(f"Research rampage completed for '{self.current_word}'.")

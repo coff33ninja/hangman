@@ -2,7 +2,6 @@ import os
 import json
 import torch
 from ai_manager import AIManager
-from content_manager import fetch_word_definition
 from threading import Thread
 
 class TeachEnglish:
@@ -39,10 +38,11 @@ class TeachEnglish:
     def fetch_and_save_word_data(self, word):
         """
         Fetch definitions, synonyms, examples, and related topics for a word and save them.
+        Trigger a research rampage for deeper exploration.
         """
         print(f"Fetching data for word: {word}")
-        word_data = self.ai_manager.filter_and_reference_data(word)
-        print(f"Filtered and referenced data for '{word}': {word_data}")
+        word_data = self.ai_manager.research_rampage(word, depth=3)
+        print(f"Research rampage completed for '{word}': {word_data}")
 
         # Save to file
         filepath = os.path.join(self.training_data_folder, f"{word}.json")
@@ -50,8 +50,8 @@ class TeachEnglish:
             json.dump(word_data, f, indent=4)
         print(f"Data for '{word}' saved to {filepath}")
 
-        # Train the AI on the filtered data
-        self.ai_manager.train_on_filtered_data(word)
+        # Train the AI on the processed data
+        self.ai_manager.train_on_research_rampage()
 
     def train_language_component(self, component, data):
         """

@@ -69,5 +69,125 @@
                 "Related topics: a computer, a house, an electronic device, communication, a computer"
             ]
         }
-    ]
+    ],
+    "research_results": {
+        "ephemeral": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Something which lasts for a short period of time.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Lasting for a short period of time.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Existing for only one day, as with some flowers, insects, and diseases.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a body of water) Usually dry, but filling with water for brief periods during and after precipitation.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [
+                "transitory",
+                "short",
+                "short-lived",
+                "temporary",
+                "volatile",
+                "fleeting",
+                "ephemeron",
+                "momentary",
+                "evanescent"
+            ],
+            "examples": [],
+            "related_topics": [
+                "short-lived",
+                "ephemeral",
+                "ephemeral",
+                "ephemeral",
+                "ephemeral"
+            ],
+            "references": {
+                "nouns": [
+                    "ephemeral"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "resilience": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The mental ability to recover quickly from depression, illness or misfortune.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The physical property of material that can resume its shape after being stretched or deformed; elasticity.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The positive capacity of an organizational system or company to adapt and return to equilibrium due to the consequences of a crisis or failure caused by any type of disruption, including: an outage, natural disasters, man-made disasters, terrorism, or similar (particularly IT systems, archives).",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "resilience",
+                "resilience",
+                "resilience",
+                "resilience",
+                "resilience"
+            ],
+            "references": {
+                "nouns": [
+                    "resilience"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "serendipity": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A combination of events which have come together by chance to make a surprisingly good or wonderful outcome.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An unsought, unintended, and/or unexpected, but fortunate, discovery and/or learning experience that happens by accident.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [
+                "luck",
+                "chance"
+            ],
+            "examples": [],
+            "related_topics": [
+                "serendipity",
+                "serendipity",
+                "serendipity",
+                "serendipity",
+                "serendipity"
+            ],
+            "references": {
+                "nouns": [
+                    "serendipity"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        }
+    }
 }

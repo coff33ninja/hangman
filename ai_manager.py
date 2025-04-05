@@ -382,3 +382,139 @@ class AIManager:
         self.training_data["filtered_data"][word] = filtered_data
         self.save_training_data()
         print(f"Trained on filtered data for '{word}'.")
+
+    def process_and_research_data(self, data):
+        """
+        Process and research data by breaking it into components and researching each part.
+        :param data: The input data (e.g., a sentence, word, or paragraph).
+        :return: A dictionary containing research results for each component.
+        """
+        research_results = {}
+
+        # Break down data into words and sentences
+        words = data.split()
+        sentences = data.split(". ")
+
+        # Research each word
+        research_results["words"] = {}
+        for word in words:
+            word_data = self.filter_and_reference_data(word)
+            research_results["words"][word] = word_data
+
+        # Research each sentence
+        research_results["sentences"] = {}
+        for sentence in sentences:
+            sentence_data = {
+                "grammar_analysis": self.analyze_grammar(sentence),
+                "vocabulary_analysis": self.analyze_vocabulary(sentence),
+                "spelling_analysis": self.analyze_spelling(sentence),
+                "punctuation_analysis": self.analyze_punctuation(sentence),
+            }
+            research_results["sentences"][sentence] = sentence_data
+
+        # Save research results to training data
+        self.training_data["research_results"] = self.training_data.get("research_results", {})
+        self.training_data["research_results"].update(research_results)
+        self.save_training_data()
+
+        return research_results
+
+    def analyze_grammar(self, sentence):
+        """
+        Analyze the grammar of a sentence.
+        :param sentence: The sentence to analyze.
+        :return: A dictionary containing grammar analysis results.
+        """
+        # Placeholder for grammar analysis logic
+        return {"syntax": "Analyzed syntax", "parts_of_speech": "Analyzed parts of speech"}
+
+    def analyze_vocabulary(self, sentence):
+        """
+        Analyze the vocabulary of a sentence.
+        :param sentence: The sentence to analyze.
+        :return: A dictionary containing vocabulary analysis results.
+        """
+        # Placeholder for vocabulary analysis logic
+        return {"word_meanings": "Analyzed word meanings", "contextual_usage": "Analyzed contextual usage"}
+
+    def analyze_spelling(self, sentence):
+        """
+        Analyze the spelling of a sentence.
+        :param sentence: The sentence to analyze.
+        :return: A dictionary containing spelling analysis results.
+        """
+        # Placeholder for spelling analysis logic
+        return {"phonetic_spelling": "Analyzed phonetic spelling", "spelling_rules": "Analyzed spelling rules"}
+
+    def analyze_punctuation(self, sentence):
+        """
+        Analyze the punctuation of a sentence.
+        :param sentence: The sentence to analyze.
+        :return: A dictionary containing punctuation analysis results.
+        """
+        # Placeholder for punctuation analysis logic
+        return {"end_punctuation": "Analyzed end punctuation", "internal_punctuation": "Analyzed internal punctuation"}
+
+    def train_on_research_results(self):
+        """
+        Train the AI on the research results stored in the training data.
+        """
+        research_results = self.training_data.get("research_results", {})
+        for word, word_data in research_results.get("words", {}).items():
+            self.train_on_filtered_data(word)
+        for sentence, sentence_data in research_results.get("sentences", {}).items():
+            # Placeholder for training on sentence-level data
+            pass
+
+        print("AI trained on research results.")
+
+    def research_rampage(self, word, depth=3, visited=None):
+        """
+        Perform a recursive research rampage on a word or concept.
+        :param word: The word or concept to research.
+        :param depth: The maximum depth of recursive research.
+        :param visited: A set of already visited words to avoid infinite loops.
+        :return: A dictionary containing the research results.
+        """
+        if visited is None:
+            visited = set()
+
+        # Stop recursion if depth is exceeded or word is already visited
+        if depth <= 0 or word in visited:
+            return {}
+
+        print(f"Researching: {word} (Depth: {depth})")
+        visited.add(word)
+
+        # Fetch initial data for the word
+        research_results = self.filter_and_reference_data(word)
+
+        # Save the research results
+        self.training_data["research_results"] = self.training_data.get("research_results", {})
+        self.training_data["research_results"][word] = research_results
+        self.save_training_data()
+
+        # Recursively research new words found in definitions, synonyms, and related topics
+        new_words = set()
+        for definition in research_results.get("definitions", []):
+            new_words.update(definition["definition"].split())
+        new_words.update(research_results.get("synonyms", []))
+        new_words.update(research_results.get("related_topics", []))
+
+        # Filter out already visited words
+        new_words = {w for w in new_words if w not in visited}
+
+        # Recursively research each new word
+        for new_word in new_words:
+            self.research_rampage(new_word, depth=depth - 1, visited=visited)
+
+        return research_results
+
+    def train_on_research_rampage(self):
+        """
+        Train the AI on all research results gathered during the research rampage.
+        """
+        research_results = self.training_data.get("research_results", {})
+        for word, data in research_results.items():
+            self.train_on_filtered_data(word)
+        print("AI trained on research rampage results.")
