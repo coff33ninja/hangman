@@ -30,6 +30,7 @@ difficulty = 1
 game = None
 ui = UIManager(screen)
 theme_manager = ThemeManager()
+theme_manager.generate_themes()  # Generate default themes if not exist
 voice_input = VoiceInput()
 paused = False
 

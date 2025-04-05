@@ -94,6 +94,22 @@ class AchievementsManager:
         except (IOError, json.JSONDecodeError) as e:
             print(f"Error loading achievements: {e}")
 
+    def generate_default_achievements(self):
+        """
+
+        Ensure default achievements exist.
+
+        """
+        if not self.achievements:
+            self.achievements = {
+                "first_win": {"description": "Win your first game!", "unlocked": False},
+                "no_hints": {
+                    "description": "Win a game without using hints.",
+                    "unlocked": False,
+                },
+                "streak_5": {"description": "Win 5 games in a row.", "unlocked": False},
+            }
+
 
 class HangmanGame:
 
@@ -135,6 +151,8 @@ class HangmanGame:
         self.achievements_manager = AchievementsManager()
 
         self.achievements_manager.load_achievements()
+
+        self.achievements_manager.generate_default_achievements()  # Ensure defaults exist
 
         self.current_definition = None
 
@@ -298,11 +316,11 @@ class HangmanGame:
 
         if self.mode == "word_guess":
 
-            if self.current_definition and random.random() < 0.5:
+            if self.current_definition and "definitions" in self.current_definition:
 
                 self.hint_count -= 1
 
-                return f"Definition: {self.current_definition}"
+                return f"Definition: {self.current_definition['definitions'][0]['definition']}"
 
             else:
 

@@ -63,6 +63,7 @@ class UIManager:
         Load theme-specific assets including sounds.
         """
         theme = self.theme_manager.current_theme
+        print(f"Loading assets for theme: {theme}")  # Use the theme variable for logging
         self.bg_music = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/background.wav")
         self.correct_sound = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/correct.wav")
         self.wrong_sound = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/wrong.wav")

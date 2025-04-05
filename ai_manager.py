@@ -1,5 +1,6 @@
 from transformers import pipeline
 from collections import Counter
+from content_manager import fetch_word_definition
 
 class AIManager:
     def __init__(self):
@@ -69,3 +70,16 @@ class AIManager:
             except Exception:
                 pass
         return f"I am something you call a '{word}'. What am I?"
+
+    def lookup_word_meaning(self, word):
+        """
+        Use the dictionary API to fetch the meaning of a word.
+        :param word: The word to look up.
+        :return: A string containing the word's definition or a fallback message.
+        """
+        definition_data = fetch_word_definition(word)
+        if definition_data and "definitions" in definition_data:
+            definitions = definition_data["definitions"]
+            if definitions:
+                return f"{word.capitalize()} ({definitions[0]['partOfSpeech']}): {definitions[0]['definition']}"
+        return f"Could not find a definition for '{word}'."
