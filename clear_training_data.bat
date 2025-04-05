@@ -1,4 +1,3 @@
-:: filepath: c:\Users\DRAGOHN\Documents\GitHub\hangman\clear_training_data.bat
 @echo off
 echo Clearing training data while preserving core files...
 
@@ -10,7 +9,7 @@ cd %DATA_FOLDER%
 
 :: Delete all files except the core files
 for %%f in (*) do (
-    if /i not "%%f"=="symbols.json" if /i not "%%f"=="predefined_words.json" if /i not "%%f"=="core_language_components.json" if /i not "%%f"=="words.txt" if /i not "%%f"=="riddles_easy.txt" if /i not "%%f"=="riddles_medium.txt" if /i not "%%f"=="riddles_hard.txt" (
+    if /i not "%%f"=="symbols.json" if /i not "%%f"=="predefined_words.json" if /i not "%%f"=="core_language_components.json" if /i not "%%f"=="words.txt" if /i not "%%f"=="riddles_easy.txt" if /i not "%%f"=="riddles_medium.txt" if /i not "%%f"=="riddles_hard.txt" if /i not "%%f"=="scores.json" if /i not "%%f"=="achievements.json" if /i not "%%f"=="riddles.txt" (
         del "%%f"
     )
 )
