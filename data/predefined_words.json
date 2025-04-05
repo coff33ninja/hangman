@@ -1,0 +1,2451 @@
+{
+    "the": {
+        "definitions": [
+            {
+                "partOfSpeech": "article",
+                "definition": "Used to refer to a specific item or items.",
+                "example": "The cat sat on the mat."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["The sun is shining.", "The book is on the table."],
+        "related_topics": []
+    },
+    "a": {
+        "definitions": [
+            {
+                "partOfSpeech": "article",
+                "definition": "Used when referring to something for the first time.",
+                "example": "A dog barked loudly."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["A bird is flying.", "A car is parked outside."],
+        "related_topics": []
+    },
+    "an": {
+        "definitions": [
+            {
+                "partOfSpeech": "article",
+                "definition": "Used before a vowel sound when referring to something for the first time.",
+                "example": "An apple fell from the tree."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["An elephant is large.", "An hour passed quickly."],
+        "related_topics": []
+    },
+    "in": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Expressing the situation of something that is or appears to be enclosed or surrounded by something else.",
+                "example": "The keys are in the drawer."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["In the house.", "In the car."],
+        "related_topics": []
+    },
+    "on": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Physically in contact with and supported by a surface.",
+                "example": "The book is on the table."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["On the floor.", "On the roof."],
+        "related_topics": []
+    },
+    "at": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Expressing location or arrival in a particular place or position.",
+                "example": "She is at the park."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["At school.", "At the door."],
+        "related_topics": []
+    },
+    "by": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Indicating the means of achieving something or proximity to something.",
+                "example": "The letter was sent by mail."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["By the river.", "By hand."],
+        "related_topics": []
+    },
+    "with": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Accompanied by or having something.",
+                "example": "He writes with a pen."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["With friends.", "With care."],
+        "related_topics": []
+    },
+    "to": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Expressing motion in the direction of a particular location.",
+                "example": "She walked to the store."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["To the city.", "To work."],
+        "related_topics": []
+    },
+    "from": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Indicating the point in space or time at which something starts.",
+                "example": "He comes from France."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["From home.", "From now on."],
+        "related_topics": []
+    },
+    "above": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "At a higher level or layer than something else.",
+                "example": "The plane flew above the clouds."
+            }
+        ],
+        "synonyms": ["over"],
+        "examples": ["Above the fireplace.", "Above average."],
+        "related_topics": []
+    },
+    "below": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "At a lower level or layer than something else.",
+                "example": "The fish swim below the surface."
+            }
+        ],
+        "synonyms": ["under"],
+        "examples": ["Below the bridge.", "Below zero."],
+        "related_topics": []
+    },
+    "and": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Used to connect words or phrases.",
+                "example": "She likes apples and oranges."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["He ran and jumped.", "Bread and butter."],
+        "related_topics": []
+    },
+    "or": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Used to link alternatives.",
+                "example": "I can go, or I can stay."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Tea or coffee.", "Now or later."],
+        "related_topics": []
+    },
+    "but": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Used to introduce something contrasting with what has been mentioned before.",
+                "example": "I tried, but I failed."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It’s small but cozy.", "He’s tired but happy."],
+        "related_topics": []
+    },
+    "so": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Used to introduce a result or consequence.",
+                "example": "It was raining, so we stayed inside."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I was hungry, so I ate.", "She called, so I answered."],
+        "related_topics": []
+    },
+    "when": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "At the time that.",
+                "example": "Call me when you arrive."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["When it rains, I stay inside.", "I was sleeping when the phone rang."],
+        "related_topics": []
+    },
+    "he": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to a male person or animal previously mentioned or easily identified.",
+                "example": "He is my brother."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["He went to the store.", "He is tall."],
+        "related_topics": []
+    },
+    "she": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to a female person or animal previously mentioned or easily identified.",
+                "example": "She is my sister."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She is kind.", "She loves reading."],
+        "related_topics": []
+    },
+    "it": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to a thing previously mentioned or easily identified.",
+                "example": "It is a nice day."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It broke.", "It’s raining."],
+        "related_topics": []
+    },
+    "they": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to two or more people or things previously mentioned or easily identified.",
+                "example": "They are my friends."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["They left early.", "They like to play."],
+        "related_topics": []
+    },
+    "we": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to the speaker and one or more other people.",
+                "example": "We are going to the park."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["We laughed.", "We need help."],
+        "related_topics": []
+    },
+    "this": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to identify a specific person or thing close at hand or being indicated or experienced.",
+                "example": "This is my friend."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["This book is interesting.", "I like this movie."],
+        "related_topics": []
+    },
+    "is": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Third person singular present of 'be'.",
+                "example": "She is happy."
+            }
+        ],
+        "synonyms": ["exists", "exists as"],
+        "examples": ["He is a teacher.", "The sky is blue."],
+        "related_topics": []
+    },
+    "are": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Second person singular and plural, and first and third person plural present of 'be'.",
+                "example": "They are here."
+            }
+        ],
+        "synonyms": ["exist"],
+        "examples": ["We are ready.", "You are late."],
+        "related_topics": []
+    },
+    "was": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "First and third person singular past of 'be'.",
+                "example": "He was tired."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I was there.", "She was happy."],
+        "related_topics": []
+    },
+    "can": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Be able to.",
+                "example": "I can swim."
+            }
+        ],
+        "synonyms": ["able to"],
+        "examples": ["She can speak three languages.", "Can you help me?"],
+        "related_topics": []
+    },
+    "will": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Used to express the future tense or intention.",
+                "example": "I will go tomorrow."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She will call later.", "They will win."],
+        "related_topics": []
+    },
+    "not": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Used to make a word or group of words negative.",
+                "example": "I am not going."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Not today.", "Not possible."],
+        "related_topics": []
+    },
+    "very": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Used to emphasize an adjective or adverb.",
+                "example": "It’s very cold."
+            }
+        ],
+        "synonyms": ["extremely", "really"],
+        "examples": ["She’s very smart.", "He runs very fast."],
+        "related_topics": []
+    },
+    "too": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "To a higher degree than is desirable or possible.",
+                "example": "It’s too hot."
+            }
+        ],
+        "synonyms": ["excessively"],
+        "examples": ["Too much noise.", "Too late to join."],
+        "related_topics": []
+    },
+    "often": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Frequently; many times.",
+                "example": "I often go to the gym."
+            }
+        ],
+        "synonyms": ["frequently", "regularly"],
+        "examples": ["He often forgets his keys.", "We often meet for lunch."],
+        "related_topics": []
+    },
+    "good": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of high quality or extent.",
+                "example": "This is a good book."
+            }
+        ],
+        "synonyms": ["great", "fine"],
+        "examples": ["Good weather.", "A good idea."],
+        "related_topics": []
+    },
+    "bad": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of poor quality or low standard.",
+                "example": "The food was bad."
+            }
+        ],
+        "synonyms": ["poor", "terrible"],
+        "examples": ["Bad news.", "A bad day."],
+        "related_topics": []
+    },
+    "happy": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Feeling or showing pleasure or contentment.",
+                "example": "She is happy today."
+            }
+        ],
+        "synonyms": ["joyful", "glad"],
+        "examples": ["Happy children.", "A happy ending."],
+        "related_topics": []
+    },
+    "big": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of considerable size or extent.",
+                "example": "It’s a big house."
+            }
+        ],
+        "synonyms": ["large", "huge"],
+        "examples": ["Big dreams.", "A big dog."],
+        "related_topics": []
+    },
+    "small": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of a size that is less than normal or usual.",
+                "example": "A small car."
+            }
+        ],
+        "synonyms": ["little", "tiny"],
+        "examples": ["Small steps.", "A small gift."],
+        "related_topics": []
+    },
+    "young": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having lived or existed for only a short time.",
+                "example": "She is a young girl."
+            }
+        ],
+        "synonyms": ["youthful", "juvenile"],
+        "examples": ["The young man helped.", "A young child."],
+        "related_topics": []
+    }
+{
+    "of": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Expressing the relationship between a part and a whole or belonging.",
+                "example": "The cover of the book."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["A friend of mine.", "The city of Paris."],
+        "related_topics": []
+    },
+    "for": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Indicating the purpose, reason, or recipient of something.",
+                "example": "This gift is for you."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["For dinner.", "Waiting for hours."],
+        "related_topics": []
+    },
+    "about": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "On the subject of or concerning.",
+                "example": "A book about history."
+            }
+        ],
+        "synonyms": ["regarding"],
+        "examples": ["Talking about the weather.", "Curious about life."],
+        "related_topics": []
+    },
+    "under": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Directly below something or covered by it.",
+                "example": "The cat is under the table."
+            }
+        ],
+        "synonyms": ["beneath"],
+        "examples": ["Under the bed.", "Under pressure."],
+        "related_topics": []
+    },
+    "over": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Extending directly above or across something.",
+                "example": "The bridge goes over the river."
+            }
+        ],
+        "synonyms": ["above"],
+        "examples": ["Over the hill.", "Over the years."],
+        "related_topics": []
+    },
+    "between": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "In the space separating two points or objects.",
+                "example": "A path between the trees."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Between you and me.", "Between the lines."],
+        "related_topics": []
+    },
+    "through": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Moving in one side and out the other of something.",
+                "example": "We walked through the forest."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Through the tunnel.", "Through the night."],
+        "related_topics": []
+    },
+    "beside": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "At the side of or next to.",
+                "example": "She sat beside him."
+            }
+        ],
+        "synonyms": ["next to"],
+        "examples": ["Beside the river.", "Beside the point."],
+        "related_topics": []
+    },
+    "near": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Close to in distance or time.",
+                "example": "The shop is near the station."
+            }
+        ],
+        "synonyms": ["close to"],
+        "examples": ["Near the end.", "Near my house."],
+        "related_topics": []
+    },
+    "around": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Located or situated on every side of.",
+                "example": "Trees around the lake."
+            }
+        ],
+        "synonyms": ["surrounding"],
+        "examples": ["Around the corner.", "Around noon."],
+        "related_topics": []
+    },
+    "across": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "From one side to the other of something.",
+                "example": "She walked across the street."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Across the room.", "Across the country."],
+        "related_topics": []
+    },
+    "against": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "In opposition to or in contact with.",
+                "example": "Leaning against the wall."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Against the rules.", "Against the wind."],
+        "related_topics": []
+    },
+    "along": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "In a line next to or following the length of.",
+                "example": "Houses along the road."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Along the coast.", "Walk along the path."],
+        "related_topics": []
+    },
+    "among": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Surrounded by or in the company of.",
+                "example": "She stood among friends."
+            }
+        ],
+        "synonyms": ["amid"],
+        "examples": ["Among the crowd.", "Among the trees."],
+        "related_topics": []
+    },
+    "behind": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "At the back of or after something.",
+                "example": "The car is behind the house."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Behind the door.", "Behind schedule."],
+        "related_topics": []
+    },
+    "beneath": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Under or below something, often with a sense of being covered.",
+                "example": "Treasures beneath the sea."
+            }
+        ],
+        "synonyms": ["under"],
+        "examples": ["Beneath the stars.", "Beneath the surface."],
+        "related_topics": []
+    },
+    "beyond": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "At or to the further side of something.",
+                "example": "The hills beyond the village."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Beyond the horizon.", "Beyond repair."],
+        "related_topics": []
+    },
+    "despite": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Without being affected by; in spite of.",
+                "example": "He succeeded despite the odds."
+            }
+        ],
+        "synonyms": ["in spite of"],
+        "examples": ["Despite the rain.", "Despite his efforts."],
+        "related_topics": []
+    },
+    "during": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Throughout the course or duration of.",
+                "example": "She slept during the movie."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["During the night.", "During class."],
+        "related_topics": []
+    },
+    "except": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Not including; other than.",
+                "example": "Everyone came except John."
+            }
+        ],
+        "synonyms": ["but"],
+        "examples": ["Except me.", "Except weekends."],
+        "related_topics": []
+    },
+    "inside": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Within the interior of something.",
+                "example": "The keys are inside the box."
+            }
+        ],
+        "synonyms": ["within"],
+        "examples": ["Inside the room.", "Inside the bag."],
+        "related_topics": []
+    },
+    "outside": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "On or to the outer side of something.",
+                "example": "Wait outside the building."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Outside the gate.", "Outside the city."],
+        "related_topics": []
+    },
+    "since": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "In the intervening period between a time and the present.",
+                "example": "I’ve been here since morning."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Since last year.", "Since then."],
+        "related_topics": []
+    },
+    "toward": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "In the direction of.",
+                "example": "She walked toward the door."
+            }
+        ],
+        "synonyms": ["towards"],
+        "examples": ["Toward the sun.", "Toward evening."],
+        "related_topics": []
+    },
+    "until": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Up to the point in time or the event mentioned.",
+                "example": "Wait until tomorrow."
+            }
+        ],
+        "synonyms": ["till"],
+        "examples": ["Until the end.", "Until he arrives."],
+        "related_topics": []
+    },
+    "upon": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "On or immediately after.",
+                "example": "The decision rests upon us."
+            }
+        ],
+        "synonyms": ["on"],
+        "examples": ["Upon the table.", "Upon arrival."],
+        "related_topics": []
+    },
+    "within": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Inside the range or limits of.",
+                "example": "Stay within the lines."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Within an hour.", "Within reach."],
+        "related_topics": []
+    },
+    "without": {
+        "definitions": [
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Not having or accompanied by.",
+                "example": "He left without a word."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Without help.", "Without delay."],
+        "related_topics": []
+    },
+    "yet": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Nevertheless; in spite of that.",
+                "example": "It’s simple, yet effective."
+            }
+        ],
+        "synonyms": ["still"],
+        "examples": ["Cold yet sunny.", "Tired yet determined."],
+        "related_topics": []
+    },
+    "nor": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Used to introduce a further negative statement.",
+                "example": "I don’t like tea, nor do I like coffee."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Nor me.", "Nor here."],
+        "related_topics": []
+    },
+    "because": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "For the reason that.",
+                "example": "I stayed because it rained."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Because of you.", "Because it’s late."],
+        "related_topics": []
+    },
+    "although": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "In spite of the fact that.",
+                "example": "Although it’s small, it’s cozy."
+            }
+        ],
+        "synonyms": ["though"],
+        "examples": ["Although tired.", "Although he tried."],
+        "related_topics": []
+    },
+    "if": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Introducing a conditional clause.",
+                "example": "I’ll go if you do."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["If it rains.", "If possible."],
+        "related_topics": []
+    },
+    "while": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "During the time that.",
+                "example": "She read while waiting."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["While I slept.", "While here."],
+        "related_topics": []
+    },
+    "after": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Following the time when.",
+                "example": "We left after it stopped raining."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["After he spoke.", "After dinner."],
+        "related_topics": []
+    },
+    "before": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Earlier than the time when.",
+                "example": "Finish before it gets dark."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Before you go.", "Before noon."],
+        "related_topics": []
+    },
+    "unless": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Except if.",
+                "example": "I won’t go unless you come."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Unless it rains.", "Unless necessary."],
+        "related_topics": []
+    },
+    "where": {
+        "definitions": [
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "In or to the place that.",
+                "example": "Stay where you are."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Where I live.", "Where it happened."],
+        "related_topics": []
+    },
+    "you": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to the person or people being addressed.",
+                "example": "You are my friend."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["You can do it.", "I see you."],
+        "related_topics": []
+    },
+    "I": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used by a speaker to refer to themselves.",
+                "example": "I am happy."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I went home.", "I like tea."],
+        "related_topics": []
+    },
+    "me": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Objective case of 'I', used as the object of a verb or preposition.",
+                "example": "She gave me a book."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Help me.", "Talk to me."],
+        "related_topics": []
+    },
+    "him": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Objective case of 'he', used as the object of a verb or preposition.",
+                "example": "I saw him yesterday."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Give it to him.", "She likes him."],
+        "related_topics": []
+    },
+    "her": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Objective case of 'she', used as the object of a verb or preposition.",
+                "example": "I called her."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Tell her the truth.", "I met her."],
+        "related_topics": []
+    },
+    "us": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Objective case of 'we', used as the object of a verb or preposition.",
+                "example": "They helped us."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Join us.", "He saw us."],
+        "related_topics": []
+    },
+    "them": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Objective case of 'they', used as the object of a verb or preposition.",
+                "example": "I gave them a gift."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Call them.", "We need them."],
+        "related_topics": []
+    },
+    "my": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Possessive form of 'I', indicating ownership.",
+                "example": "This is my house."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["My car.", "My idea."],
+        "related_topics": []
+    },
+    "your": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Possessive form of 'you', indicating ownership.",
+                "example": "Your book is here."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Your turn.", "Your name."],
+        "related_topics": []
+    },
+    "his": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Possessive form of 'he', indicating ownership.",
+                "example": "His dog ran away."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["His choice.", "His fault."],
+        "related_topics": []
+    },
+    "their": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Possessive form of 'they', indicating ownership.",
+                "example": "Their house is big."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Their decision.", "Their kids."],
+        "related_topics": []
+    },
+    "its": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Possessive form of 'it', indicating ownership.",
+                "example": "The cat licked its paws."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Its color.", "Its size."],
+        "related_topics": []
+    },
+    "myself": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'I', used for emphasis or as an object.",
+                "example": "I hurt myself."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["I did it myself.", "I’ll keep it to myself."],
+        "related_topics": []
+    },
+    "yourself": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'you', used for emphasis or as an object.",
+                "example": "Take care of yourself."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Help yourself.", "You did it yourself."],
+        "related_topics": []
+    },
+    "himself": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'he', used for emphasis or as an object.",
+                "example": "He taught himself."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["He hurt himself.", "He did it himself."],
+        "related_topics": []
+    },
+    "herself": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'she', used for emphasis or as an object.",
+                "example": "She blamed herself."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She made it herself.", "She saw herself."],
+        "related_topics": []
+    },
+    "itself": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'it', used for emphasis or as an object.",
+                "example": "The machine turned itself off."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["It fixed itself.", "The cat cleaned itself."],
+        "related_topics": []
+    },
+    "ourselves": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'we', used for emphasis or as an object.",
+                "example": "We enjoyed ourselves."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["We made it ourselves.", "We kept to ourselves."],
+        "related_topics": []
+    },
+    "yourselves": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'you' (plural), used for emphasis or as an object.",
+                "example": "You can help yourselves."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Enjoy yourselves.", "You did it yourselves."],
+        "related_topics": []
+    },
+    "themselves": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Reflexive form of 'they', used for emphasis or as an object.",
+                "example": "They prepared themselves."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["They hurt themselves.", "They did it themselves."],
+        "related_topics": []
+    },
+    "that": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to identify a specific person or thing observed or heard by the speaker.",
+                "example": "That is my car."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["That looks good.", "I like that."],
+        "related_topics": []
+    },
+    "these": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Plural of 'this', used to identify specific things close at hand.",
+                "example": "These are my books."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["These shoes.", "I want these."],
+        "related_topics": []
+    },
+    "those": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Plural of 'that', used to identify specific things farther away.",
+                "example": "Those are his keys."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Those trees.", "I need those."],
+        "related_topics": []
+    },
+    "who": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to refer to a person or people.",
+                "example": "Who is there?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Who called?", "I know who did it."],
+        "related_topics": []
+    },
+    "whom": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Objective form of 'who', used as the object of a verb or preposition.",
+                "example": "To whom did you speak?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Whom I met.", "With whom."],
+        "related_topics": []
+    },
+    "whose": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Possessive form of 'who', indicating ownership.",
+                "example": "Whose bag is this?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Whose turn.", "I know whose it is."],
+        "related_topics": []
+    },
+    "what": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to ask for information about something.",
+                "example": "What is your name?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["What time?", "What happened?"],
+        "related_topics": []
+    },
+    "which": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Used to specify one or more items from a set.",
+                "example": "Which do you want?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Which book?", "Which way?"],
+        "related_topics": []
+    },
+    "some": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "An unspecified amount or number of something.",
+                "example": "Some are here."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Some people.", "I need some."],
+        "relatedTopics": []
+    },
+    "any": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "One, some, or all, without specification.",
+                "example": "Do you have any questions?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Any help.", "Take any."],
+        "related_topics": []
+    },
+    "none": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Not any; no one.",
+                "example": "None were left."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["None of them.", "I saw none."],
+        "related_topics": []
+    },
+    "all": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "The whole quantity or extent of something.",
+                "example": "All are welcome."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["All of us.", "I ate all."],
+        "related_topics": []
+    },
+    "both": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "The two together.",
+                "example": "Both are correct."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Both of them.", "I like both."],
+        "related_topics": []
+    },
+    "each": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Every one of two or more considered individually.",
+                "example": "Each has a role."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Each person.", "I gave each."],
+        "related_topics": []
+    },
+    "every": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "All the individual items in a group.",
+                "example": "Every student passed."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Every day.", "Every time."],
+        "related_topics": []
+    },
+    "few": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "A small number of something.",
+                "example": "Few came to the party."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Few of us.", "I saw few."],
+        "related_topics": []
+    },
+    "many": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "A large number of something.",
+                "example": "Many were invited."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Many people.", "I have many."],
+        "related_topics": []
+    },
+    "several": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "More than two but not many.",
+                "example": "Several arrived late."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Several times.", "I took several."],
+        "related_topics": []
+    },
+    "one": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "A single person or thing.",
+                "example": "One is enough."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["One of them.", "I need one."],
+        "related_topics": []
+    },
+    "anyone": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Any person at all.",
+                "example": "Can anyone help?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Anyone there?", "I didn’t see anyone."],
+        "related_topics": []
+    },
+    "everyone": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Every person.",
+                "example": "Everyone cheered."
+            }
+        ],
+        "synonyms": ["everybody"],
+        "examples": ["Everyone knows.", "I told everyone."],
+        "related_topics": []
+    },
+    "someone": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "An unspecified person.",
+                "example": "Someone called."
+            }
+        ],
+        "synonyms": ["somebody"],
+        "examples": ["Someone is here.", "I heard someone."],
+        "related_topics": []
+    },
+    "no one": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Not a single person.",
+                "example": "No one answered."
+            }
+        ],
+        "synonyms": ["nobody"],
+        "examples": ["No one came.", "I saw no one."],
+        "related_topics": []
+    },
+    "anything": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Any thing, no matter what.",
+                "example": "Do you need anything?"
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Anything else.", "I don’t want anything."],
+        "related_topics": []
+    },
+    "everything": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "All things.",
+                "example": "Everything is ready."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Everything went well.", "I lost everything."],
+        "related_topics": []
+    },
+    "something": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "An unspecified thing.",
+                "example": "I forgot something."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Something smells good.", "Give me something."],
+        "related_topics": []
+    },
+    "nothing": {
+        "definitions": [
+            {
+                "partOfSpeech": "pronoun",
+                "definition": "Not anything; no single thing.",
+                "example": "There’s nothing here."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Nothing happened.", "I see nothing."],
+        "related_topics": []
+    },
+    "were": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Second person singular and plural, and first and third person plural past of 'be'.",
+                "example": "They were late."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["We were there.", "You were right."],
+        "related_topics": []
+    },
+    "be": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Exist or occur; base form of the verb 'to be'.",
+                "example": "Let it be."
+            }
+        ],
+        "synonyms": ["exist"],
+        "examples": ["To be happy.", "Be quiet."],
+        "related_topics": []
+    },
+    "been": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Past participle of 'be'.",
+                "example": "I have been busy."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She’s been here.", "It’s been done."],
+        "related_topics": []
+    },
+    "being": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Present participle of 'be', indicating existence or action in progress.",
+                "example": "He is being silly."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Being careful.", "It’s being fixed."],
+        "related_topics": []
+    },
+    "have": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Possess, own, or hold.",
+                "example": "I have a dog."
+            }
+        ],
+        "synonyms": ["own"],
+        "examples": ["They have time.", "I have it."],
+        "related_topics": []
+    },
+    "has": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Third person singular present of 'have'.",
+                "example": "She has a car."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["He has money.", "It has begun."],
+        "related_topics": []
+    },
+    "had": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Past tense and past participle of 'have'.",
+                "example": "I had lunch."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She had a plan.", "They had left."],
+        "related_topics": []
+    },
+    "do": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Perform an action.",
+                "example": "I do my homework."
+            }
+        ],
+        "synonyms": ["perform"],
+        "examples": ["Do it now.", "What do you do?"],
+        "related_topics": []
+    },
+    "does": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Third person singular present of 'do'.",
+                "example": "She does well."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["He does it.", "Does she know?"],
+        "related_topics": []
+    },
+    "did": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Past tense of 'do'.",
+                "example": "I did my best."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She did it.", "What did you do?"],
+        "related_topics": []
+    },
+    "could": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Past tense of 'can', indicating possibility or ability.",
+                "example": "I could run fast."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She could help.", "Could you try?"],
+        "related_topics": []
+    },
+    "may": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Expressing possibility or permission.",
+                "example": "It may rain."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["You may go.", "It may happen."],
+        "related_topics": []
+    },
+    "might": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Expressing a smaller possibility.",
+                "example": "I might visit."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She might agree.", "It might work."],
+        "related_topics": []
+    },
+    "must": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Be obliged to; should.",
+                "example": "You must leave now."
+            }
+        ],
+        "synonyms": ["have to"],
+        "examples": ["I must finish.", "She must try."],
+        "related_topics": []
+    },
+    "shall": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Used to indicate future action, often formally.",
+                "example": "I shall return."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["We shall see.", "Shall we go?"],
+        "related_topics": []
+    },
+    "should": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Indicating obligation, duty, or correctness.",
+                "example": "You should study."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She should call.", "I should go."],
+        "related_topics": []
+    },
+    "would": {
+        "definitions": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Past tense of 'will', indicating future in the past or conditional.",
+                "example": "I would help if I could."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["She would like that.", "Would you?"],
+        "related_topics": []
+    },
+    "also": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In addition; too.",
+                "example": "I’m tired, and also hungry."
+            }
+        ],
+        "synonyms": ["too"],
+        "examples": ["He’s here also.", "Also important."],
+        "related_topics": []
+    },
+    "just": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Only or exactly.",
+                "example": "I just finished."
+            }
+        ],
+        "synonyms": ["only"],
+        "examples": ["Just now.", "Just one."],
+        "related_topics": []
+    },
+    "only": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "And no one or nothing more besides.",
+                "example": "I have only one dollar."
+            }
+        ],
+        "synonyms": ["just"],
+        "examples": ["Only you.", "Only here."],
+        "related_topics": []
+    },
+    "always": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "At all times; on all occasions.",
+                "example": "She’s always late."
+            }
+        ],
+        "synonyms": ["constantly"],
+        "examples": ["Always happy.", "I always try."],
+        "related_topics": []
+    },
+    "never": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "At no time in the past or future.",
+                "example": "I never saw it."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Never again.", "He never calls."],
+        "related_topics": []
+    },
+    "sometimes": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Occasionally, rather than all the time.",
+                "example": "I sometimes walk."
+            }
+        ],
+        "synonyms": ["occasionally"],
+        "examples": ["Sometimes it rains.", "I see her sometimes."],
+        "related_topics": []
+    },
+    "usually": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Under normal conditions; generally.",
+                "example": "I usually wake up early."
+            }
+        ],
+        "synonyms": ["normally"],
+        "examples": ["Usually quiet.", "She’s usually here."],
+        "related_topics": []
+    },
+    "rarely": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Not often; seldom.",
+                "example": "I rarely go out."
+            }
+        ],
+        "synonyms": ["seldom"],
+        "examples": ["Rarely seen.", "He rarely talks."],
+        "related_topics": []
+    },
+    "seldom": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Not often; rarely.",
+                "example": "She seldom visits."
+            }
+        ],
+        "synonyms": ["rarely"],
+        "examples": ["Seldom wrong.", "I seldom eat out."],
+        "related_topics": []
+    },
+    "quickly": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "At a fast speed.",
+                "example": "He ran quickly."
+            }
+        ],
+        "synonyms": ["fast"],
+        "examples": ["Quickly finished.", "Move quickly."],
+        "related_topics": []
+    },
+    "slowly": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "At a slow speed.",
+                "example": "She walked slowly."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Drive slowly.", "Speak slowly."],
+        "related_topics": []
+    },
+    "well": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a good or satisfactory way.",
+                "example": "He sings well."
+            }
+        ],
+        "synonyms": ["nicely"],
+        "examples": ["Done well.", "She plays well."],
+        "related_topics": []
+    },
+    "badly": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a bad or unsatisfactory way.",
+                "example": "He did badly on the test."
+            }
+        ],
+        "synonyms": ["poorly"],
+        "examples": ["Badly hurt.", "It went badly."],
+        "related_topics": []
+    },
+    "easily": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Without difficulty or effort.",
+                "example": "She won easily."
+            }
+        ],
+        "synonyms": ["effortlessly"],
+        "examples": ["Easily done.", "I can easily help."],
+        "related_topics": []
+    },
+    "hard": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "With a great deal of effort.",
+                "example": "She works hard."
+            }
+        ],
+        "synonyms": ["intensely"],
+        "examples": ["Try hard.", "He hit hard."],
+        "related_topics": []
+    },
+    "late": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "After the expected or proper time.",
+                "example": "He arrived late."
+            }
+        ],
+        "synonyms": ["tardily"],
+        "examples": ["Late at night.", "She sleeps late."],
+        "related_topics": []
+    },
+    "early": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Before the expected time.",
+                "example": "I woke up early."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Arrive early.", "Early today."],
+        "related_topics": []
+    },
+    "soon": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In or after a short time.",
+                "example": "I’ll see you soon."
+            }
+        ],
+        "synonyms": ["shortly"],
+        "examples": ["Come soon.", "It’ll end soon."],
+        "related_topics": []
+    },
+    "already": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Before now or before a specified time.",
+                "example": "I’ve already eaten."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Already gone.", "She’s already here."],
+        "related_topics": []
+    },
+    "still": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Up to and including the present time.",
+                "example": "I’m still waiting."
+            }
+        ],
+        "synonyms": ["yet"],
+        "examples": ["Still here.", "He’s still asleep."],
+        "related_topics": []
+    },
+    "here": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In, at, or to this place.",
+                "example": "Come here."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Stay here.", "I’m here now."],
+        "related_topics": []
+    },
+    "there": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In, at, or to that place.",
+                "example": "Look over there."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Go there.", "She’s there."],
+        "related_topics": []
+    },
+    "everywhere": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In all places.",
+                "example": "Flowers are everywhere."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Everywhere I go.", "Noise everywhere."],
+        "related_topics": []
+    },
+    "somewhere": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In or to an unspecified place.",
+                "example": "It’s somewhere nearby."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Somewhere safe.", "I left it somewhere."],
+        "related_topics": []
+    },
+    "nowhere": {
+        "definitions": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Not in or to any place.",
+                "example": "There’s nowhere to hide."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Nowhere near.", "I went nowhere."],
+        "related_topics": []
+    },
+    "sad": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Feeling or showing sorrow; unhappy.",
+                "example": "She felt sad."
+            }
+        ],
+        "synonyms": ["unhappy"],
+        "examples": ["A sad story.", "He looks sad."],
+        "related_topics": []
+    },
+    "old": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having lived or existed for a long time.",
+                "example": "An old man."
+            }
+        ],
+        "synonyms": ["aged"],
+        "examples": ["Old house.", "Old friends."],
+        "related_topics": []
+    },
+    "new": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not existing before; recently made or acquired.",
+                "example": "A new car."
+            }
+        ],
+        "synonyms": ["fresh"],
+        "examples": ["New ideas.", "New clothes."],
+        "related_topics": []
+    },
+    "long": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Measuring a great distance or duration.",
+                "example": "A long road."
+            }
+        ],
+        "synonyms": ["lengthy"],
+        "examples": ["Long wait.", "Long hair."],
+        "related_topics": []
+    },
+    "short": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Measuring a small distance or duration.",
+                "example": "A short walk."
+            }
+        ],
+        "synonyms": ["brief"],
+        "examples": ["Short time.", "Short story."],
+        "related_topics": []
+    },
+    "tall": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of great or more than average height.",
+                "example": "A tall tree."
+            }
+        ],
+        "synonyms": ["high"],
+        "examples": ["Tall building.", "She’s tall."],
+        "related_topics": []
+    },
+    "hot": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a high temperature.",
+                "example": "The soup is hot."
+            }
+        ],
+        "synonyms": ["warm"],
+        "examples": ["Hot day.", "Hot coffee."],
+        "related_topics": []
+    },
+    "cold": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a low temperature.",
+                "example": "It’s cold outside."
+            }
+        ],
+        "synonyms": ["chilly"],
+        "examples": ["Cold water.", "Cold weather."],
+        "related_topics": []
+    },
+    "warm": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Moderately hot; comfortable temperature.",
+                "example": "A warm jacket."
+            }
+        ],
+        "synonyms": ["cozy"],
+        "examples": ["Warm hands.", "Warm sun."],
+        "related_topics": []
+    },
+    "cool": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Moderately cold; pleasantly refreshing.",
+                "example": "A cool breeze."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Cool evening.", "Cool drink."],
+        "related_topics": []
+    },
+    "bright": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Giving out or reflecting much light; vivid.",
+                "example": "A bright room."
+            }
+        ],
+        "synonyms": ["shiny"],
+        "examples": ["Bright stars.", "Bright colors."],
+        "related_topics": []
+    },
+    "dark": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "With little or no light.",
+                "example": "A dark night."
+            }
+        ],
+        "synonyms": ["dim"],
+        "examples": ["Dark room.", "Dark hair."],
+        "related_topics": []
+    },
+    "light": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a lot of light or being pale in color.",
+                "example": "A light sky."
+            }
+        ],
+        "synonyms": ["bright"],
+        "examples": ["Light blue.", "Light morning."],
+        "related_topics": []
+    },
+    "heavy": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of great weight or intensity.",
+                "example": "A heavy box."
+            }
+        ],
+        "synonyms": ["weighty"],
+        "examples": ["Heavy rain.", "Heavy load."],
+        "related_topics": []
+    },
+    "fast": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Moving or capable of moving at high speed.",
+                "example": "A fast car."
+            }
+        ],
+        "synonyms": ["quick"],
+        "examples": ["Fast runner.", "Fast pace."],
+        "related_topics": []
+    },
+    "slow": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Moving or operating at a low speed.",
+                "example": "A slow train."
+            }
+        ],
+        "synonyms": ["sluggish"],
+        "examples": ["Slow day.", "Slow progress."],
+        "related_topics": []
+    },
+    "quiet": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Making little or no noise.",
+                "example": "A quiet room."
+            }
+        ],
+        "synonyms": ["silent"],
+        "examples": ["Quiet night.", "Stay quiet."],
+        "related_topics": []
+    },
+    "loud": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Producing much noise.",
+                "example": "A loud bang."
+            }
+        ],
+        "synonyms": ["noisy"],
+        "examples": ["Loud music.", "Loud voice."],
+        "related_topics": []
+    },
+    "clean": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Free from dirt or impurities.",
+                "example": "A clean shirt."
+            }
+        ],
+        "synonyms": ["tidy"],
+        "examples": ["Clean house.", "Clean water."],
+        "related_topics": []
+    },
+    "dirty": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Covered or marked with dirt.",
+                "example": "A dirty floor."
+            }
+        ],
+        "synonyms": ["filthy"],
+        "examples": ["Dirty hands.", "Dirty clothes."],
+        "related_topics": []
+    },
+    "beautiful": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Pleasing to the senses or mind aesthetically.",
+                "example": "A beautiful sunset."
+            }
+        ],
+        "synonyms": ["lovely"],
+        "examples": ["Beautiful song.", "She’s beautiful."],
+        "related_topics": []
+    },
+    "ugly": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unpleasant or unattractive in appearance.",
+                "example": "An ugly scar."
+            }
+        ],
+        "synonyms": ["hideous"],
+        "examples": ["Ugly building.", "Ugly truth."],
+        "related_topics": []
+    },
+    "rich": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a lot of money or valuable possessions.",
+                "example": "A rich family."
+            }
+        ],
+        "synonyms": ["wealthy"],
+        "examples": ["Rich taste.", "Rich history."],
+        "related_topics": []
+    },
+    "poor": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lacking sufficient money or quality.",
+                "example": "A poor village."
+            }
+        ],
+        "synonyms": ["needy"],
+        "examples": ["Poor health.", "Poor results."],
+        "related_topics": []
+    },
+    "strong": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having the power to move heavy weights or perform physically demanding tasks.",
+                "example": "A strong man."
+            }
+        ],
+        "synonyms": ["powerful"],
+        "examples": ["Strong wind.", "Strong will."],
+        "related_topics": []
+    },
+    "weak": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lacking physical strength or energy.",
+                "example": "A weak signal."
+            }
+        ],
+        "synonyms": ["feeble"],
+        "examples": ["Weak legs.", "Weak argument."],
+        "related_topics": []
+    },
+    "true": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "In accordance with fact or reality.",
+                "example": "A true story."
+            }
+        ],
+        "synonyms": ["real"],
+        "examples": ["True love.", "It’s true."],
+        "related_topics": []
+    },
+    "false": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not according with truth or fact.",
+                "example": "A false statement."
+            }
+        ],
+        "synonyms": ["untrue"],
+        "examples": ["False alarm.", "False hope."],
+        "related_topics": []
+    },
+    "right": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Correct or morally good.",
+                "example": "The right answer."
+            }
+        ],
+        "synonyms": ["correct"],
+        "examples": ["Right choice.", "You’re right."],
+        "related_topics": []
+    },
+    "wrong": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not correct or morally unacceptable.",
+                "example": "The wrong way."
+            }
+        ],
+        "synonyms": ["incorrect"],
+        "examples": ["Wrong time.", "Something’s wrong."],
+        "related_topics": []
+    },
+    "important": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Of great significance or value.",
+                "example": "An important meeting."
+            }
+        ],
+        "synonyms": ["crucial"],
+        "examples": ["Important news.", "It’s important."],
+        "related_topics": []
+    },
+    "famous": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Known about by many people.",
+                "example": "A famous actor."
+            }
+        ],
+        "synonyms": ["well-known"],
+        "examples": ["Famous place.", "She’s famous."],
+        "related_topics": []
+    },
+    "different": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not the same as another.",
+                "example": "A different color."
+            }
+        ],
+        "synonyms": ["unlike"],
+        "examples": ["Different ideas.", "They’re different."],
+        "related_topics": []
+    },
+    "same": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Identical; not different.",
+                "example": "The same shirt."
+            }
+        ],
+        "synonyms": ["identical"],
+        "examples": ["Same time.", "We’re the same."],
+        "related_topics": []
+    },
+    "next": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Coming immediately after the present one.",
+                "example": "The next day."
+            }
+        ],
+        "synonyms": ["following"],
+        "examples": ["Next step.", "Next in line."],
+        "related_topics": []
+    },
+    "last": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Most recent or final.",
+                "example": "The last page."
+            }
+        ],
+        "synonyms": ["final"],
+        "examples": ["Last night.", "Last chance."],
+        "related_topics": []
+    },
+    "first": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Coming before all others in time or order.",
+                "example": "The first time."
+            }
+        ],
+        "synonyms": ["initial"],
+        "examples": ["First place.", "First step."],
+        "related_topics": []
+    },
+    "second": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Coming after the first in time or order.",
+                "example": "The second choice."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Second try.", "Second place."],
+        "related_topics": []
+    },
+    "third": {
+        "definitions": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Coming after the second in time or order.",
+                "example": "The third book."
+            }
+        ],
+        "synonyms": [],
+        "examples": ["Third day.", "Third option."],
+        "related_topics": []
+    }
+}

@@ -8,14 +8,15 @@ import os
 import requests
 from threading import Thread
 import logging
+import time  # Add for rate limiting
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 class AIManager:
-    def __init__(self, training_file="data/training_data.json"):
+    def __init__(self, training_file="data/training_data.json", predefined_words_file="data/predefined_words.json"):
         """
-        Initialize the AI manager with pre-trained models and training data file.
+        Initialize the AI manager with pre-trained models, training data file, and predefined words file.
         """
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"Device set to use {self.device}")
@@ -29,6 +30,7 @@ class AIManager:
         self.letter_frequency = Counter("etaoinshrdlcumwfgypbvkjxqz")  # English letter frequency
         self.training_file = training_file
         self.training_data = {"riddles": [], "definitions": [], "categories": [], "research": []}
+        self.predefined_words = self.load_predefined_words(predefined_words_file)
 
         try:
             self.text_generator = pipeline("text-generation", model="gpt2", device=0 if self.device == "cuda" else -1)
@@ -43,6 +45,19 @@ class AIManager:
             print("AI-powered features will be limited.")
 
         self.load_training_data()
+
+    def load_predefined_words(self, filepath):
+        """
+        Load predefined words and their data from a JSON file.
+        :param filepath: Path to the predefined words file.
+        :return: A dictionary of predefined words and their data.
+        """
+        try:
+            with open(filepath, "r") as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            print(f"Predefined words file not found or invalid: {filepath}")
+            return {}
 
     def load_training_data(self):
         """
@@ -339,6 +354,11 @@ class AIManager:
         """
         filtered_data = {}
 
+        # Check if the word is in predefined words
+        if word in self.predefined_words:
+            print(f"Using predefined data for '{word}'.")
+            return self.predefined_words[word]
+
         # Fetch definitions
         definition_data = fetch_word_definition(word)
         if definition_data:
@@ -360,15 +380,8 @@ class AIManager:
         filtered_data["examples"] = examples
 
         # Fetch related topics
-        related_topics = self.fetch_related_topics(word)
+        related_topics = self.fetch_related_topics(word) or []  # Ensure it's not None
         filtered_data["related_topics"] = related_topics
-
-        # Reference each component dynamically
-        filtered_data["references"] = {
-            "nouns": [w for w in word.split() if w.isalpha()],
-            "acronyms": [w for w in word.split() if w.isupper()],
-            "verbs": [w for w in word.split() if w.endswith("ing")],  # Example heuristic
-        }
 
         return filtered_data
 
@@ -483,6 +496,12 @@ class AIManager:
         if depth <= 0 or word in visited:
             return {}
 
+        # Filter out invalid words (e.g., punctuation, numbers, stop words)
+        invalid_words = {"the", "is", "a", "an", "and", "or", "to", "of", "in", "on", "it", "at", "by", "for", "with"}
+        if word.lower() in invalid_words:
+            print(f"Skipping predefined word '{word}'.")
+            return self.predefined_words.get(word, {})
+
         print(f"Researching: {word} (Depth: {depth})")
         visited.add(word)
 
@@ -492,20 +511,26 @@ class AIManager:
         # Save the research results
         self.training_data["research_results"] = self.training_data.get("research_results", {})
         self.training_data["research_results"][word] = research_results
-        self.save_training_data()
+
+        # Safely save training data to avoid concurrent modification
+        try:
+            self.save_training_data()
+        except RuntimeError as e:
+            print(f"Error saving training data: {e}")
 
         # Recursively research new words found in definitions, synonyms, and related topics
         new_words = set()
-        for definition in research_results.get("definitions", []):
-            new_words.update(definition["definition"].split())
-        new_words.update(research_results.get("synonyms", []))
-        new_words.update(research_results.get("related_topics", []))
+        if research_results:
+            new_words.update(research_results.get("definitions", []))
+            new_words.update(research_results.get("synonyms", []))
+            new_words.update(research_results.get("related_topics", []))
 
         # Filter out already visited words
         new_words = {w for w in new_words if w not in visited}
 
-        # Recursively research each new word
+        # Add rate limiting to avoid hitting API limits
         for new_word in new_words:
+            time.sleep(0.5)  # Delay between API calls
             self.research_rampage(new_word, depth=depth - 1, visited=visited)
 
         return research_results

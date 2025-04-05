@@ -1,0 +1,109 @@
+{
+    "Grammar": {
+        "topics": [
+            "Syntax: Sentence structure and word order.",
+            "Parts of Speech: Nouns, verbs, adjectives, adverbs, etc.",
+            "Tenses and Verb Conjugation: Past, present, future forms, and irregular verbs.",
+            "Agreement: Subject-verb, noun-adjective consistency.",
+            "Morphology: Word formation (prefixes, suffixes, root words).",
+            "Semantics: Meaning of words and sentences.",
+            "Pragmatics: Language use in context, including implied meanings."
+        ]
+    },
+    "Vocabulary": {
+        "topics": [
+            "Word Meanings: Definitions and usage.",
+            "Synonyms, Antonyms, Homonyms: Expanding word variety and avoiding confusion.",
+            "Contextual Usage: How words change meaning depending on context.",
+            "Idiomatic Expressions: Phrases like 'kick the bucket' or 'under the weather.'",
+            "Collocations: Words that commonly pair together (e.g., 'make a decision').",
+            "Register and Tone: Formal vs. informal language distinctions."
+        ]
+    },
+    "Spelling": {
+        "topics": [
+            "Phonetic Spelling: Sound-to-letter correspondence.",
+            "Spelling Rules: Patterns like 'i before e except after c.'",
+            "Exceptions: Irregular spellings (e.g., 'through,' 'thought').",
+            "Homophones: Words that sound the same but differ in meaning (e.g., 'their' vs. 'there')."
+        ]
+    },
+    "Punctuation": {
+        "topics": [
+            "End Punctuation: Periods, question marks, exclamation points.",
+            "Internal Punctuation: Commas, semicolons, colons.",
+            "Quotation and Possession: Quotation marks and apostrophes.",
+            "Connectors: Hyphens, dashes, parentheses for clarity and structure."
+        ]
+    },
+    "Reading Comprehension": {
+        "topics": [
+            "Main Ideas and Details: Identifying key points and supporting information.",
+            "Inferences: Drawing conclusions from implied meanings.",
+            "Text Structure: Understanding narrative, expository, or persuasive formats.",
+            "Critical Analysis: Evaluating arguments, themes, and motifs.",
+            "Techniques: Skimming, scanning, and close reading."
+        ]
+    },
+    "Writing": {
+        "topics": [
+            "Sentence Construction: Variety and complexity in sentence forms.",
+            "Paragraphs: Coherence, topic sentences, and transitions.",
+            "Essay Writing: Introduction, body, conclusion structure.",
+            "Styles: Narrative, descriptive, expository, persuasive, argumentative.",
+            "Creative Writing: Poetry, stories, and imaginative expression.",
+            "Editing: Proofreading and refining written work."
+        ]
+    },
+    "Speaking and Listening": {
+        "topics": [
+            "Pronunciation: Correct articulation and stress patterns.",
+            "Intonation: Pitch and rhythm in speech.",
+            "Fluency: Speaking smoothly and clearly.",
+            "Listening Skills: Understanding spoken language, including accents and dialects.",
+            "Conversation: Turn-taking, interruptions, and politeness."
+        ]
+    },
+    "Literature": {
+        "topics": [
+            "Genres: Prose, poetry, drama, non-fiction.",
+            "Literary Devices: Metaphors, similes, alliteration, etc.",
+            "Analysis: Themes, characters, plots, and symbolism.",
+            "Context: Historical and cultural influences on texts.",
+            "Interpretation: Understanding author intent and reader perspectives."
+        ]
+    },
+    "Linguistics": {
+        "topics": [
+            "Phonetics: Study of speech sounds.",
+            "Phonology: Sound patterns and rules.",
+            "Sociolinguistics: Language variation by region, class, or group.",
+            "Psycholinguistics: How the brain processes language.",
+            "Historical Linguistics: Language evolution over time."
+        ]
+    },
+    "Cultural and Historical Context": {
+        "topics": [
+            "Cultural Norms: Etiquette, values, and traditions tied to the language.",
+            "Historical Influence: Events shaping language development.",
+            "Proverbs and Sayings: Culturally specific expressions.",
+            "Identity: Language’s role in regional or ethnic identity."
+        ]
+    },
+    "Practical Language Applications": {
+        "topics": [
+            "Translation: Converting text between languages.",
+            "Interpretation: Real-time spoken language conversion.",
+            "Specialized Language: Business, technical, legal, or medical terminology.",
+            "Media and Technology: Language use in digital or broadcast contexts."
+        ]
+    },
+    "Language Acquisition and Learning Strategies": {
+        "topics": [
+            "Theories: How humans learn languages (e.g., second language acquisition).",
+            "Strategies: Mnemonics, repetition, immersion techniques.",
+            "Tools: Dictionaries, thesauruses, and language apps.",
+            "Self-Assessment: Evaluating progress and setting goals."
+        ]
+    }
+}

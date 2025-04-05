@@ -188,6 +188,1970 @@
                 "acronyms": [],
                 "verbs": []
             }
+        },
+        "one": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The digit or figure 1.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The neutral element with respect to multiplication in a ring.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A one-dollar bill.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One run scored by hitting the ball and running between the wickets; a single.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A joke or amusing anecdote.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A particularly special or compatible person or thing.",
+                    "example": "I knew as soon I met him that John was the one for me and we were married within a month."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(leet) Used instead of ! to amplify an exclamation, parodying unskilled typists who forget to press the shift key while typing exclamation points, thus typing \"1\".",
+                    "example": "2003 September 26, \"DEAL WITH IT!!!!11one!!\", in alt.games.video.nintendo.gamecube, Usenet"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause to become one; to gather into a single whole; to unite.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Of a period of time, being particular.",
+                    "example": "One day the prince set forth to kill the dragon that had brought terror to his father\u2019s kingdom for centuries."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Being a single, unspecified thing; a; any.",
+                    "example": "My aunt used to say, \"One day is just like the other.\""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Sole, only.",
+                    "example": "He is the one man who can help you."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Whole, entire.",
+                    "example": "Body and soul are not separate; they are one."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "In agreement.",
+                    "example": "We are one on the importance of learning."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "The same.",
+                    "example": "The two types look very different, but are one species."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Being a preeminent example.",
+                    "example": "He is one hell of a guy."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Being an unknown person with the specified name; see also \"a certain\".",
+                    "example": "The town records from 1843 showed the overnight incarceration of one \u201cA. Lincoln\u201d."
+                },
+                {
+                    "partOfSpeech": "numeral",
+                    "definition": "The number represented by the Arabic numeral 1; the numerical value equal to that cardinal number.",
+                    "example": "In many cultures, a baby turns one year old a year after its birth."
+                },
+                {
+                    "partOfSpeech": "numeral",
+                    "definition": "The first positive number in the set of natural numbers.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "numeral",
+                    "definition": "The cardinality of the smallest nonempty set.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "numeral",
+                    "definition": "The ordinality of an element which has no predecessor, usually called first or number one.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(impersonal pronoun, indefinite) One thing (among a group of others); one member of a group.",
+                    "example": "Any one of the boys.\u2003 The big one looks good.\u2003 I want the green one.\u2003 A good driver is one who drives carefully."
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(impersonal pronoun, sometimes with \"the\") The first mentioned of two things or people, as opposed to the other.",
+                    "example": "She offered him an apple and an orange; he took one and left the other."
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(indefinite personal pronoun) Any person (applying to people in general).",
+                    "example": "One\u2019s guilt may trouble one, but it is best not to let oneself be troubled by things which cannot be changed.\u2003 One shouldn\u2019t be too quick to judge."
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(pronoun) Any person, entity or thing.",
+                    "example": "\"driver\", noun: one who drives."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "I knew as soon I met him that John was the one for me and we were married within a month.",
+                "2003 September 26, \"DEAL WITH IT!!!!11one!!\", in alt.games.video.nintendo.gamecube, Usenet",
+                "One day the prince set forth to kill the dragon that had brought terror to his father\u2019s kingdom for centuries.",
+                "My aunt used to say, \"One day is just like the other.\"",
+                "He is the one man who can help you.",
+                "Body and soul are not separate; they are one.",
+                "We are one on the importance of learning.",
+                "The two types look very different, but are one species.",
+                "He is one hell of a guy.",
+                "The town records from 1843 showed the overnight incarceration of one \u201cA. Lincoln\u201d.",
+                "In many cultures, a baby turns one year old a year after its birth.",
+                "Any one of the boys.\u2003 The big one looks good.\u2003 I want the green one.\u2003 A good driver is one who drives carefully.",
+                "She offered him an apple and an orange; he took one and left the other.",
+                "One\u2019s guilt may trouble one, but it is best not to let oneself be troubled by things which cannot be changed.\u2003 One shouldn\u2019t be too quick to judge.",
+                "\"driver\", noun: one who drives."
+            ],
+            "related_topics": [
+                "number",
+                "one",
+                "first",
+                "two",
+                "a number"
+            ],
+            "references": {
+                "nouns": [
+                    "one"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "failure": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "State or condition of not meeting a desirable or intended objective, opposite of success.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An object, person or endeavour in a state of failure or incapable of success.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Termination of the ability of an item to perform its required function; breakdown.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Bankruptcy.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "failure",
+                "failure",
+                "fortune",
+                "failure",
+                "failure"
+            ],
+            "references": {
+                "nouns": [
+                    "failure"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "outcome.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "\"1\".": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "perform": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To do something; to execute.",
+                    "example": "It took him only twenty minutes to perform the task."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To do (something) in front of an audience, such as acting or music, often in order to entertain.",
+                    "example": "She will perform in the play."
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "applause",
+                "rehearse",
+                "practice",
+                "bow",
+                "perform"
+            ],
+            "references": {
+                "nouns": [
+                    "perform"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "discovery": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Something discovered.",
+                    "example": "This latest discovery should eventually lead to much better treatments for disease."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The discovering of new things.",
+                    "example": "Automatic discovery of RSS feeds by a Web browser."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An act of uncovering or revealing something; a revelation.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A pre-trial phase in which evidence is gathered.",
+                    "example": "The prosecution moved to suppress certain items turned up during discovery."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Materials revealed to the opposing party during the pre-trial phase in which evidence is gathered.",
+                    "example": "The defense argued that the plaintiff's discovery was inadequate."
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "discovery",
+                "disclosure",
+                "discovery",
+                "discovery",
+                "discovery"
+            ],
+            "references": {
+                "nouns": [
+                    "discovery"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "typists": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "typist",
+                "typist",
+                "typists",
+                "typists"
+            ],
+            "references": {
+                "nouns": [
+                    "typists"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "state": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "a state",
+                "a country",
+                "a state",
+                "a state",
+                "a state"
+            ],
+            "references": {
+                "nouns": [
+                    "state"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "act": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "play",
+                "act",
+                "act",
+                "act",
+                "act"
+            ],
+            "references": {
+                "nouns": [
+                    "act"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "into": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "preposition",
+                "into",
+                "dans",
+                "into",
+                "into"
+            ],
+            "references": {
+                "nouns": [
+                    "into"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "breakdown.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "revealing": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "disclosure",
+                "telltale",
+                "revealing",
+                "revealing",
+                "skimpy"
+            ],
+            "references": {
+                "nouns": [
+                    "revealing"
+                ],
+                "acronyms": [],
+                "verbs": [
+                    "revealing"
+                ]
+            }
+        },
+        "pronoun,": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "item": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "item",
+                "item",
+                "item",
+                "item",
+                "item"
+            ],
+            "references": {
+                "nouns": [
+                    "item"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "phase": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "phase",
+                "phase",
+                "phase",
+                "cycle",
+                "phase"
+            ],
+            "references": {
+                "nouns": [
+                    "phase"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "neutral": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "neutral",
+                "neutral",
+                "neutral",
+                "neuter",
+                "neutral"
+            ],
+            "references": {
+                "nouns": [
+                    "neutral"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "fortune": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Destiny, especially favorable.",
+                    "example": "She read my fortune. Apparently I will have a good love life this week, but I will have a bad week for money."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A prediction or set of predictions about a person's future provided by a fortune teller.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A small slip of paper with wise or vaguely prophetic words printed on it, baked into a fortune cookie.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The arrival of something in a sudden or unexpected manner; chance; accident.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Good luck.",
+                    "example": "Fortune favors the brave."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One's wealth; the amount of money one has; especially, if it is vast.",
+                    "example": "He's amassed a small fortune working in the Middle East."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A large amount of money.",
+                    "example": "That car must be worth a fortune! How could you afford it?"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To happen, take place.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To provide with a fortune.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To presage; to tell the fortune of.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "She read my fortune. Apparently I will have a good love life this week, but I will have a bad week for money.",
+                "Fortune favors the brave.",
+                "He's amassed a small fortune working in the Middle East.",
+                "That car must be worth a fortune! How could you afford it?"
+            ],
+            "related_topics": [
+                "a cookie",
+                "luck",
+                "fortune",
+                "a lot of money",
+                "bank"
+            ],
+            "references": {
+                "nouns": [
+                    "fortune"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "is": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "is",
+                "is",
+                "je",
+                "is",
+                "jeste"
+            ],
+            "references": {
+                "nouns": [
+                    "is"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "has": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To possess, own.",
+                    "example": "I have a house and a car."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To hold, as something at someone's disposal.",
+                    "example": "Do you have the key? (not necessarily one's own key)"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "Used to state the existence or presence of someone in a specified relationship with the subject.",
+                    "example": "I have a really mean boss."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To partake of (a particular substance, especially food or drink, or action or activity).",
+                    "example": "Can I have a look at that?"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be scheduled to attend, undertake or participate in.",
+                    "example": "Fred won't be able to come to the party; he has a meeting that day."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To experience, go through, undergo.",
+                    "example": "He had surgery on his hip yesterday."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be afflicted with, suffer from.",
+                    "example": "He had a cold last week."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary verb, taking a past participle) Used in forming the perfect aspect.",
+                    "example": "I had already eaten."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "Used as an interrogative verb before a pronoun to form a tag question, echoing a previous use of 'have' as an auxiliary verb or, in certain cases, main verb. (For further discussion, see the appendix English tag questions.)",
+                    "example": "They haven't eaten dinner yet, have they?"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary verb, taking a to-infinitive) See have to.",
+                    "example": "I have to go."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To give birth to.",
+                    "example": "My mother had me when she was 25."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To engage in sexual intercourse with.",
+                    "example": "He's always bragging about how many women he's had."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To accept as a romantic partner.",
+                    "example": "Despite my protestations of love, she would not have me."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with bare infinitive) To cause to, by a command, request or invitation.",
+                    "example": "They had me feed their dog while they were out of town."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with adjective or adjective-phrase complement) To cause to be.",
+                    "example": "He had him arrested for trespassing."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with bare infinitive) To be affected by an occurrence. (Used in supplying a topic that is not a verb argument.)",
+                    "example": "I've had three people today tell me my hair looks nice."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with adjective or adjective-phrase complement) To depict as being.",
+                    "example": "Their stories differed; he said he'd been at work when the incident occurred, but her statement had him at home that entire evening."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To defeat in a fight; take.",
+                    "example": "I could have him!"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(obsolete outside Ireland) To be able to speak (a language).",
+                    "example": "I have no German."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To feel or be (especially painfully) aware of.",
+                    "example": "Dan certainly has arms today, probably from scraping paint off four columns the day before."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To trick, to deceive.",
+                    "example": "You had me alright! I never would have thought that was just a joke."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(often with present participle) To allow; to tolerate.",
+                    "example": "I asked my dad if I could go to the concert this Thursday, but he wouldn't have it since it's a school night."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(often used in the negative) To believe, buy, be taken in by.",
+                    "example": "I made up an excuse as to why I was out so late, but my wife wasn't having any of it."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To host someone; to take in as a guest.",
+                    "example": "Thank you for having me!"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To get a reading, measurement, or result from an instrument or calculation.",
+                    "example": "I have two contacts on my scope."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(of a jury) To consider a court proceeding that has been completed; to begin deliberations on a case.",
+                    "example": "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make an observation of (a bird species).",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "I have a house and a car.",
+                "Do you have the key? (not necessarily one's own key)",
+                "I have a really mean boss.",
+                "Can I have a look at that?",
+                "Fred won't be able to come to the party; he has a meeting that day.",
+                "He had surgery on his hip yesterday.",
+                "He had a cold last week.",
+                "I had already eaten.",
+                "They haven't eaten dinner yet, have they?",
+                "I have to go.",
+                "My mother had me when she was 25.",
+                "He's always bragging about how many women he's had.",
+                "Despite my protestations of love, she would not have me.",
+                "They had me feed their dog while they were out of town.",
+                "He had him arrested for trespassing.",
+                "I've had three people today tell me my hair looks nice.",
+                "Their stories differed; he said he'd been at work when the incident occurred, but her statement had him at home that entire evening.",
+                "I could have him!",
+                "I have no German.",
+                "Dan certainly has arms today, probably from scraping paint off four columns the day before.",
+                "You had me alright! I never would have thought that was just a joke.",
+                "I asked my dad if I could go to the concert this Thursday, but he wouldn't have it since it's a school night.",
+                "I made up an excuse as to why I was out so late, but my wife wasn't having any of it.",
+                "Thank you for having me!",
+                "I have two contacts on my scope.",
+                "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon."
+            ],
+            "related_topics": [
+                "has",
+                "has",
+                "has",
+                "has",
+                "has"
+            ],
+            "references": {
+                "nouns": [
+                    "has"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "desirable": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A thing that people want; something that is desirable.",
+                    "example": "There are plenty of desirables on display in the window."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Worthy to be desired; pleasing; agreeable.",
+                    "example": "This applicant has almost all desirable properties."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "There are plenty of desirables on display in the window.",
+                "This applicant has almost all desirable properties."
+            ],
+            "related_topics": [
+                "desirable",
+                "desirable",
+                "desirable",
+                "desirable",
+                "desirable"
+            ],
+            "references": {
+                "nouns": [
+                    "desirable"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "party": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A person or group of people constituting a particular side in a contract or legal action.",
+                    "example": "The contract requires that the party of the first part pay the fee."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A person.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A group of people forming one side in a given dispute, contest etc.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A political group considered as a formal whole, united under one specific political platform of issues and campaigning to take part in government.",
+                    "example": "The green party took 12% of the vote."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A discrete detachment of troops, especially for a particular purpose.",
+                    "example": "The settlers were attacked early next morning by a scouting party."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A group of persons collected or gathered together for some particular purpose.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A part or division.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To celebrate at a party, to have fun, to enjoy oneself.",
+                    "example": "We partied until the early hours."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To take recreational drugs.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To engage in flings, to have one-night stands, to sow one's wild oats.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To form a party (with).",
+                    "example": "If you want to beat that monster, you should party with a healer."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "The contract requires that the party of the first part pay the fee.",
+                "The green party took 12% of the vote.",
+                "The settlers were attacked early next morning by a scouting party.",
+                "We partied until the early hours.",
+                "If you want to beat that monster, you should party with a healer."
+            ],
+            "related_topics": [
+                "celebration",
+                "gathering",
+                "party",
+                "fun",
+                "birthday"
+            ],
+            "references": {
+                "nouns": [
+                    "party"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "scored": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cut a notch or a groove in a surface.",
+                    "example": "The baker scored the cake so that the servers would know where to slice it."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To record the tally of points for a game, a match, or an examination.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To obtain something desired.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To provide (a film, etc.) with a musical score.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "The baker scored the cake so that the servers would know where to slice it."
+            ],
+            "related_topics": [
+                "score",
+                "scored",
+                "scored",
+                "scored",
+                "scored"
+            ],
+            "references": {
+                "nouns": [
+                    "scored"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "the": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "the",
+                "the",
+                "the",
+                "the",
+                "the"
+            ],
+            "references": {
+                "nouns": [
+                    "the"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "during": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To last, continue, endure.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "For all of a given time interval.",
+                    "example": "I lived with my parents during the 1970s."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "At any time or period within a given time interval.",
+                    "example": "I lived with my parents at several points during the 1980s."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "I lived with my parents during the 1970s.",
+                "I lived with my parents at several points during the 1980s."
+            ],
+            "related_topics": [
+                "during",
+                "during",
+                "during",
+                "during",
+                "during"
+            ],
+            "references": {
+                "nouns": [
+                    "during"
+                ],
+                "acronyms": [],
+                "verbs": [
+                    "during"
+                ]
+            }
+        },
+        "entity": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "That which has a distinct existence as an individual unit. Often used for organisations which have no physical form.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The existence of something considered apart from its properties.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Anything about which information or data can be stored in a database; in particular, an organised array or set of individual elements or parts.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The state or quality of being or existence.",
+                    "example": "The group successfully maintains its tribal entity."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A spirit, ghost, or the like.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An alien lifeform that has no corporeal body.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "entity",
+                "entity",
+                "entity",
+                "entitet",
+                "entity"
+            ],
+            "references": {
+                "nouns": [
+                    "entity"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "an": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "an",
+                "a",
+                "an",
+                "Associate in Nursing",
+                "an"
+            ],
+            "references": {
+                "nouns": [
+                    "an"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "The": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [
+                    "The"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "sometimes": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "sometimes",
+                "sometimes",
+                "sometimes",
+                "sometimes",
+                "sometimes"
+            ],
+            "references": {
+                "nouns": [
+                    "sometimes"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "function;": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "new": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "new",
+                "new",
+                "old",
+                "new",
+                "new"
+            ],
+            "references": {
+                "nouns": [
+                    "new"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "numbers.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "to": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Toward a closed, touching or engaging position.",
+                    "example": "Please push the door to."
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Into the wind.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Indicating destination: In the direction of, and arriving at.",
+                    "example": "We are walking to the shop."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used to indicate the target or recipient of an action.",
+                    "example": "He devoted himself to education."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used to indicate result of action.",
+                    "example": "His face was beaten to a pulp."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used to indicate a resulting feeling or emotion.",
+                    "example": "To everyone's great relief, the tuneless carol singers finally ceased their warbling."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used after an adjective to indicate its application.",
+                    "example": "similar to ..., relevant to ..., pertinent to ..., I was nice to him, he was cruel to her, I am used to walking."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Denotes the end of a range.",
+                    "example": "It takes 2 to 4 weeks to process typical applications."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "As a.",
+                    "example": "With God to friend (with God as a friend);\u00a0\u00a0 with The Devil to fiend (with the Devil as a foe);\u00a0\u00a0 lambs slaughtered to lake (lambs slaughtered as a sacrifice);\u00a0\u00a0 took her to wife (took her as a wife);\u00a0\u00a0 was sold to slave (was sold as a slave)."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used to indicate a ratio or comparison.",
+                    "example": "I have ten dollars to your four."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used to indicate that the preceding term is to be raised to the power of the following value; indicates exponentiation.",
+                    "example": "Three squared or three to the second power is nine."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "(time) Preceding.",
+                    "example": "ten to ten = 9:50; We're going to leave at ten to (the hour)."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Used to describe what something consists of or contains.",
+                    "example": "Anyone could do this job; there's nothing to it."
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "At.",
+                    "example": "Stay where you're to and I'll come find you, b'y."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "Please push the door to.",
+                "We are walking to the shop.",
+                "He devoted himself to education.",
+                "His face was beaten to a pulp.",
+                "To everyone's great relief, the tuneless carol singers finally ceased their warbling.",
+                "similar to ..., relevant to ..., pertinent to ..., I was nice to him, he was cruel to her, I am used to walking.",
+                "It takes 2 to 4 weeks to process typical applications.",
+                "With God to friend (with God as a friend);\u00a0\u00a0 with The Devil to fiend (with the Devil as a foe);\u00a0\u00a0 lambs slaughtered to lake (lambs slaughtered as a sacrifice);\u00a0\u00a0 took her to wife (took her as a wife);\u00a0\u00a0 was sold to slave (was sold as a slave).",
+                "I have ten dollars to your four.",
+                "Three squared or three to the second power is nine.",
+                "ten to ten = 9:50; We're going to leave at ten to (the hour).",
+                "Anyone could do this job; there's nothing to it.",
+                "Stay where you're to and I'll come find you, b'y."
+            ],
+            "related_topics": [
+                "to",
+                "to",
+                "to",
+                "to",
+                "to"
+            ],
+            "references": {
+                "nouns": [
+                    "to"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "smallest": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "smallest",
+                "smallest",
+                "smallest",
+                "smallest",
+                "smallest"
+            ],
+            "references": {
+                "nouns": [
+                    "smallest"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "discovered.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "not": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "negative",
+                "negation",
+                "and",
+                "not",
+                "not"
+            ],
+            "references": {
+                "nouns": [
+                    "not"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "A": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The name of the Latin script letter A/a.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [
+                    "A"
+                ],
+                "acronyms": [
+                    "A"
+                ],
+                "verbs": []
+            }
+        },
+        "which": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "which",
+                "who",
+                "which",
+                "which",
+                "koji"
+            ],
+            "references": {
+                "nouns": [
+                    "which"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "unskilled": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "unskilled",
+                "unskilled",
+                "inexperienced",
+                "crude",
+                "botched"
+            ],
+            "references": {
+                "nouns": [
+                    "unskilled"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "An": {
+            "definitions": [
+                {
+                    "partOfSpeech": "numeral",
+                    "definition": "One",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [
+                    "An"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "disclosure": {
+            "synonyms": [],
+            "examples": [
+                "get full disclosure"
+            ],
+            "related_topics": [
+                "disclosure",
+                "disclosure",
+                "disclosure",
+                "disclosure",
+                "disclosure"
+            ],
+            "references": {
+                "nouns": [
+                    "disclosure"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "meeting": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(gerund) The act of persons or things that meet.",
+                    "example": "Meeting him will be exciting.\u2003I enjoy meeting new people."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A gathering of persons for a purpose; an assembly.",
+                    "example": "We need to have a meeting about that soon."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(collective) The people at such a gathering.",
+                    "example": "What has the meeting decided."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An encounter between people, even accidental.",
+                    "example": "They came together in a chance meeting on the way home from work."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A place or instance of junction or intersection; a confluence.",
+                    "example": "Earthquakes occur at the meeting of tectonic plates."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A religious service held by a charismatic preacher in small towns in the United States.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An administrative unit in the Religious Society of Friends (Quakers).",
+                    "example": "Denver meeting is a part of Intermountain yearly meeting."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "Meeting him will be exciting.\u2003I enjoy meeting new people.",
+                "We need to have a meeting about that soon.",
+                "What has the meeting decided.",
+                "They came together in a chance meeting on the way home from work.",
+                "Earthquakes occur at the meeting of tectonic plates.",
+                "Denver meeting is a part of Intermountain yearly meeting."
+            ],
+            "related_topics": [
+                "meeting",
+                "a meeting",
+                "a meeting",
+                "a meeting",
+                "a meeting"
+            ],
+            "references": {
+                "nouns": [
+                    "meeting"
+                ],
+                "acronyms": [],
+                "verbs": [
+                    "meeting"
+                ]
+            }
+        },
+        "revelation.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "incapable": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One who is morally or mentally weak or inefficient; an imbecile; a simpleton.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Not capable (of doing something); unable.",
+                    "example": "A pint glass is incapable of holding more than a pint of liquid."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Not in a state to receive; not receptive; not susceptible; not able to admit.",
+                    "example": "incapable of pain, or pleasure; incapable of stain or injury"
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "A pint glass is incapable of holding more than a pint of liquid.",
+                "incapable of pain, or pleasure; incapable of stain or injury"
+            ],
+            "related_topics": [
+                "incapable",
+                "incapable",
+                "incapable",
+                "incapable",
+                "incapable"
+            ],
+            "references": {
+                "nouns": [
+                    "incapable"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "ability": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Suitableness.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The quality or state of being able; capacity to do or of doing something; having the necessary power.",
+                    "example": "This phone has the ability to have its software upgraded wirelessly."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The legal wherewithal to act.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Physical power.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Financial ability.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A unique power of the mind; a faculty.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A skill or competence in doing; mental power; talent; aptitude.",
+                    "example": "She has an uncanny ability to defuse conflict."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "This phone has the ability to have its software upgraded wirelessly.",
+                "She has an uncanny ability to defuse conflict."
+            ],
+            "related_topics": [
+                "ability",
+                "ability",
+                "ability",
+                "ability",
+                "cognition"
+            ],
+            "references": {
+                "nouns": [
+                    "ability"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "pre-trial": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A preliminary trial held in advance of a court trial.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Pertaining to a preliminary trial.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Before a trial.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "something;": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "its": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One who is neither a he nor a she; a creature; a dehumanized being.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The person who chases and tries to catch the other players in the playground game of tag.",
+                    "example": "In the next game, Adam and Tom will be it\u2026"
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The game of tag.",
+                    "example": "Let's play it at breaktime."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Sex appeal, especially that which goes beyond beauty.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Sexual activity.",
+                    "example": "caught them doing it"
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A biological force that inhabits living beings, according to the vitalist approach of Georg Groddeck.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "The one (or ones) belonging to it.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "In the next game, Adam and Tom will be it\u2026",
+                "Let's play it at breaktime.",
+                "caught them doing it"
+            ],
+            "related_topics": [
+                "its",
+                "it",
+                "its",
+                "its",
+                "son"
+            ],
+            "references": {
+                "nouns": [
+                    "its"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "evidence": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Facts or observations presented in support of an assertion.",
+                    "example": "There is no evidence that anyone was here earlier."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Anything admitted by a court to prove or disprove alleged matters of fact in a trial.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One who bears witness.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A body of objectively verifiable facts that are positively indicative of, and/or exclusively concordant with, that one conclusion over any other.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To provide evidence for, or suggest the truth of.",
+                    "example": "She was furious, as evidenced by her slamming the door."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "There is no evidence that anyone was here earlier.",
+                "She was furious, as evidenced by her slamming the door."
+            ],
+            "related_topics": [
+                "evidence",
+                "testify",
+                "evidence",
+                "evidence",
+                "evidence"
+            ],
+            "references": {
+                "nouns": [
+                    "evidence"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "success.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "required": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To ask (someone) for something; to request.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To demand, to insist upon (having); to call for authoritatively.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "Naturally to demand (something) as indispensable; to need, to call for as necessary.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To demand of (someone) to do something.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Necessary; obligatory; mandatory.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "required",
+                "required",
+                "required",
+                "required",
+                "required"
+            ],
+            "references": {
+                "nouns": [
+                    "required"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "revealed": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "revealed",
+                "revealed",
+                "revealed",
+                "divinity",
+                "reveal"
+            ],
+            "references": {
+                "nouns": [
+                    "revealed"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "Termination": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [
+                    "Termination"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "gathered.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "a": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "a",
+                "is a container",
+                "A",
+                "the alphabet",
+                "a"
+            ],
+            "references": {
+                "nouns": [
+                    "a"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "uncovering": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "denudation",
+                "discovery",
+                "uncovering",
+                "uncovering",
+                "uncovering"
+            ],
+            "references": {
+                "nouns": [
+                    "uncovering"
+                ],
+                "acronyms": [],
+                "verbs": [
+                    "uncovering"
+                ]
+            }
+        },
+        "Bankruptcy.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "opposing": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "opposing",
+                "opponent",
+                "opposite",
+                "opposing",
+                "opposing"
+            ],
+            "references": {
+                "nouns": [
+                    "opposing"
+                ],
+                "acronyms": [],
+                "verbs": [
+                    "opposing"
+                ]
+            }
+        },
+        "condition": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "state",
+                "condition",
+                "condition",
+                "shampoo",
+                "condition"
+            ],
+            "references": {
+                "nouns": [
+                    "condition"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "Something": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [
+                    "Something"
+                ],
+                "acronyms": [],
+                "verbs": [
+                    "Something"
+                ]
+            }
+        },
+        "opposite": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "face to face",
+                "opposite",
+                "opposite",
+                "opposite",
+                "suprotan"
+            ],
+            "references": {
+                "nouns": [
+                    "opposite"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "things.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [],
+            "references": {
+                "nouns": [],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "person": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An individual; usually a human being.",
+                    "example": "Each person is unique, both mentally and physically."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The physical body of a being seen as distinct from the mind, character, etc.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Any individual or formal organization with standing before the courts.",
+                    "example": "At common law a corporation or a trust is legally a person."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The human genitalia; specifically, the penis.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(grammar) A linguistic category used to distinguish between the speaker of an utterance and those to whom or about whom he or she is speaking. See grammatical person.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A shoot or bud of a plant; a polyp or zooid of the compound Hydrozoa, Anthozoa, etc.; also, an individual, in the narrowest sense, among the higher animals.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To represent as a person; to personify; to impersonate.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(gender-neutral) To man.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "Each person is unique, both mentally and physically.",
+                "At common law a corporation or a trust is legally a person."
+            ],
+            "related_topics": null,
+            "references": {
+                "nouns": [
+                    "person"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
+        },
+        "or": {
+            "definitions": [
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "Connects at least two alternative words, phrases, clauses, sentences, etc. each of which could make a passage true. In English, this is the \"inclusive or.\" The \"exclusive or\" is formed by \"either [...] or\".",
+                    "example": "He might get cancer, or be hit by a bus, or God knows what."
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "An operator denoting the disjunction of two propositions or truth values. There are two forms, the inclusive or and the exclusive or.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "Counts the elements before and after as two possibilities.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "Otherwise (a consequence of the condition that the previous is false).",
+                    "example": "It's raining! Come inside or you'll catch a cold!"
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "Connects two equivalent names.",
+                    "example": "The country Myanmar, or Burma"
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "He might get cancer, or be hit by a bus, or God knows what.",
+                "It's raining! Come inside or you'll catch a cold!",
+                "The country Myanmar, or Burma"
+            ],
+            "related_topics": null,
+            "references": {
+                "nouns": [
+                    "or"
+                ],
+                "acronyms": [],
+                "verbs": []
+            }
         }
     }
 }

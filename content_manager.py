@@ -4,6 +4,7 @@ import random
 import requests
 import os
 import json
+import time
 
 
 def categorize_entry(entry, dictionary_data):
@@ -179,6 +180,14 @@ def fetch_word_definition(word):
                 "phonetics": data[0].get("phonetics", []),
                 "definitions": definitions,
             }
+    except requests.exceptions.HTTPError as e:
+        if response.status_code == 429:
+            print("Rate limit exceeded. Retrying after delay...")
+            time.sleep(1)  # Delay before retrying
+        elif response.status_code == 404:
+            print(f"Word '{word}' not found in dictionary.")
+        else:
+            print(f"HTTP error for '{word}': {e}")
     except requests.exceptions.RequestException as e:
         print(f"Error fetching definition for '{word}': {e}")
     return None

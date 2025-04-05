@@ -5,13 +5,14 @@ from ai_manager import AIManager
 from threading import Thread
 
 class TeachEnglish:
-    def __init__(self, ai_manager=None, model_file="data/english_model.pth"):
+    def __init__(self, ai_manager=None, model_file="data/english_model.pth", components_file="data/core_language_components.json"):
         """
         Initialize the TeachEnglish package with an AIManager instance and model file.
         """
         self.ai_manager = ai_manager or AIManager()
         self.training_data_folder = "data/english_training"
         self.model_file = model_file
+        self.language_components = self.load_language_components(components_file)
         os.makedirs(self.training_data_folder, exist_ok=True)
 
         # Initialize or load the model
@@ -106,106 +107,24 @@ class TeachEnglish:
         self.model["interactions"].append({"question": question, "response": response})
         self.save_model()
 
+    def load_language_components(self, filepath):
+        """
+        Load predefined language components from a JSON file.
+        """
+        try:
+            with open(filepath, "r") as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            print(f"Language components file not found or invalid: {filepath}")
+            return {}
+
     def train_core_language_components(self):
         """
-        Train the AI on core language components.
+        Train the AI on core language components using the predefined file.
         """
-        grammar_data = [
-            "Syntax: Sentence structure and word order.",
-            "Parts of Speech: Nouns, verbs, adjectives, adverbs.",
-            "Tenses: Past, present, future forms.",
-            "Agreement: Subject-verb consistency.",
-            "Morphology: Word formation (prefixes, suffixes, root words).",
-            "Semantics: Meaning of words and sentences.",
-            "Pragmatics: Language use in context, including implied meanings.",
-        ]
-        vocabulary_data = [
-            "Word Meanings: Definitions and usage.",
-            "Synonyms, Antonyms, Homonyms: Expanding word variety.",
-            "Contextual Usage: How words change meaning depending on context.",
-            "Idiomatic Expressions: Phrases like 'kick the bucket' or 'under the weather'.",
-            "Collocations: Words that commonly pair together (e.g., 'make a decision').",
-            "Register and Tone: Formal vs. informal language distinctions.",
-        ]
-        spelling_data = [
-            "Phonetic Spelling: Sound-to-letter correspondence.",
-            "Spelling Rules: Patterns like 'i before e except after c'.",
-            "Exceptions: Irregular spellings (e.g., 'through', 'thought').",
-            "Homophones: Words that sound the same but differ in meaning (e.g., 'their' vs. 'there').",
-        ]
-        punctuation_data = [
-            "End Punctuation: Periods, question marks, exclamation points.",
-            "Internal Punctuation: Commas, semicolons, colons.",
-            "Quotation and Possession: Quotation marks and apostrophes.",
-            "Connectors: Hyphens, dashes, parentheses for clarity and structure.",
-        ]
-        reading_comprehension_data = [
-            "Main Ideas and Details: Identifying key points and supporting information.",
-            "Inferences: Drawing conclusions from implied meanings.",
-            "Text Structure: Understanding narrative, expository, or persuasive formats.",
-            "Critical Analysis: Evaluating arguments, themes, and motifs.",
-        ]
-        writing_data = [
-            "Sentence Construction: Variety and complexity in sentence forms.",
-            "Paragraphs: Coherence, topic sentences, and transitions.",
-            "Essay Writing: Introduction, body, conclusion structure.",
-            "Styles: Narrative, descriptive, expository, persuasive, argumentative.",
-            "Creative Writing: Poetry, stories, and imaginative expression.",
-            "Editing: Proofreading and refining written work.",
-        ]
-        speaking_and_listening_data = [
-            "Pronunciation: Correct articulation and stress patterns.",
-            "Intonation: Pitch and rhythm in speech.",
-            "Fluency: Speaking smoothly and clearly.",
-            "Listening Skills: Understanding spoken language, including accents and dialects.",
-            "Conversation: Turn-taking, interruptions, and politeness.",
-        ]
-        literature_data = [
-            "Genres: Prose, poetry, drama, non-fiction.",
-            "Literary Devices: Metaphors, similes, alliteration, etc.",
-            "Analysis: Themes, characters, plots, and symbolism.",
-            "Context: Historical and cultural influences on texts.",
-            "Interpretation: Understanding author intent and reader perspectives.",
-        ]
-        linguistics_data = [
-            "Phonetics: Study of speech sounds.",
-            "Phonology: Sound patterns and rules.",
-            "Sociolinguistics: Language variation by region, class, or group.",
-            "Psycholinguistics: How the brain processes language.",
-            "Historical Linguistics: Language evolution over time.",
-        ]
-        practical_language_applications_data = [
-            "Translation: Converting text between languages.",
-            "Interpretation: Real-time spoken language conversion.",
-            "Specialized Language: Business, technical, legal, or medical terminology.",
-            "Media and Technology: Language use in digital or broadcast contexts.",
-        ]
-        language_acquisition_data = [
-            "Theories: How humans learn languages (e.g., second language acquisition).",
-            "Strategies: Mnemonics, repetition, immersion techniques.",
-            "Tools: Dictionaries, thesauruses, and language apps.",
-            "Self-Assessment: Evaluating progress and setting goals.",
-        ]
-        additional_training_data = [
-            "Assessment Standards: Familiarity with language tests (e.g., TOEFL, IELTS).",
-            "Digital Literacy: Language use in emails, social media, and online platforms.",
-            "Language Variation: Dialects, sociolects, and registers (e.g., slang vs. academic language).",
-            "Error Analysis: Common mistakes in grammar, spelling, or usage.",
-            "Multimodal Language: Integrating text with visuals, audio, or gestures (e.g., captions, emojis).",
-        ]
-
-        self.train_language_component("Grammar", grammar_data)
-        self.train_language_component("Vocabulary", vocabulary_data)
-        self.train_language_component("Spelling", spelling_data)
-        self.train_language_component("Punctuation", punctuation_data)
-        self.train_language_component("Reading Comprehension", reading_comprehension_data)
-        self.train_language_component("Writing", writing_data)
-        self.train_language_component("Speaking and Listening", speaking_and_listening_data)
-        self.train_language_component("Literature", literature_data)
-        self.train_language_component("Linguistics", linguistics_data)
-        self.train_language_component("Practical Language Applications", practical_language_applications_data)
-        self.train_language_component("Language Acquisition", language_acquisition_data)
-        self.train_language_component("Additional Training", additional_training_data)
+        for component, data in self.language_components.items():
+            print(f"Training on language component: {component}")
+            self.train_language_component(component, data["topics"])
 
 if __name__ == "__main__":
     # Example usage
