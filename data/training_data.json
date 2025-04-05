@@ -5630,6 +5630,192 @@
                 "against"
             ],
             "related_topics": []
+        },
+        "speedruns": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A playthrough of a computer or video game in which the whole game or a select part of it, such as a single level, is played with the intent of completing it as quickly as possible, optionally with certain prerequisites.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To create a speedrun.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "lost": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause (something) to cease to be in one's possession or capability due to unfortunate or unknown circumstances, events or reasons.",
+                    "example": "He lost his hearing in the explosion.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To wander from; to miss, so as not to be able to find; to go astray from.",
+                    "example": "I lost my way in the forest.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To fail to win (a game, competition, trial, etc).",
+                    "example": "We lost the football match.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be unable to follow or trace (somebody or something) any longer.",
+                    "example": "Mission control lost the satellite as its signal died down.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause (somebody) to be unable to follow or trace one any longer.",
+                    "example": "We managed to lose our pursuers in the forest.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cease exhibiting; to overcome (a behavior or emotion).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To shed, remove, discard, or eliminate.",
+                    "example": "When we get into the building, please lose the hat.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "Of a clock, to run slower than expected.",
+                    "example": "It's already 5:30? My watch must have lost a few minutes.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(ditransitive) To cause (someone) the loss of something; to deprive of.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To fail to catch with the mind or senses; to miss.",
+                    "example": "I lost a part of what he said.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause to part with; to deprive of.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Having wandered from, or unable to find, the way.",
+                    "example": "The children were soon lost in the forest.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "In an unknown location; unable to be found.",
+                    "example": "Deep beneath the ocean, the Titanic was lost to the world.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Not perceptible to the senses; no longer visible.",
+                    "example": "an island lost in a fog; a person lost in a crowd",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Parted with; no longer held or possessed.",
+                    "example": "a lost limb; lost honour",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Not employed or enjoyed; thrown away; employed ineffectually; wasted; squandered.",
+                    "example": "a lost day; a lost opportunity or benefit",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Ruined or destroyed, either physically or morally; past help or hope.",
+                    "example": "a ship lost at sea; a woman lost to virtue; a lost soul",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Hardened beyond sensibility or recovery; alienated; insensible.",
+                    "example": "lost to shame; lost to all sense of honour",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Occupied with, or under the influence of, something, so as not to notice external things.",
+                    "example": "to be lost in thought",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "He lost his hearing in the explosion.",
+                "I lost my way in the forest.",
+                "We lost the football match.",
+                "Mission control lost the satellite as its signal died down.",
+                "We managed to lose our pursuers in the forest.",
+                "",
+                "When we get into the building, please lose the hat.",
+                "It's already 5:30? My watch must have lost a few minutes.",
+                "",
+                "I lost a part of what he said.",
+                "",
+                "The children were soon lost in the forest.",
+                "Deep beneath the ocean, the Titanic was lost to the world.",
+                "an island lost in a fog; a person lost in a crowd",
+                "a lost limb; lost honour",
+                "a lost day; a lost opportunity or benefit",
+                "a ship lost at sea; a woman lost to virtue; a lost soul",
+                "lost to shame; lost to all sense of honour",
+                "to be lost in thought"
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         }
     },
     "filtered_data": {
