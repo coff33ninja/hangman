@@ -2,6 +2,8 @@
 
 import random
 import requests
+import os
+import json
 
 
 def categorize_entry(entry, dictionary_data):
@@ -53,6 +55,16 @@ def load_words(filepath="data/words.txt", ai_manager=None):
                     print(f"Malformed line in words file: {line}")
     except FileNotFoundError:
         print(f"Words file not found. Using default words: {words['default']}")
+
+    # Dynamically include topics from the topics folder
+    topics_folder = "data/topics"
+    if os.path.exists(topics_folder):
+        for topic_file in os.listdir(topics_folder):
+            if topic_file.endswith(".json"):
+                topic_name = topic_file.replace("_", " ").replace(".json", "")
+                with open(os.path.join(topics_folder, topic_file), "r") as f:
+                    topic_data = json.load(f)
+                    words[topic_name] = topic_data.get("results", [])
 
     # Train the AI on the loaded words
     if ai_manager:
