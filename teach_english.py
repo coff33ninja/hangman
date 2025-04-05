@@ -39,7 +39,7 @@ class TeachEnglish:
     def fetch_and_save_word_data(self, word):
         """
         Fetch definitions, synonyms, examples, and related topics for a word and save them.
-        Trigger a research rampage for deeper exploration.
+        Train the AI on additional data from researched sentences.
         """
         print(f"Fetching data for word: {word}")
         try:
@@ -54,6 +54,12 @@ class TeachEnglish:
 
             # Train the AI on the processed data
             self.ai_manager.train_on_research_rampage()
+
+            # Train on additional sentences from research
+            sentences = word_data.get("examples", [])
+            for sentence in sentences:
+                self.ai_manager.process_and_research_data(sentence)
+
         except Exception as e:
             print(f"Error during research for '{word}': {e}")
 

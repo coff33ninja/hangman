@@ -48,28 +48,7 @@
         "JAPAN",
         "computer"
     ],
-    "research": [
-        {
-            "topic": "computer",
-            "results": [
-                "A person employed to perform computations; one who computes.",
-                "(by restriction) A male computer, where the female computer is called a computress.",
-                "A programmable electronic device that performs mathematical calculations and logical operations, especially one that can process, store and retrieve large amounts of data very quickly; now especially, a small one for personal or home use employed for manipulating text or graphics, accessing the Internet, or playing games or media.",
-                "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation; or to a group of computers that are linked and function together, such as a computer network or computer cluster.",
-                "Related topics: a computer, a house, an electronic device, communication, a computer"
-            ]
-        },
-        {
-            "topic": "computer",
-            "results": [
-                "A person employed to perform computations; one who computes.",
-                "(by restriction) A male computer, where the female computer is called a computress.",
-                "A programmable electronic device that performs mathematical calculations and logical operations, especially one that can process, store and retrieve large amounts of data very quickly; now especially, a small one for personal or home use employed for manipulating text or graphics, accessing the Internet, or playing games or media.",
-                "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation; or to a group of computers that are linked and function together, such as a computer network or computer cluster.",
-                "Related topics: a computer, a house, an electronic device, communication, a computer"
-            ]
-        }
-    ],
+    "research": [],
     "research_results": {
         "ephemeral": {
             "definitions": [
@@ -2249,8 +2228,53 @@
             "related_topics": []
         },
         "luck": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Something that happens to someone by chance, a chance occurrence, especially a favourable one.",
+                    "example": "Gilbert had some bad luck yesterday \u2014 he got pick-pocketed and lost fifty dollars."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A superstitious feeling that brings fortune or success.",
+                    "example": "He blew on the dice for luck."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Success.",
+                    "example": "He has a lot of luck with the ladies, perhaps it is because of his new motorbike."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The results of a random number generator.",
+                    "example": "The creators of tool-assisted speedruns often manipulate a lot of luck to get the most favorable results in order to save the most time."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To succeed by chance.",
+                    "example": "His plan lucked out."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To rely on luck.",
+                    "example": "No plan. We're just to going to have to luck through."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To carry out relying on luck.",
+                    "example": "Our plan is to luck it through."
+                }
+            ],
             "synonyms": [],
-            "examples": [],
+            "examples": [
+                "Gilbert had some bad luck yesterday \u2014 he got pick-pocketed and lost fifty dollars.",
+                "He blew on the dice for luck.",
+                "He has a lot of luck with the ladies, perhaps it is because of his new motorbike.",
+                "The creators of tool-assisted speedruns often manipulate a lot of luck to get the most favorable results in order to save the most time.",
+                "His plan lucked out.",
+                "No plan. We're just to going to have to luck through.",
+                "Our plan is to luck it through."
+            ],
             "related_topics": [
                 "luck",
                 "luck",
@@ -2919,14 +2943,7 @@
                 }
             ],
             "synonyms": [],
-            "examples": [
-                "We got a news brief.",
-                "I wear boxers under trousers but for sports I usually wear a brief.",
-                "The U.S. president was briefed on the military coup and its implications on African stability.",
-                "Her reign was brief but spectacular.",
-                "His speech of acceptance was brief but moving.",
-                "Her skirt was extremely brief but doubtless cool."
-            ],
+            "examples": [],
             "related_topics": [
                 "brief",
                 "brief",
@@ -2934,6 +2951,46 @@
                 "brief",
                 "brief"
             ]
+        },
+        "Success.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To rely on luck.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To carry out relying on luck.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Something that happens to someone by chance, a chance occurrence, especially a favourable one.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "The results of a random number generator.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "A superstitious feeling that brings fortune or success.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To succeed by chance.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of a body of water) Usually dry, but filling with water for brief periods during and after precipitation.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
         }
     },
     "filtered_data": {

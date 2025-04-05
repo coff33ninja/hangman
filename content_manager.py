@@ -4,7 +4,7 @@ import random
 import requests
 import os
 import json
-import time
+import time  # Reintroduced for delay handling
 
 
 def categorize_entry(entry, dictionary_data):
@@ -115,6 +115,7 @@ def fetch_online_riddles(num_riddles=5, filepath="data/riddles.txt"):
     riddles = []
     try:
         for _ in range(min(num_riddles, 10)):  # Limit to avoid overloading free API
+            time.sleep(0.5)  # Add delay between API calls to avoid rate limits
             response = requests.get("https://riddles-api.vercel.app/random", timeout=5)
             if response.status_code == 200:
                 data = response.json()
@@ -155,13 +156,14 @@ def fetch_online_riddles(num_riddles=5, filepath="data/riddles.txt"):
 
 def fetch_word_definition(word):
     """
-    Fetch the definition of a word from the dictionary API.
+    Fetch the definition of a word using multiple APIs as fallbacks.
     :param word: The word to look up.
     :return: A dictionary containing the word's definition, synonyms, and example usage.
     """
-    url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
+    # Primary API: DictionaryAPI
+    url_primary = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
     try:
-        response = requests.get(url, timeout=5)
+        response = requests.get(url_primary, timeout=5)
         response.raise_for_status()
         data = response.json()
         if isinstance(data, list) and len(data) > 0:
@@ -180,14 +182,68 @@ def fetch_word_definition(word):
                 "phonetics": data[0].get("phonetics", []),
                 "definitions": definitions,
             }
-    except requests.exceptions.HTTPError as e:
-        if response.status_code == 429:
-            print("Rate limit exceeded. Retrying after delay...")
-            time.sleep(1)  # Delay before retrying
-        elif response.status_code == 404:
-            print(f"Word '{word}' not found in dictionary.")
-        else:
-            print(f"HTTP error for '{word}': {e}")
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching definition for '{word}': {e}")
+        print(f"Primary API failed for '{word}': {e}")
+
+    # Fallback API 1: Datamuse API
+    url_datamuse = f"https://api.datamuse.com/words?sp={word}&md=d"
+    try:
+        response = requests.get(url_datamuse, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        if data:
+            definitions = [{"definition": entry.get("defs", [""])[0]} for entry in data if "defs" in entry]
+            return {
+                "word": word,
+                "definitions": definitions,
+                "phonetics": [],
+            }
+    except requests.exceptions.RequestException as e:
+        print(f"Datamuse API failed for '{word}': {e}")
+
+    # Fallback API 2: Wordnik API (requires API key)
+    api_key_wordnik = "YOUR_WORDNIK_API_KEY"  # Replace with your Wordnik API key
+    url_wordnik = f"https://api.wordnik.com/v4/word.json/{word}/definitions?api_key={api_key_wordnik}"
+    try:
+        response = requests.get(url_wordnik, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        if data:
+            definitions = [{"definition": entry.get("text", "")} for entry in data]
+            return {
+                "word": word,
+                "definitions": definitions,
+                "phonetics": [],
+            }
+    except requests.exceptions.RequestException as e:
+        print(f"Wordnik API failed for '{word}': {e}")
+
+    # Fallback API 3: Oxford Dictionaries API (requires API key)
+    app_id_oxford = "YOUR_OXFORD_APP_ID"  # Replace with your Oxford App ID
+    app_key_oxford = "YOUR_OXFORD_APP_KEY"  # Replace with your Oxford App Key
+    url_oxford = f"https://od-api.oxforddictionaries.com/api/v2/entries/en-us/{word}"
+    headers_oxford = {"app_id": app_id_oxford, "app_key": app_key_oxford}
+    try:
+        response = requests.get(url_oxford, headers=headers_oxford, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        if "results" in data:
+            definitions = []
+            for lexical_entry in data["results"][0].get("lexicalEntries", []):
+                for entry in lexical_entry.get("entries", []):
+                    for sense in entry.get("senses", []):
+                        definitions.append({
+                            "definition": sense.get("definitions", [""])[0],
+                            "example": sense.get("examples", [{}])[0].get("text", ""),
+                        })
+            return {
+                "word": word,
+                "definitions": definitions,
+                "phonetics": [],
+            }
+    except requests.exceptions.RequestException as e:
+        print(f"Oxford API failed for '{word}': {e}")
+
+    # If all APIs fail
+    print(f"All APIs failed for '{word}'.")
     return None
