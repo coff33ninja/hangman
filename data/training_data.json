@@ -96,14 +96,14 @@
             ],
             "synonyms": [
                 "transitory",
-                "short",
-                "short-lived",
-                "temporary",
-                "volatile",
                 "fleeting",
+                "volatile",
+                "short-lived",
+                "evanescent",
                 "ephemeron",
+                "temporary",
                 "momentary",
-                "evanescent"
+                "short"
             ],
             "examples": [],
             "related_topics": [
@@ -112,14 +112,7 @@
                 "ephemeral",
                 "ephemeral",
                 "ephemeral"
-            ],
-            "references": {
-                "nouns": [
-                    "ephemeral"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            ]
         },
         "resilience": {
             "definitions": [
@@ -147,14 +140,7 @@
                 "resilience",
                 "resilience",
                 "resilience"
-            ],
-            "references": {
-                "nouns": [
-                    "resilience"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            ]
         },
         "serendipity": {
             "definitions": [
@@ -180,14 +166,7 @@
                 "serendipity",
                 "serendipity",
                 "serendipity"
-            ],
-            "references": {
-                "nouns": [
-                    "serendipity"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            ]
         },
         "one": {
             "definitions": [

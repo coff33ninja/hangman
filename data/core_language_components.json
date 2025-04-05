@@ -7,7 +7,13 @@
             "Agreement: Subject-verb, noun-adjective consistency.",
             "Morphology: Word formation (prefixes, suffixes, root words).",
             "Semantics: Meaning of words and sentences.",
-            "Pragmatics: Language use in context, including implied meanings."
+            "Pragmatics: Language use in context, including implied meanings.",
+            "Sentence Types: Simple, compound, complex, and compound-complex sentences.",
+            "Voice: Active and passive voice constructions.",
+            "Mood: Indicative, imperative, subjunctive, and conditional moods.",
+            "Clauses: Independent and dependent clauses, relative clauses.",
+            "Phrases: Noun phrases, verb phrases, prepositional phrases.",
+            "Ellipsis and Substitution: Omitting or replacing words to avoid repetition."
         ]
     },
     "Vocabulary": {
@@ -17,7 +23,12 @@
             "Contextual Usage: How words change meaning depending on context.",
             "Idiomatic Expressions: Phrases like 'kick the bucket' or 'under the weather.'",
             "Collocations: Words that commonly pair together (e.g., 'make a decision').",
-            "Register and Tone: Formal vs. informal language distinctions."
+            "Register and Tone: Formal vs. informal language distinctions.",
+            "Etymology: Origins and historical development of words.",
+            "Polysemy and Homonymy: Words with multiple meanings and similar-sounding words.",
+            "Figurative Language: Metaphors, similes, personification, etc.",
+            "Lexical Fields: Groups of words related to a particular subject (e.g., weather terms).",
+            "Borrowed Words: Words adopted from other languages and their integration."
         ]
     },
     "Spelling": {
@@ -25,7 +36,11 @@
             "Phonetic Spelling: Sound-to-letter correspondence.",
             "Spelling Rules: Patterns like 'i before e except after c.'",
             "Exceptions: Irregular spellings (e.g., 'through,' 'thought').",
-            "Homophones: Words that sound the same but differ in meaning (e.g., 'their' vs. 'there')."
+            "Homophones: Words that sound the same but differ in meaning (e.g., 'their' vs. 'there').",
+            "Silent Letters: Letters that are not pronounced (e.g., 'knife,' 'psychology').",
+            "Spelling Variations: Differences in spelling across regions (e.g., 'color' vs. 'colour').",
+            "Compound Words: Spelling rules for combining words (e.g., 'toothbrush,' 'mother-in-law').",
+            "Acronyms and Initialisms: Spelling and usage of shortened forms (e.g., 'NASA,' 'FBI')."
         ]
     },
     "Punctuation": {
@@ -33,7 +48,11 @@
             "End Punctuation: Periods, question marks, exclamation points.",
             "Internal Punctuation: Commas, semicolons, colons.",
             "Quotation and Possession: Quotation marks and apostrophes.",
-            "Connectors: Hyphens, dashes, parentheses for clarity and structure."
+            "Connectors: Hyphens, dashes, parentheses for clarity and structure.",
+            "Ellipses: Indicating omission or trailing off in speech.",
+            "Brackets: Usage in quotations and clarifications.",
+            "Slashes: Indicating alternatives or fractions.",
+            "Punctuation in Dialogue: Rules for punctuating spoken words."
         ]
     },
     "Reading Comprehension": {
@@ -42,7 +61,12 @@
             "Inferences: Drawing conclusions from implied meanings.",
             "Text Structure: Understanding narrative, expository, or persuasive formats.",
             "Critical Analysis: Evaluating arguments, themes, and motifs.",
-            "Techniques: Skimming, scanning, and close reading."
+            "Techniques: Skimming, scanning, and close reading.",
+            "Summarization: Condensing text while retaining key information.",
+            "Context Clues: Using surrounding text to infer meaning.",
+            "Author’s Purpose: Identifying why a text was written (to inform, persuade, entertain).",
+            "Tone and Mood: Recognizing the emotional quality of a text.",
+            "Textual Evidence: Supporting interpretations with direct quotes or references."
         ]
     },
     "Writing": {
@@ -52,7 +76,12 @@
             "Essay Writing: Introduction, body, conclusion structure.",
             "Styles: Narrative, descriptive, expository, persuasive, argumentative.",
             "Creative Writing: Poetry, stories, and imaginative expression.",
-            "Editing: Proofreading and refining written work."
+            "Editing: Proofreading and refining written work.",
+            "Research Writing: Citing sources, avoiding plagiarism, and structuring research papers.",
+            "Rhetorical Devices: Techniques to persuade or impact the reader (e.g., repetition, parallelism).",
+            "Audience Awareness: Tailoring writing to specific readers or purposes.",
+            "Voice and Style: Developing a personal or appropriate tone in writing.",
+            "Genre-Specific Writing: Adapting to formats like letters, reports, or scripts."
         ]
     },
     "Speaking and Listening": {
@@ -61,7 +90,12 @@
             "Intonation: Pitch and rhythm in speech.",
             "Fluency: Speaking smoothly and clearly.",
             "Listening Skills: Understanding spoken language, including accents and dialects.",
-            "Conversation: Turn-taking, interruptions, and politeness."
+            "Conversation: Turn-taking, interruptions, and politeness.",
+            "Public Speaking: Techniques for effective oral presentations.",
+            "Nonverbal Communication: Body language, gestures, and facial expressions.",
+            "Debate and Argumentation: Structuring and delivering arguments orally.",
+            "Active Listening: Engaging with and responding to spoken content.",
+            "Oral Interpretation: Reading aloud with expression and accuracy."
         ]
     },
     "Literature": {
@@ -70,7 +104,12 @@
             "Literary Devices: Metaphors, similes, alliteration, etc.",
             "Analysis: Themes, characters, plots, and symbolism.",
             "Context: Historical and cultural influences on texts.",
-            "Interpretation: Understanding author intent and reader perspectives."
+            "Interpretation: Understanding author intent and reader perspectives.",
+            "Literary Movements: Romanticism, Realism, Modernism, etc.",
+            "Narrative Techniques: Point of view, stream of consciousness, unreliable narrators.",
+            "Poetic Forms: Sonnets, haikus, free verse, etc.",
+            "Dramatic Elements: Stage directions, soliloquies, dramatic irony.",
+            "Comparative Literature: Analyzing texts across cultures or time periods."
         ]
     },
     "Linguistics": {
@@ -79,7 +118,14 @@
             "Phonology: Sound patterns and rules.",
             "Sociolinguistics: Language variation by region, class, or group.",
             "Psycholinguistics: How the brain processes language.",
-            "Historical Linguistics: Language evolution over time."
+            "Historical Linguistics: Language evolution over time.",
+            "Syntax: Formal rules governing sentence structure.",
+            "Morphology: Structure and formation of words.",
+            "Semantics: Theories of meaning in language.",
+            "Pragmatics: Language in use and context.",
+            "Discourse Analysis: Structure and function of language in texts and conversations.",
+            "Stylistics: Analysis of style in literary and non-literary texts.",
+            "Computational Linguistics: Language processing by machines, including AI."
         ]
     },
     "Cultural and Historical Context": {
@@ -87,7 +133,11 @@
             "Cultural Norms: Etiquette, values, and traditions tied to the language.",
             "Historical Influence: Events shaping language development.",
             "Proverbs and Sayings: Culturally specific expressions.",
-            "Identity: Language’s role in regional or ethnic identity."
+            "Identity: Language’s role in regional or ethnic identity.",
+            "Language and Power: How language reflects and reinforces social hierarchies.",
+            "Language Contact: Borrowing, code-switching, and bilingualism.",
+            "Folklore and Mythology: Traditional stories and their linguistic features.",
+            "Language Policy: Official languages, language rights, and education policies."
         ]
     },
     "Practical Language Applications": {
@@ -95,7 +145,11 @@
             "Translation: Converting text between languages.",
             "Interpretation: Real-time spoken language conversion.",
             "Specialized Language: Business, technical, legal, or medical terminology.",
-            "Media and Technology: Language use in digital or broadcast contexts."
+            "Media and Technology: Language use in digital or broadcast contexts.",
+            "Localization: Adapting content for specific cultural or regional audiences.",
+            "Subtitling and Dubbing: Techniques for audiovisual translation.",
+            "Language in Advertising: Persuasive language and rhetorical strategies.",
+            "Technical Writing: Clear and concise communication in manuals or reports."
         ]
     },
     "Language Acquisition and Learning Strategies": {
@@ -103,7 +157,59 @@
             "Theories: How humans learn languages (e.g., second language acquisition).",
             "Strategies: Mnemonics, repetition, immersion techniques.",
             "Tools: Dictionaries, thesauruses, and language apps.",
-            "Self-Assessment: Evaluating progress and setting goals."
+            "Self-Assessment: Evaluating progress and setting goals.",
+            "Language Teaching Methods: Direct method, communicative approach, etc.",
+            "Error Analysis: Understanding and correcting common language mistakes.",
+            "Motivation and Attitude: Psychological factors in language learning.",
+            "Bilingual Education: Approaches to teaching in multilingual settings."
+        ]
+    },
+    "Discourse Analysis": {
+        "topics": [
+            "Cohesion and Coherence: How sentences and ideas link together.",
+            "Turn-Taking and Repair: Managing conversation flow and correcting misunderstandings.",
+            "Speech Acts: Understanding the function of utterances (e.g., requests, promises).",
+            "Politeness Strategies: How language conveys respect or familiarity.",
+            "Narrative Structure: How stories are organized in discourse.",
+            "Critical Discourse Analysis: Examining power dynamics and ideology in language."
+        ]
+    },
+    "Stylistics": {
+        "topics": [
+            "Literary Stylistics: Analyzing style in literature (e.g., diction, syntax).",
+            "Non-Literary Stylistics: Style in everyday language, advertisements, etc.",
+            "Foregrounding: Techniques that make language stand out (e.g., unusual metaphors).",
+            "Register Analysis: How language varies in different contexts (e.g., formal vs. informal).",
+            "Stylistic Devices: Rhetorical figures like irony, hyperbole, and euphemism."
+        ]
+    },
+    "Language and Technology": {
+        "topics": [
+            "Natural Language Processing (NLP): How computers understand and generate language.",
+            "Machine Translation: Automated translation systems and their challenges.",
+            "Speech Recognition: Converting spoken language into text.",
+            "Corpus Linguistics: Analyzing large collections of text data.",
+            "Language in Social Media: How digital platforms influence language use.",
+            "Chatbots and Virtual Assistants: AI-driven language interaction."
+        ]
+    },
+    "Language Disorders": {
+        "topics": [
+            "Aphasia: Language impairment due to brain injury.",
+            "Dyslexia: Reading and writing difficulties.",
+            "Speech Sound Disorders: Issues with articulation or phonological processing.",
+            "Language Development Delays: Challenges in acquiring language in children.",
+            "Augmentative and Alternative Communication (AAC): Tools for those with speech impairments."
+        ]
+    },
+    "Language Teaching Methods": {
+        "topics": [
+            "Grammar-Translation Method: Focus on rules and translation.",
+            "Direct Method: Immersion in the target language without translation.",
+            "Communicative Language Teaching: Emphasis on interaction and communication.",
+            "Task-Based Learning: Using language to complete meaningful tasks.",
+            "Content-Based Instruction: Learning language through subject matter.",
+            "Blended Learning: Combining online and face-to-face instruction."
         ]
     }
 }

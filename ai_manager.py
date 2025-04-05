@@ -521,7 +521,9 @@ class AIManager:
         # Recursively research new words found in definitions, synonyms, and related topics
         new_words = set()
         if research_results:
-            new_words.update(research_results.get("definitions", []))
+            # Extract only strings from definitions
+            definitions = research_results.get("definitions", [])
+            new_words.update(d["definition"] for d in definitions if isinstance(d, dict) and "definition" in d)
             new_words.update(research_results.get("synonyms", []))
             new_words.update(research_results.get("related_topics", []))
 
