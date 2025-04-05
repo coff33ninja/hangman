@@ -71,7 +71,12 @@ class AIManager:
                 return json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             print(f"Symbols file not found or invalid: {filepath}")
-            return {}
+            # Provide a fallback for basic symbols
+            return {
+                "?": {"name": "Question Mark", "function": "Indicates a question or inquiry."},
+                "!": {"name": "Exclamation Mark", "function": "Expresses strong emotion or emphasis."},
+                ".": {"name": "Period", "function": "Marks the end of a declarative sentence."}
+            }
 
     def load_training_data(self):
         """
@@ -386,7 +391,7 @@ class AIManager:
                     for definition in self.training_data.get("definitions", [])
                     if definition.get("synonyms")
                 ] + [
-                    f"Related Topics: {', '.join(entry.get('results', []))}"
+                    f"Related Topics: {', '.join(entry.get("results", []))}"
                     for entry in self.training_data.get("research", [])
                 ]
             )
@@ -680,7 +685,7 @@ class AIManager:
         # Check if the topic is a symbol
         if topic in symbols:
             symbol_data = symbols[topic]
-            return f"Symbol: {topic}\nName: {symbol_data['name']}\nFunction: {symbol_data['function']}\nExamples: {', '.join(symbol_data['examples'])}"
+            return f"Symbol: {topic}\nName: {symbol_data['name']}\nFunction: {symbol_data['function']}"
 
         # Proceed with regular research if not a symbol
         research_results = self.research_rampage(topic, depth=3)
