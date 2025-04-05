@@ -673,6 +673,37 @@ class AIManager:
         # Save the updated training data
         self.save_training_data()
 
+    def pull_existing_data(self, word):
+        """
+        Pull existing data for a word from predefined words, symbols, or cached topics.
+        :param word: The word to pull data for.
+        :return: The pulled data or None if no data is found.
+        """
+        # Check predefined words
+        if word in self.predefined_words:
+            print(f"Found predefined data for '{word}'.")
+            return self.predefined_words[word]
+
+        # Check symbols
+        symbols = self.load_symbols()
+        if word in symbols:
+            print(f"Found symbol data for '{word}'.")
+            return symbols[word]
+
+        # Check cached topics
+        topic_path = f"data/topics/{word.replace(' ', '_')}.json"
+        if os.path.exists(topic_path):
+            try:
+                with open(topic_path, "r") as f:
+                    print(f"Found cached topic data for '{word}'.")
+                    return json.load(f)
+            except (IOError, json.JSONDecodeError):
+                print(f"Error reading cached topic data for '{word}'.")
+
+        # No data found
+        print(f"No existing data found for '{word}'.")
+        return None
+
     def research_topic(self, topic):
         """
         Research a topic by fetching definitions, synonyms, examples, and related topics.
@@ -680,15 +711,22 @@ class AIManager:
         :return: A summary of the research.
         """
         print(f"Researching topic: {topic}")
-        symbols = self.load_symbols()
 
-        # Check if the topic is a symbol
-        if topic in symbols:
-            symbol_data = symbols[topic]
-            return f"Symbol: {topic}\nName: {symbol_data['name']}\nFunction: {symbol_data['function']}\nExamples: {', '.join(symbol_data['examples'])}"
+        # Fetch definitions and related data using the content manager
+        word_data = fetch_word_definition(topic)
 
-        # Proceed with regular research if not a symbol
-        research_results = self.research_rampage(topic, depth=3)
-        if not research_results:
+        if not word_data:
+            print(f"No data found for topic: {topic}")
             return f"No information found for '{topic}'."
+
+        # Format the research results
+        research_results = {
+            "word": word_data.get("word", topic),
+            "definitions": word_data.get("definitions", []),
+            "examples": word_data.get("examples", []),
+            "synonyms": word_data.get("synonyms", []),
+            "antonyms": word_data.get("antonyms", []),
+            "related_topics": word_data.get("related_topics", [])
+        }
+
         return research_results

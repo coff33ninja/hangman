@@ -11,3 +11,11 @@ resilience,RESILIENCE
 uncategorized,COFFEE?
 uncategorized,COFFEE?
 uncategorized,COFFEE?
+people,COFFEE
+uncategorized,NOT
+uncategorized,ME.
+objects,HANGING
+objects,YOU
+places,WITH
+places,LITTLE
+animals,CAR

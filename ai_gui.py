@@ -7,6 +7,7 @@ from PyQt6.QtCore import QThread, pyqtSignal
 import sys
 from ai_manager import AIManager
 import re  # Import regex for sanitizing words
+from threading import Thread
 
 
 class ResearchThread(QThread):
@@ -137,7 +138,7 @@ class AIGui(QMainWindow):
 
     def ask_ai_question(self):
         """
-        Ask the AI a question, break it into core words and research the rest.
+        Ask the AI a question, display pulled data, and start learning in the background.
         """
         question = self.question_input.text().strip()
         if not question:
@@ -156,22 +157,61 @@ class AIGui(QMainWindow):
         print(f"Core words: {core_words}")
         print(f"Focus words: {focus_words}")
 
-        # Step 4: Research focus words
-        research_results = {}
+        # Step 4: Pull existing data for focus words
+        pulled_data = {}
         for word in focus_words:
             if word:  # Ensure the word is not empty after sanitization
-                research_results[word] = self.ai_manager.research_topic(word)
+                pulled_data[word] = self.ai_manager.pull_existing_data(word)
 
-        # Step 5: Formulate an answer
-        if research_results:
-            answer = f"Core words: {' '.join(core_words)}\n\n"
-            for word, result in research_results.items():
-                answer += f"Research on '{word}':\n{result}\n\n"
-        else:
-            answer = "Sorry, I couldn't find any relevant information."
-
-        # Step 6: Display the answer
+        # Step 5: Display pulled data in a clean format
+        answer = f"Core words: {' '.join(core_words)}\n\n"
+        for word, data in pulled_data.items():
+            if data:
+                answer += f"Pulled data for '{word}':\n"
+                answer += self.format_pulled_data(data) + "\n\n"
+            else:
+                answer += f"No existing data found for '{word}'. Starting research...\n\n"
         self.answer_display.setText(answer)
+
+        # Step 6: Start learning/researching in the background
+        for word, data in pulled_data.items():
+            if not data:  # Only research if no existing data is found
+                Thread(target=self.learn_and_update, args=(word,)).start()
+
+    def format_pulled_data(self, data):
+        """
+        Format the pulled data into a readable string.
+        """
+        formatted_data = f"Word: {data.get('word', 'N/A')}\n"
+        definitions = data.get('definitions', [])
+        if definitions:
+            formatted_data += "Definitions:\n"
+            for i, definition in enumerate(definitions, 1):
+                formatted_data += f"  {i}. ({definition.get('partOfSpeech', 'N/A')}) {definition.get('definition', 'N/A')}\n"
+                if definition.get('example'):
+                    formatted_data += f"     Example: {definition['example']}\n"
+        examples = [ex for ex in data.get('examples', []) if ex]
+        if examples:
+            formatted_data += "Examples:\n"
+            for example in examples:
+                formatted_data += f"  - {example}\n"
+        synonyms = data.get('synonyms', [])
+        if synonyms:
+            formatted_data += f"Synonyms: {', '.join(synonyms)}\n"
+        antonyms = data.get('antonyms', [])
+        if antonyms:
+            formatted_data += f"Antonyms: {', '.join(antonyms)}\n"
+        related_topics = data.get('related_topics', [])
+        if related_topics:
+            formatted_data += f"Related Topics: {', '.join(related_topics)}\n"
+        return formatted_data
+
+    def learn_and_update(self, word):
+        """
+        Learn or research a word and update the UI with the results.
+        """
+        research_result = self.ai_manager.research_topic(word)
+        self.answer_display.append(f"Research on '{word}':\n{research_result}\n\n")
 
     def research_topic(self):
         """
