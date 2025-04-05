@@ -31,6 +31,7 @@ class AIManager:
         self.training_file = training_file
         self.training_data = {"riddles": [], "definitions": [], "categories": [], "research": []}
         self.predefined_words = self.load_predefined_words(predefined_words_file)
+        self.memory = {"short_term": {}, "long_term": {}}  # Add memory system
 
         try:
             self.text_generator = pipeline("text-generation", model="gpt2", device=0 if self.device == "cuda" else -1)
@@ -101,6 +102,46 @@ class AIManager:
         """
         retrain_thread = Thread(target=self.retrain)
         retrain_thread.start()
+
+    def dynamic_retrain(self):
+        """
+        Dynamically retrain the AI based on newly acquired data.
+        """
+        print("Dynamically retraining AI...")
+        # Combine short-term and long-term memory for retraining
+        combined_data = {**self.memory["short_term"], **{k: v["data"] for k, v in self.memory["long_term"].items()}}
+        self.training_data["dynamic_memory"] = combined_data
+        self.retrain()
+
+    def update_memory(self, word, data):
+        """
+        Update the AI's memory with new data for a word.
+        Frequently accessed words are moved to long-term memory.
+        """
+        # Add to short-term memory
+        self.memory["short_term"][word] = data
+
+        # If the word is accessed frequently, move it to long-term memory
+        if word in self.memory["long_term"]:
+            self.memory["long_term"][word]["access_count"] += 1
+        else:
+            self.memory["long_term"][word] = {"data": data, "access_count": 1}
+
+        # Forget less relevant data from short-term memory
+        if len(self.memory["short_term"]) > 100:  # Limit short-term memory size
+            least_used = min(self.memory["short_term"], key=lambda w: self.memory["long_term"].get(w, {}).get("access_count", 0))
+            del self.memory["short_term"][least_used]
+
+    def retrieve_memory(self, word):
+        """
+        Retrieve data for a word from memory.
+        """
+        if word in self.memory["short_term"]:
+            return self.memory["short_term"][word]
+        if word in self.memory["long_term"]:
+            self.memory["long_term"][word]["access_count"] += 1
+            return self.memory["long_term"][word]["data"]
+        return None
 
     def generate_files(self):
         """
@@ -354,34 +395,20 @@ class AIManager:
         """
         filtered_data = {}
 
-        # Check if the word is in predefined words
-        if word in self.predefined_words:
-            print(f"Using predefined data for '{word}'.")
-            return self.predefined_words[word]
-
         # Fetch definitions
         definition_data = fetch_word_definition(word)
         if definition_data:
-            filtered_data["definitions"] = [
-                {
-                    "partOfSpeech": d.get("partOfSpeech", ""),
-                    "definition": d.get("definition", ""),
-                    "example": d.get("example", ""),
-                }
-                for d in definition_data.get("definitions", [])
+            filtered_data["definitions"] = definition_data.get("definitions", [])
+            filtered_data["examples"] = [
+                definition.get("example", "") for definition in definition_data.get("definitions", []) if "example" in definition
             ]
-
-        # Fetch synonyms
-        synonyms = self.fetch_word_synonyms(word)
-        filtered_data["synonyms"] = synonyms
-
-        # Fetch examples
-        examples = self.fetch_word_examples(word)
-        filtered_data["examples"] = examples
-
-        # Fetch related topics
-        related_topics = self.fetch_related_topics(word) or []  # Ensure it's not None
-        filtered_data["related_topics"] = related_topics
+            filtered_data["synonyms"] = [
+                synonym for definition in definition_data.get("definitions", []) for synonym in definition.get("synonyms", [])
+            ]
+            filtered_data["antonyms"] = [
+                antonym for definition in definition_data.get("definitions", []) for antonym in definition.get("antonyms", [])
+            ]
+            filtered_data["related_topics"] = definition_data.get("related_topics", [])
 
         return filtered_data
 
@@ -496,14 +523,14 @@ class AIManager:
         if depth <= 0 or word in visited:
             return {}
 
-        # Filter out invalid words (e.g., punctuation, numbers, stop words)
-        invalid_words = {"the", "is", "a", "an", "and", "or", "to", "of", "in", "on", "it", "at", "by", "for", "with"}
-        if word.lower() in invalid_words:
-            print(f"Skipping predefined word '{word}'.")
-            return self.predefined_words.get(word, {})
-
         print(f"Researching: {word} (Depth: {depth})")
         visited.add(word)
+
+        # Check memory before fetching new data
+        memory_data = self.retrieve_memory(word)
+        if memory_data:
+            print(f"Retrieved '{word}' from memory.")
+            return memory_data
 
         # Fetch initial data for the word
         research_results = self.filter_and_reference_data(word)
@@ -511,31 +538,64 @@ class AIManager:
         # Save the research results
         self.training_data["research_results"] = self.training_data.get("research_results", {})
         self.training_data["research_results"][word] = research_results
+        self.save_training_data()
 
-        # Safely save training data to avoid concurrent modification
-        try:
-            self.save_training_data()
-        except RuntimeError as e:
-            print(f"Error saving training data: {e}")
+        # Update memory with new data
+        self.update_memory(word, research_results)
 
-        # Recursively research new words found in definitions, synonyms, and related topics
-        new_words = set()
-        if research_results:
-            # Extract only strings from definitions
-            definitions = research_results.get("definitions", [])
-            new_words.update(d["definition"] for d in definitions if isinstance(d, dict) and "definition" in d)
-            new_words.update(research_results.get("synonyms", []))
-            new_words.update(research_results.get("related_topics", []))
+        # Extract related terms for recursive research
+        related_terms = set()
+
+        # Add synonyms, antonyms, and related topics
+        for meaning in research_results.get("definitions", []):
+            related_terms.update(meaning.get("synonyms", []))
+            related_terms.update(meaning.get("antonyms", []))
+
+        related_terms.update(research_results.get("related_topics", []))
+
+        # Add words from examples
+        for example in research_results.get("examples", []):
+            related_terms.update(example.split())
 
         # Filter out already visited words
-        new_words = {w for w in new_words if w not in visited}
+        related_terms = {term.lower() for term in related_terms if term.lower() not in visited}
 
-        # Add rate limiting to avoid hitting API limits
-        for new_word in new_words:
-            time.sleep(0.5)  # Delay between API calls
-            self.research_rampage(new_word, depth=depth - 1, visited=visited)
+        # Recursively research each related term
+        for term in related_terms:
+            self.research_rampage(term, depth=depth - 1, visited=visited)
 
         return research_results
+
+    def process_and_categorize_data(self, word, data):
+        """
+        Process and categorize the data gathered during research.
+        :param word: The word being processed.
+        :param data: The data gathered for the word.
+        """
+        print(f"Processing and categorizing data for '{word}'...")
+
+        # Categorize definitions by part of speech
+        categorized_definitions = {}
+        for definition in data.get("definitions", []):
+            part_of_speech = definition.get("partOfSpeech", "unknown")
+            categorized_definitions.setdefault(part_of_speech, []).append(definition["definition"])
+
+        # Link related terms (synonyms, antonyms, related topics)
+        linked_terms = {
+            "synonyms": data.get("synonyms", []),
+            "antonyms": data.get("antonyms", []),
+            "related_topics": data.get("related_topics", []),
+        }
+
+        # Save categorized and linked data
+        self.training_data["processed_data"] = self.training_data.get("processed_data", {})
+        self.training_data["processed_data"][word] = {
+            "categorized_definitions": categorized_definitions,
+            "linked_terms": linked_terms,
+            "examples": data.get("examples", []),
+        }
+
+        print(f"Data for '{word}' categorized and saved.")
 
     def train_on_research_rampage(self):
         """

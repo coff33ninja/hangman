@@ -60,6 +60,9 @@ class TeachEnglish:
             for sentence in sentences:
                 self.ai_manager.process_and_research_data(sentence)
 
+            # Trigger dynamic retraining
+            self.ai_manager.dynamic_retrain()
+
         except Exception as e:
             print(f"Error during research for '{word}': {e}")
 
