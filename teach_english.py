@@ -41,26 +41,8 @@ class TeachEnglish:
         Fetch definitions, synonyms, examples, and related topics for a word and save them.
         """
         print(f"Fetching data for word: {word}")
-        word_data = {}
-
-        # Fetch definitions
-        definition_data = fetch_word_definition(word)
-        if definition_data:
-            word_data["definitions"] = definition_data.get("definitions", [])
-            print(f"Definitions for '{word}': {word_data['definitions']}")
-
-        # Fetch synonyms and examples
-        synonyms = self.ai_manager.fetch_word_synonyms(word)
-        examples = self.ai_manager.fetch_word_examples(word)
-        word_data["synonyms"] = synonyms
-        word_data["examples"] = examples
-        print(f"Synonyms for '{word}': {synonyms}")
-        print(f"Examples for '{word}': {examples}")
-
-        # Fetch related topics
-        related_topics = list(set(self.ai_manager.fetch_related_topics(word)))  # Remove duplicates
-        word_data["related_topics"] = related_topics
-        print(f"Related topics for '{word}': {related_topics}")
+        word_data = self.ai_manager.filter_and_reference_data(word)
+        print(f"Filtered and referenced data for '{word}': {word_data}")
 
         # Save to file
         filepath = os.path.join(self.training_data_folder, f"{word}.json")
@@ -68,9 +50,8 @@ class TeachEnglish:
             json.dump(word_data, f, indent=4)
         print(f"Data for '{word}' saved to {filepath}")
 
-        # Update the model dynamically
-        self.model["words"][word] = word_data
-        self.save_model()
+        # Train the AI on the filtered data
+        self.ai_manager.train_on_filtered_data(word)
 
     def train_language_component(self, component, data):
         """

@@ -263,3 +263,122 @@ class AIManager:
             except Exception as e:
                 print(f"Error generating word: {e}")
         return random.choice(self.training_data["categories"]).upper()  # Use random to select a category
+
+    def fetch_word_synonyms(self, word):
+        """
+        Fetch synonyms for a word using the dictionary API.
+        :param word: The word to fetch synonyms for.
+        :return: A list of synonyms.
+        """
+        definition_data = fetch_word_definition(word)
+        if definition_data and "definitions" in definition_data:
+            synonyms = [
+                synonym
+                for definition in definition_data["definitions"]
+                for synonym in definition.get("synonyms", [])
+            ]
+            return list(set(synonyms))  # Remove duplicates
+        return []
+
+    def fetch_word_examples(self, word):
+        """
+        Fetch example sentences for a word using the dictionary API.
+        :param word: The word to fetch examples for.
+        :return: A list of example sentences.
+        """
+        definition_data = fetch_word_definition(word)
+        if definition_data and "definitions" in definition_data:
+            examples = [
+                definition.get("example", "")
+                for definition in definition_data["definitions"]
+                if "example" in definition
+            ]
+            return [example for example in examples if example]  # Filter out empty examples
+        return []
+
+    def answer_question(self, question, context=None):
+        """
+        Answer a question based on the provided context or training data.
+        :param question: The question to answer.
+        :param context: The context to use for answering the question. If None, use training data.
+        :return: The answer to the question.
+        """
+        if not self.question_answering_model:
+            return "Question-answering model is not available."
+
+        if not context:
+            # Dynamically build context from training data
+            context = "\n".join(
+                [
+                    f"Definition: {definition.get('definition', '')}"
+                    for definition in self.training_data.get("definitions", [])
+                ] + [
+                    f"Synonyms: {', '.join(definition.get('synonyms', []))}"
+                    for definition in self.training_data.get("definitions", [])
+                    if definition.get("synonyms")
+                ] + [
+                    f"Related Topics: {', '.join(entry.get('results', []))}"
+                    for entry in self.training_data.get("research", [])
+                ]
+            )
+            if not context:
+                return "I don't have enough information to answer that question."
+
+        try:
+            result = self.question_answering_model(question=question, context=context)
+            return result["answer"]
+        except Exception as e:
+            print(f"Error answering question: {e}")
+            return "I couldn't find an answer to that question."
+
+    def filter_and_reference_data(self, word):
+        """
+        Filter and reference data for a word, including definitions, synonyms, examples, and related topics.
+        :param word: The word to process.
+        :return: A dictionary containing filtered and referenced data.
+        """
+        filtered_data = {}
+
+        # Fetch definitions
+        definition_data = fetch_word_definition(word)
+        if definition_data:
+            filtered_data["definitions"] = [
+                {
+                    "partOfSpeech": d.get("partOfSpeech", ""),
+                    "definition": d.get("definition", ""),
+                    "example": d.get("example", ""),
+                }
+                for d in definition_data.get("definitions", [])
+            ]
+
+        # Fetch synonyms
+        synonyms = self.fetch_word_synonyms(word)
+        filtered_data["synonyms"] = synonyms
+
+        # Fetch examples
+        examples = self.fetch_word_examples(word)
+        filtered_data["examples"] = examples
+
+        # Fetch related topics
+        related_topics = self.fetch_related_topics(word)
+        filtered_data["related_topics"] = related_topics
+
+        # Reference each component dynamically
+        filtered_data["references"] = {
+            "nouns": [w for w in word.split() if w.isalpha()],
+            "acronyms": [w for w in word.split() if w.isupper()],
+            "verbs": [w for w in word.split() if w.endswith("ing")],  # Example heuristic
+        }
+
+        return filtered_data
+
+    def train_on_filtered_data(self, word):
+        """
+        Train the AI on filtered and referenced data for a word.
+        :param word: The word to train on.
+        """
+        filtered_data = self.filter_and_reference_data(word)
+        self.training_data["filtered_data"] = self.training_data.get("filtered_data", {})
+        self.training_data["filtered_data"][word] = filtered_data
+        self.save_training_data()
+        print(f"Trained on filtered data for '{word}'.")

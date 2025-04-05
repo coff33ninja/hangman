@@ -315,35 +315,23 @@ class HangmanGame:
 
     def provide_hint(self):
         """
-
         Provide a hint: either a letter, definition, or AI-generated hint.
-
         Returns the hint or None.
-
         """
-
         if self.hint_count <= 0:
-
             return None
 
         if self.mode == "word_guess":
-
-            if self.current_definition and "definitions" in self.current_definition:
-
+            filtered_data = self.ai_manager.training_data.get("filtered_data", {}).get(self.current_word, {})
+            if filtered_data:
                 self.hint_count -= 1
-
-                return f"Definition: {self.current_definition['definitions'][0]['definition']}"
-
+                return f"Hint: {random.choice(filtered_data.get('definitions', [{'definition': 'No hints available.'}]))['definition']}"
             else:
-
                 self.hint_count -= 1
-
-                return self.ai_manager.generate_hint(self.current_word)
+                return "No hints available."
 
         elif self.mode == "riddle_time":
-
             self.hint_count -= 1
-
             return self.ai_manager.rephrase_riddle(self.current_riddle)
 
         return None
