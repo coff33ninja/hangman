@@ -1,0 +1,6 @@
+animals,cat
+animals,dog
+fruits,apple
+fruits,banana
+countries,canada
+countries,japan
