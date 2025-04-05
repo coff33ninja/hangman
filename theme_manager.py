@@ -1,11 +1,13 @@
 import os
 import shutil
+from asset_manager import AssetManager
 
 class ThemeManager:
     def __init__(self, theme_folder="assets/themes", default_theme="default"):
         self.theme_folder = theme_folder
         self.current_theme = default_theme
         self.assets = {}
+        self.asset_manager = AssetManager()
 
     def validate_theme(self, theme_name):
         """
@@ -62,8 +64,30 @@ class ThemeManager:
             theme_path = os.path.join(self.theme_folder, theme_name)
             if not os.path.exists(theme_path):
                 os.makedirs(theme_path)
+                tasks = []
                 for asset_type, asset_path in assets.items():
-                    if os.path.isdir(asset_path):
-                        shutil.copytree(asset_path, os.path.join(theme_path, asset_type))
+                    if asset_type == "background" and not os.path.exists(asset_path):
+                        tasks.append((self.asset_manager.generate_placeholder_image, (asset_path, (800, 600), (200, 200, 200), f"{theme_name} Background")))
+                    elif asset_type == "hangman_images" and not os.path.exists(asset_path):
+                        tasks.append((self.asset_manager.generate_hangman_images, (asset_path, 10)))  # 10 stages
+                    elif asset_type == "sounds" and not os.path.exists(asset_path):
+                        os.makedirs(asset_path)
+                        print(f"Generated placeholder sounds folder for theme '{theme_name}'.")
+                    elif os.path.exists(asset_path):
+                        self.copy_default_assets(asset_path, theme_path)
                     else:
-                        shutil.copy(asset_path, os.path.join(theme_path, os.path.basename(asset_path)))
+                        print(f"Missing asset: {asset_path}. Placeholder not generated for this type.")
+                self.asset_manager.generate_assets(tasks)
+
+    def copy_default_assets(self, src_folder, dest_folder):
+        """
+        Copy default assets from the source folder to the destination folder.
+        """
+        if os.path.exists(src_folder):
+            for item in os.listdir(src_folder):
+                src_path = os.path.join(src_folder, item)
+                dest_path = os.path.join(dest_folder, item)
+                if os.path.isdir(src_path):
+                    shutil.copytree(src_path, dest_path, dirs_exist_ok=True)
+                else:
+                    shutil.copy(src_path, dest_path)

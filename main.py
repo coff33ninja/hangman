@@ -5,15 +5,10 @@ from config import WIDTH, HEIGHT, FPS
 from game_logic import HangmanGame
 from ui_manager import UIManager
 from powerup_manager import PowerUpManager
-from generate_images import create_hangman_images  # Import the image generation function
 from time import time
 from theme_manager import ThemeManager
 from voice_input import VoiceInput
-
-# Ensure Hangman images exist
-if not os.path.exists("assets/images"):
-    print("Hangman images not found. Generating images...")
-    create_hangman_images()
+from ai_manager import AIManager
 
 try:
     pygame.init()
@@ -28,10 +23,11 @@ game_mode = "name_input"  # Start with the name input screen
 player_name = ""  # Store the player's name
 difficulty = 1
 game = None
-ui = UIManager(screen)
 theme_manager = ThemeManager()
-theme_manager.generate_themes()  # Generate default themes if not exist
+theme_manager.generate_themes()  # Generate default themes and placeholder assets if not exist
+ui = UIManager(screen, theme_manager)  # Pass theme_manager as the second argument
 voice_input = VoiceInput()
+ai_manager = AIManager()  # Initialize AIManager with training data support
 paused = False
 
 start_time = time()
@@ -73,6 +69,13 @@ def handle_hint():
     if hint:
         print(f"Hint: {hint}")
         ui.update_hint(hint)
+
+def handle_word_meaning(word):
+    """
+    Fetch and display the meaning of a word using AIManager.
+    """
+    meaning = ai_manager.lookup_word_meaning(word)
+    print(f"Meaning: {meaning}")
 
 def handle_power_up(power_up):
     if game.use_power_up(power_up):

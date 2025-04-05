@@ -23,10 +23,13 @@ def load_words(filepath="data/words.txt"):
     return {category: random.sample(words, len(words)) for category, words in words.items()}
 
 
-def load_riddles(difficulty_files=None):
+def load_riddles(difficulty=None, difficulty_files=None):
     """
     Load riddles from separate files for each difficulty level.
-    If no files are provided, default to 'data/riddles.txt'.
+    If no files are provided, default to 'data/riddles_<difficulty>.txt'.
+    :param difficulty: The difficulty level to load ('easy', 'medium', 'hard').
+    :param difficulty_files: A dictionary mapping difficulty levels to file paths.
+    :return: A dictionary of riddles categorized by difficulty or riddles for a specific difficulty.
     """
     if difficulty_files is None:
         difficulty_files = {
@@ -36,23 +39,26 @@ def load_riddles(difficulty_files=None):
         }
 
     riddles = {}
-    for difficulty, filepath in difficulty_files.items():
+    for level, filepath in difficulty_files.items():
         try:
             with open(filepath, "r") as f:
                 for line in f:
                     try:
                         riddle, answer = line.strip().split(",", 1)
-                        riddles.setdefault(difficulty, []).append((riddle, answer.upper()))
+                        riddles.setdefault(level, []).append((riddle, answer.upper()))
                     except ValueError:
                         print(f"Malformed line in {filepath}: {line}")
         except FileNotFoundError:
             print(f"Riddles file not found: {filepath}")
+
+    if difficulty:
+        return riddles.get(difficulty, [])
     return riddles
 
 
 def fetch_online_riddles(num_riddles=5, filepath="data/riddles.txt"):
     """
-    Fetch random riddles from riddles-api.vercel.app and store them in riddles.txt.
+    Fetch random riddles from riddles-api.vercel.app and store them in riddles_<difficulty>.txt.
     Categorize riddles based on the length of the answer.
     """
     riddles = []
@@ -73,22 +79,27 @@ def fetch_online_riddles(num_riddles=5, filepath="data/riddles.txt"):
     if not riddles:  # Fallback
         riddles = [("What is always running but never moves?", "CLOCK")]
 
-    # Categorize and store riddles in riddles.txt
-    try:
-        with open(filepath, "a") as f:
-            for riddle, answer in riddles:
-                word_count = len(answer.split())
-                if word_count > 5:
-                    category = "hard"
-                elif 1 <= word_count <= 5:
-                    category = "medium"
-                else:
-                    category = "easy"
-                f.write(f"{category},{riddle},{answer}\n")
-    except IOError as e:
-        print(f"Error writing riddles to file: {e}")
+    # Categorize and store riddles in difficulty-specific files
+    categorized_riddles = {"easy": [], "medium": [], "hard": []}
+    for riddle, answer in riddles:
+        word_count = len(answer.split())
+        if word_count > 5:
+            category = "hard"
+        elif 1 <= word_count <= 5:
+            category = "medium"
+        else:
+            category = "easy"
+        categorized_riddles[category].append((riddle, answer))
 
-    return {"online": riddles}
+    for category, riddles_list in categorized_riddles.items():
+        try:
+            with open(f"data/riddles_{category}.txt", "a") as f:
+                for riddle, answer in riddles_list:
+                    f.write(f"{riddle},{answer}\n")
+        except IOError as e:
+            print(f"Error writing riddles to file for {category}: {e}")
+
+    return categorized_riddles
 
 
 def fetch_word_definition(word):

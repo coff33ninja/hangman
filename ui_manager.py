@@ -1,5 +1,6 @@
 # ui_manager.py
 import pygame
+import os
 from config import WIDTH, HEIGHT, WHITE, BLACK, GRAY
 
 class Button:
@@ -36,20 +37,7 @@ class UIManager:
         self.theme_manager = theme_manager
         self.font = pygame.font.SysFont(None, int(HEIGHT * 0.05))  # Dynamic font size
         self.small_font = pygame.font.SysFont(None, int(HEIGHT * 0.03))
-        self.image_sets = {
-            1: [
-                pygame.image.load(f"assets/images/level1_stage{i}.png")
-                for i in range(7)
-            ],
-            2: [
-                pygame.image.load(f"assets/images/level2_stage{i}.png")
-                for i in range(10)
-            ],
-            3: [
-                pygame.image.load(f"assets/images/level3_stage{i}.png")
-                for i in range(14)
-            ],
-        }
+        self.image_sets = self.load_hangman_images()
         self.last_hint = None
         self.buttons = []
         pygame.mixer.init()
@@ -58,16 +46,44 @@ class UIManager:
         self.wrong_sound = None
         self.load_theme_assets()
 
+    def load_hangman_images(self):
+        """
+        Load Hangman images for different difficulty levels.
+        """
+        image_sets = {}
+        base_folder = "assets/images"
+        difficulties = {1: 7, 2: 10, 3: 14}  # Example difficulties
+        for difficulty, stages in difficulties.items():
+            image_sets[difficulty] = [
+                pygame.image.load(os.path.join(base_folder, f"level{difficulty}_stage{i}.png"))
+                for i in range(stages)
+            ]
+        return image_sets
+
     def load_theme_assets(self):
         """
         Load theme-specific assets including sounds.
         """
         theme = self.theme_manager.current_theme
-        print(f"Loading assets for theme: {theme}")  # Use the theme variable for logging
-        self.bg_music = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/background.wav")
-        self.correct_sound = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/correct.wav")
-        self.wrong_sound = pygame.mixer.Sound(self.theme_manager.get_asset("sounds") + "/wrong.wav")
-        self.bg_music.play(loops=-1)
+        print(f"Loading assets for theme: {theme}")
+        
+        sounds_path = self.theme_manager.get_asset("sounds")
+        if sounds_path:
+            try:
+                self.bg_music = pygame.mixer.Sound(sounds_path + "/background.wav")
+                self.correct_sound = pygame.mixer.Sound(sounds_path + "/correct.wav")
+                self.wrong_sound = pygame.mixer.Sound(sounds_path + "/wrong.wav")
+                self.bg_music.play(loops=-1)
+            except FileNotFoundError:
+                print(f"Some sound files are missing in the theme '{theme}'. Using defaults.")
+                self.bg_music = None
+                self.correct_sound = None
+                self.wrong_sound = None
+        else:
+            print(f"No sounds folder found for theme '{theme}'. Sounds will be disabled.")
+            self.bg_music = None
+            self.correct_sound = None
+            self.wrong_sound = None
 
     def play_sound(self, correct):
         """

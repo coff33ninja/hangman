@@ -14,7 +14,7 @@ from content_manager import (
     load_words,
     load_riddles,
     fetch_online_riddles,
-    fetch_word_definition,
+    fetch_word_definition,  # Ensure this is used
 )
 
 from ai_manager import AIManager
@@ -177,9 +177,14 @@ class HangmanGame:
 
             self.current_riddle = None
 
-            self.current_definition = fetch_word_definition(self.current_word)
+            # Use fetch_word_definition for training and gameplay
+            definition_data = fetch_word_definition(self.current_word)
+            if definition_data:
+                self.ai_manager.training_data["definitions"].append(definition_data)
+                self.ai_manager.save_training_data()
+            self.current_definition = definition_data
 
-        else:  # riddle_time
+        elif self.mode == "riddle_time":
 
             category = random.choice(list(self.riddles.keys()))
 
