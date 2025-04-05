@@ -95,15 +95,15 @@
                 }
             ],
             "synonyms": [
-                "momentary",
-                "short-lived",
                 "fleeting",
-                "ephemeron",
+                "short",
+                "transitory",
+                "short-lived",
                 "evanescent",
+                "ephemeron",
                 "volatile",
                 "temporary",
-                "transitory",
-                "short"
+                "momentary"
             ],
             "examples": [],
             "related_topics": [
@@ -156,8 +156,8 @@
                 }
             ],
             "synonyms": [
-                "chance",
-                "luck"
+                "luck",
+                "chance"
             ],
             "examples": [],
             "related_topics": [

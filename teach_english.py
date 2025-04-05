@@ -42,17 +42,20 @@ class TeachEnglish:
         Trigger a research rampage for deeper exploration.
         """
         print(f"Fetching data for word: {word}")
-        word_data = self.ai_manager.research_rampage(word, depth=3)
-        print(f"Research rampage completed for '{word}': {word_data}")
+        try:
+            word_data = self.ai_manager.research_rampage(word, depth=3)
+            print(f"Research rampage completed for '{word}': {word_data}")
 
-        # Save to file
-        filepath = os.path.join(self.training_data_folder, f"{word}.json")
-        with open(filepath, "w") as f:
-            json.dump(word_data, f, indent=4)
-        print(f"Data for '{word}' saved to {filepath}")
+            # Save to file
+            filepath = os.path.join(self.training_data_folder, f"{word}.json")
+            with open(filepath, "w") as f:
+                json.dump(word_data, f, indent=4)
+            print(f"Data for '{word}' saved to {filepath}")
 
-        # Train the AI on the processed data
-        self.ai_manager.train_on_research_rampage()
+            # Train the AI on the processed data
+            self.ai_manager.train_on_research_rampage()
+        except Exception as e:
+            print(f"Error during research for '{word}': {e}")
 
     def train_language_component(self, component, data):
         """

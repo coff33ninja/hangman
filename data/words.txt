@@ -4,3 +4,7 @@ fruits,apple
 fruits,banana
 countries,canada
 countries,japan
+philosophy,PHILOSOPHY
+serendipity,SERENDIPITY
+ephemeral,EPHEMERAL
+resilience,RESILIENCE

@@ -539,9 +539,20 @@ class AIManager:
 
     def train_on_research_rampage(self):
         """
-        Train the AI on all research results gathered during the research rampage.
+        Train the AI on research results from a rampage.
         """
-        research_results = self.training_data.get("research_results", {})
-        for word, data in research_results.items():
-            self.train_on_filtered_data(word)
-        print("AI trained on research rampage results.")
+        print("Training on research rampage results...")
+        research_results = self.training_data.get("research", [])
+        new_research_results = []  # Temporary list to avoid modifying during iteration
+
+        for result in research_results:
+            word = result.get("word")
+            data = result.get("results", {})
+            if word and data:
+                print(f"Training on filtered data for '{word}'.")
+                self.train_on_filtered_data(word)
+                new_research_results.append(result)
+
+        # Replace the old research results with the updated list
+        self.training_data["research"] = new_research_results
+        self.save_training_data()
