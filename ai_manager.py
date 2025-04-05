@@ -233,6 +233,21 @@ class AIManager:
                     self.training_data["categories"].append(hierarchy_path)
         self.save_training_data()
 
+    def train_on_riddles(self, riddles):
+        """
+        Train the AI on riddles by extracting answers and categorizing them.
+        :param riddles: A dictionary of riddles categorized by difficulty or type.
+        """
+        for category, riddle_list in riddles.items():
+            for riddle, answer in riddle_list:
+                if answer not in self.training_data["categories"]:
+                    definition_data = fetch_word_definition(answer)
+                    category = categorize_entry(answer, definition_data)
+                    if category not in self.training_data["categories"]:
+                        self.training_data["categories"].append(category)
+                    print(f"Trained on riddle answer '{answer}' categorized as '{category}'.")
+        self.save_training_data()
+
     def generate_word(self):
         """
         Generate a new word based on the training data.
@@ -297,6 +312,19 @@ class AIManager:
         retrain_thread = Thread(target=self.retrain)
         retrain_thread.start()
 
+    def generate_riddle_async(self, word, callback):
+        """
+        Generate a riddle for a word in a separate thread and call the callback with the result.
+        :param word: The word to generate a riddle for.
+        :param callback: A function to call with the generated riddle.
+        """
+        def generate():
+            riddle = self.generate_riddle(word)
+            callback(riddle)
+
+        generate_thread = Thread(target=generate)
+        generate_thread.start()
+
     def answer_question(self, question, context=None):
         """
         Answer a question based on the provided context or training data.
@@ -331,6 +359,38 @@ class AIManager:
         # Example: Ask about a random word from the training data
         word = random.choice(self.training_data["categories"])
         return f"What is the meaning of the word '{word}'?"
+
+    def fetch_word_examples(self, word):
+        """
+        Fetch example sentences for a word using the dictionary API.
+        :param word: The word to fetch examples for.
+        :return: A list of example sentences.
+        """
+        definition_data = fetch_word_definition(word)
+        if definition_data and "definitions" in definition_data:
+            examples = [
+                definition.get("example", "")
+                for definition in definition_data["definitions"]
+                if "example" in definition
+            ]
+            return [example for example in examples if example]
+        return []
+
+    def fetch_word_synonyms(self, word):
+        """
+        Fetch synonyms for a word using the dictionary API.
+        :param word: The word to fetch synonyms for.
+        :return: A list of synonyms.
+        """
+        definition_data = fetch_word_definition(word)
+        if definition_data and "definitions" in definition_data:
+            synonyms = [
+                synonym
+                for definition in definition_data["definitions"]
+                for synonym in definition.get("synonyms", [])
+            ]
+            return list(set(synonyms))  # Remove duplicates
+        return []
 
     def generate_config_file(self, config_path="data/config.json"):
         """

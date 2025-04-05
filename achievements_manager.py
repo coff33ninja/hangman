@@ -27,3 +27,19 @@ class AchievementsManager:
                 self.achievements.update(json.load(f))
         except FileNotFoundError:
             self.generate_default_achievements()  # Generate defaults if file not found
+
+    def unlock_achievement(self, achievement_key):
+        """
+        Unlock a specific achievement by its key.
+        """
+        if achievement_key in self.achievements and not self.achievements[achievement_key]["unlocked"]:
+            self.achievements[achievement_key]["unlocked"] = True
+            print(f"Achievement unlocked: {self.achievements[achievement_key]['description']}")
+
+    def reset_achievements(self):
+        """
+        Reset all achievements to their locked state.
+        """
+        for key in self.achievements:
+            self.achievements[key]["unlocked"] = False
+        print("All achievements have been reset.")

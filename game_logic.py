@@ -482,3 +482,25 @@ class HangmanGame:
         """
         research_results = self.ai_manager.research_topic(word)
         print(f"Research results for '{word}':\n{research_results}")
+
+    def fetch_word_examples(self):
+        """
+        Fetch example sentences for the current word.
+        """
+        if self.current_word:
+            examples = self.ai_manager.fetch_word_examples(self.current_word)
+            if examples:
+                print(f"Examples for '{self.current_word}': {examples}")
+            else:
+                print(f"No examples found for '{self.current_word}'.")
+
+    def fetch_word_synonyms(self):
+        """
+        Fetch synonyms for the current word.
+        """
+        if self.current_word:
+            synonyms = self.ai_manager.fetch_word_synonyms(self.current_word)
+            if synonyms:
+                print(f"Synonyms for '{self.current_word}': {synonyms}")
+            else:
+                print(f"No synonyms found for '{self.current_word}'.")
