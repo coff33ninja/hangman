@@ -95,14 +95,14 @@
                 }
             ],
             "synonyms": [
-                "transitory",
-                "fleeting",
-                "volatile",
-                "short-lived",
-                "evanescent",
-                "ephemeron",
-                "temporary",
                 "momentary",
+                "short-lived",
+                "fleeting",
+                "ephemeron",
+                "evanescent",
+                "volatile",
+                "temporary",
+                "transitory",
                 "short"
             ],
             "examples": [],
@@ -156,8 +156,8 @@
                 }
             ],
             "synonyms": [
-                "luck",
-                "chance"
+                "chance",
+                "luck"
             ],
             "examples": [],
             "related_topics": [
@@ -2131,6 +2131,854 @@
                 "acronyms": [],
                 "verbs": []
             }
+        },
+        "chance": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An opportunity or possibility.",
+                    "example": "We had the chance to meet the president last week."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Random occurrence; luck.",
+                    "example": "Why leave it to chance when a few simple steps will secure the desired outcome?"
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The probability of something happening.",
+                    "example": "There is a 30 percent chance of rain tomorrow."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "What befalls or happens to a person; their lot or fate.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Happening by chance, casual.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Perchance; perhaps.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "We had the chance to meet the president last week.",
+                "Why leave it to chance when a few simple steps will secure the desired outcome?",
+                "There is a 30 percent chance of rain tomorrow."
+            ],
+            "related_topics": [
+                "chance",
+                "luck",
+                "opportunity",
+                "chance",
+                "chance"
+            ]
+        },
+        "momentary": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Lasting for only a moment.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Happening at every moment; perpetual.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Ephemeral or relatively short-lived.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "momentary",
+                "momentary",
+                "momentary",
+                "momentaneous",
+                "momentary"
+            ]
+        },
+        "The mental ability to recover quickly from depression, illness or misfortune.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Happening by chance, casual.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "momentaneous": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "momentaneous",
+                "momentaneous",
+                "short",
+                "momentaneous",
+                "momentaneous"
+            ]
+        },
+        "The physical property of material that can resume its shape after being stretched or deformed; elasticity.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Random occurrence; luck.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "The positive capacity of an organizational system or company to adapt and return to equilibrium due to the consequences of a crisis or failure caused by any type of disruption, including: an outage, natural disasters, man-made disasters, terrorism, or similar (particularly IT systems, archives).": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Lasting for only a moment.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "luck": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "luck",
+                "luck",
+                "luck",
+                "luck",
+                "luck"
+            ]
+        },
+        "Happening at every moment; perpetual.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "What befalls or happens to a person; their lot or fate.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Ephemeral or relatively short-lived.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "An opportunity or possibility.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Existing for only one day, as with some flowers, insects, and diseases.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "The probability of something happening.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "short-lived": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Alive or existent for only a short period of time.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Perchance; perhaps.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Alive or existent for only a short period of time.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "opportunity": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A chance for advancement, progress or profit.",
+                    "example": "The world is full of opportunities and it's up to me to see them and pursue them."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A favorable circumstance or occasion.",
+                    "example": "Having a holiday is a great opportunity to relax."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(Euro-English) opportuneness",
+                    "example": "The Court questioned the opportunity of introducing these measures in such an uncertain economic climate."
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "The world is full of opportunities and it's up to me to see them and pursue them.",
+                "Having a holiday is a great opportunity to relax.",
+                "The Court questioned the opportunity of introducing these measures in such an uncertain economic climate."
+            ],
+            "related_topics": [
+                "chance",
+                "opportunity",
+                "opportunity",
+                "opportunity",
+                "opportunity"
+            ]
+        },
+        "fleeting": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To float.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To pass over rapidly; to skim the surface of.",
+                    "example": "a ship that fleets the gulf"
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To hasten over; to cause to pass away lightly, or in mirth and joy.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To flee, to escape, to speed away.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To evanesce, disappear, die out.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To move up a rope, so as to haul to more advantage; especially to draw apart the blocks of a tackle.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(of people) To move or change in position.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To shift the position of dead-eyes when the shrouds are become too long.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause to slip down the barrel of a capstan or windlass, as a rope or chain.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To take the cream from; to skim.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Passing quickly; of short duration.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "a ship that fleets the gulf"
+            ],
+            "related_topics": [
+                "momentaneous",
+                "fleeting",
+                "fleeting",
+                "fleeting",
+                "fleeting"
+            ]
+        },
+        "To float.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "An unsought, unintended, and/or unexpected, but fortunate, discovery and/or learning experience that happens by accident.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To evanesce, disappear, die out.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "A combination of events which have come together by chance to make a surprisingly good or wonderful outcome.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To cause to slip down the barrel of a capstan or windlass, as a rope or chain.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To shift the position of dead-eyes when the shrouds are become too long.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To flee, to escape, to speed away.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To pass over rapidly; to skim the surface of.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To take the cream from; to skim.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To move up a rope, so as to haul to more advantage; especially to draw apart the blocks of a tackle.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Passing quickly; of short duration.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of people) To move or change in position.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "To hasten over; to cause to pass away lightly, or in mirth and joy.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "ephemeron": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "ephemeral",
+                "ephemera",
+                "ephemeron",
+                "bibliographie",
+                "ephemeron"
+            ]
+        },
+        "bibliographie": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "ephemera": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Objects that are designed to be short-lived.",
+                    "example": "vintage ephemera"
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(library science) Published single-sheet or single page documents which are meant to be thrown away after one use.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(by extension) Transitory audiovisual matter not intended to be retained or preserved.",
+                    "example": "audio ephemera"
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Something short-lived or transitory.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A type of weak reference in a garbage collected programming language that does not permit an object to be kept alive by its finalizer.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "vintage ephemera",
+                "audio ephemera"
+            ],
+            "related_topics": [
+                "time",
+                "ephemera",
+                "ephemera",
+                "insect",
+                "ephemera"
+            ]
+        },
+        "Something which lasts for a short period of time.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "evanescent": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Disappearing, vanishing.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Barely there; almost imperceptible.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Ephemeral, fleeting, momentary.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [
+                "nonevanescent"
+            ],
+            "examples": [],
+            "related_topics": [
+                "evanescent",
+                "evanescent",
+                "evanescent",
+                "evanescent",
+                "evanescent"
+            ]
+        },
+        "Barely there; almost imperceptible.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Disappearing, vanishing.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "nonevanescent": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "evanescent",
+                "evanescent",
+                "nonevanescent"
+            ]
+        },
+        "Ephemeral, fleeting, momentary.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "volatile": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A chemical or compound that changes into a gas easily.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Evaporating or vaporizing readily under normal conditions.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a substance) Explosive.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a price etc) Variable or erratic.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a person) Quick to become angry or violent.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Fickle.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Temporary or ephemeral.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a situation) Potentially violent.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a variable) Having its associated memory immediately updated with any changes in value.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of memory) Whose content is lost when the computer is powered down",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Passing through the air on wings, or by the buoyant force of the atmosphere; flying; having the power to fly.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "volatile",
+                "volatile",
+                "volatile",
+                "volatile",
+                "volatile"
+            ]
+        },
+        "Passing through the air on wings, or by the buoyant force of the atmosphere; flying; having the power to fly.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of a price etc) Variable or erratic.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "A chemical or compound that changes into a gas easily.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Temporary or ephemeral.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Evaporating or vaporizing readily under normal conditions.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of memory) Whose content is lost when the computer is powered down": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of a substance) Explosive.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of a situation) Potentially violent.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of a variable) Having its associated memory immediately updated with any changes in value.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "(of a person) Quick to become angry or violent.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Fickle.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "temporary": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One serving for a limited time; short-term employee.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Not permanent; existing only for a period or periods of time.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Existing only for a short time or short times; transient, ephemeral.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "temporary",
+                "temporary",
+                "temporary",
+                "temporary",
+                "temporary"
+            ]
+        },
+        "Existing only for a short time or short times; transient, ephemeral.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "One serving for a limited time; short-term employee.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Not permanent; existing only for a period or periods of time.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Lasting for a short period of time.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "transitory": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Lasting only a short time; temporary.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Of an action: that may be brought in any county",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [],
+            "related_topics": [
+                "transitory",
+                "transitory",
+                "short-lived",
+                "transitory",
+                "transitory"
+            ]
+        },
+        "Of an action: that may be brought in any county": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "Lasting only a short time; temporary.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "short": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Measuring a small distance or duration.",
+                    "example": "A short walk."
+                }
+            ],
+            "synonyms": [
+                "brief"
+            ],
+            "examples": [
+                "Short time.",
+                "Short story."
+            ],
+            "related_topics": []
+        },
+        "Measuring a small distance or duration.": {
+            "synonyms": [],
+            "examples": [],
+            "related_topics": []
+        },
+        "brief": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A writ summoning one to answer to any action.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An answer to any action.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A memorandum of points of fact or of law for use in conducting a case.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(by extension) A position of interest or advocacy.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An attorney's legal argument in written form for submission to a court.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(English law) The material relevant to a case, delivered by a solicitor to the barrister who tries the case.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A short news story or report.",
+                    "example": "We got a news brief."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(usually in the plural) undershorts briefs.",
+                    "example": "I wear boxers under trousers but for sports I usually wear a brief."
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A summary, pr\u00e9cis or epitome; an abridgement or abstract.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A letter patent, from proper authority, authorizing a collection or charitable contribution of money in churches, for any public or private purpose.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(slang) A ticket of any type.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To summarize a recent development to some person with decision-making power.",
+                    "example": "The U.S. president was briefed on the military coup and its implications on African stability."
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To write a legal argument and submit it to a court.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Of short duration; happening quickly.",
+                    "example": "Her reign was brief but spectacular."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Concise; taking few words.",
+                    "example": "His speech of acceptance was brief but moving."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Occupying a small distance, area or spatial extent; short.",
+                    "example": "Her skirt was extremely brief but doubtless cool."
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Rife; common; prevalent.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Briefly.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Soon; quickly.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [],
+            "examples": [
+                "We got a news brief.",
+                "I wear boxers under trousers but for sports I usually wear a brief.",
+                "The U.S. president was briefed on the military coup and its implications on African stability.",
+                "Her reign was brief but spectacular.",
+                "His speech of acceptance was brief but moving.",
+                "Her skirt was extremely brief but doubtless cool."
+            ],
+            "related_topics": [
+                "brief",
+                "brief",
+                "brief",
+                "brief",
+                "brief"
+            ]
+        }
+    },
+    "filtered_data": {
+        "ephemeral": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Something which lasts for a short period of time.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Lasting for a short period of time.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Existing for only one day, as with some flowers, insects, and diseases.",
+                    "example": ""
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a body of water) Usually dry, but filling with water for brief periods during and after precipitation.",
+                    "example": ""
+                }
+            ],
+            "synonyms": [
+                "momentary",
+                "short-lived",
+                "fleeting",
+                "ephemeron",
+                "evanescent",
+                "volatile",
+                "temporary",
+                "transitory",
+                "short"
+            ],
+            "examples": [],
+            "related_topics": [
+                "short-lived",
+                "ephemeral",
+                "ephemeral",
+                "ephemeral",
+                "ephemeral"
+            ]
         }
     }
 }
