@@ -55,97 +55,142 @@
                 {
                     "partOfSpeech": "noun",
                     "definition": "Something which lasts for a short period of time.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [
+                        "ephemeron"
+                    ],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "adjective",
                     "definition": "Lasting for a short period of time.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [
+                        "evanescent",
+                        "fleeting",
+                        "momentary",
+                        "short",
+                        "short-lived",
+                        "temporary",
+                        "transitory",
+                        "volatile"
+                    ],
+                    "antonyms": [
+                        "eternal",
+                        "everlasting",
+                        "permanent",
+                        "timeless"
+                    ]
                 },
                 {
                     "partOfSpeech": "adjective",
                     "definition": "Existing for only one day, as with some flowers, insects, and diseases.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "adjective",
                     "definition": "(of a body of water) Usually dry, but filling with water for brief periods during and after precipitation.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 }
             ],
-            "synonyms": [
-                "fleeting",
-                "short",
-                "transitory",
-                "short-lived",
-                "evanescent",
-                "ephemeron",
-                "volatile",
-                "temporary",
-                "momentary"
+            "examples": [
+                "",
+                "",
+                "",
+                ""
             ],
-            "examples": [],
-            "related_topics": [
+            "synonyms": [
+                "ephemeron",
+                "evanescent",
+                "fleeting",
+                "momentary",
+                "short",
                 "short-lived",
-                "ephemeral",
-                "ephemeral",
-                "ephemeral",
-                "ephemeral"
-            ]
+                "temporary",
+                "transitory",
+                "volatile"
+            ],
+            "antonyms": [
+                "eternal",
+                "everlasting",
+                "permanent",
+                "timeless"
+            ],
+            "related_topics": []
         },
         "resilience": {
             "definitions": [
                 {
                     "partOfSpeech": "noun",
                     "definition": "The mental ability to recover quickly from depression, illness or misfortune.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "The physical property of material that can resume its shape after being stretched or deformed; elasticity.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "The positive capacity of an organizational system or company to adapt and return to equilibrium due to the consequences of a crisis or failure caused by any type of disruption, including: an outage, natural disasters, man-made disasters, terrorism, or similar (particularly IT systems, archives).",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 }
             ],
+            "examples": [
+                "",
+                "",
+                ""
+            ],
             "synonyms": [],
-            "examples": [],
-            "related_topics": [
-                "resilience",
-                "resilience",
-                "resilience",
-                "resilience",
-                "resilience"
-            ]
+            "antonyms": [],
+            "related_topics": []
         },
         "serendipity": {
             "definitions": [
                 {
                     "partOfSpeech": "noun",
                     "definition": "A combination of events which have come together by chance to make a surprisingly good or wonderful outcome.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": [
+                        "Murphy's law",
+                        "perfect storm"
+                    ]
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "An unsought, unintended, and/or unexpected, but fortunate, discovery and/or learning experience that happens by accident.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [
+                        "chance",
+                        "luck"
+                    ],
+                    "antonyms": []
                 }
             ],
-            "synonyms": [
-                "luck",
-                "chance"
+            "examples": [
+                "",
+                ""
             ],
-            "examples": [],
-            "related_topics": [
-                "serendipity",
-                "serendipity",
-                "serendipity",
-                "serendipity",
-                "serendipity"
-            ]
+            "synonyms": [
+                "chance",
+                "luck"
+            ],
+            "antonyms": [
+                "Murphy's law",
+                "perfect storm"
+            ],
+            "related_topics": []
         },
         "one": {
             "definitions": [
@@ -679,22 +724,15 @@
             }
         },
         "is": {
-            "synonyms": [],
-            "examples": [],
-            "related_topics": [
-                "is",
-                "is",
-                "je",
-                "is",
-                "jeste"
+            "definitions": [
+                {
+                    "definition": "v\t(now colloquial) Used in phrases with existential there (also here and where) when the semantic subject is plural. "
+                }
             ],
-            "references": {
-                "nouns": [
-                    "is"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            "examples": [],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "has": {
             "definitions": [
@@ -1035,22 +1073,29 @@
             }
         },
         "the": {
-            "synonyms": [],
-            "examples": [],
-            "related_topics": [
-                "the",
-                "the",
-                "the",
-                "the",
-                "the"
+            "definitions": [
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "With a comparative or with more and a verb phrase, establishes a correlation with one or more other such comparatives.",
+                    "example": "It looks weaker and weaker, the more I think about it.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "With a comparative, and often with for it, indicates a result more like said comparative. This can be negated with none. See none the.",
+                    "example": "I'm much the wiser for having had a difficult time like that.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
             ],
-            "references": {
-                "nouns": [
-                    "the"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            "examples": [
+                "It looks weaker and weaker, the more I think about it.",
+                "I'm much the wiser for having had a difficult time like that."
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "during": {
             "definitions": [
@@ -1233,77 +1278,105 @@
                 {
                     "partOfSpeech": "adverb",
                     "definition": "Toward a closed, touching or engaging position.",
-                    "example": "Please push the door to."
+                    "example": "Please push the door to.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "adverb",
                     "definition": "Into the wind.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Indicating destination: In the direction of, and arriving at.",
-                    "example": "We are walking to the shop."
+                    "example": "We are walking to the shop.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used to indicate the target or recipient of an action.",
-                    "example": "He devoted himself to education."
+                    "example": "He devoted himself to education.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used to indicate result of action.",
-                    "example": "His face was beaten to a pulp."
+                    "example": "His face was beaten to a pulp.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used to indicate a resulting feeling or emotion.",
-                    "example": "To everyone's great relief, the tuneless carol singers finally ceased their warbling."
+                    "example": "To everyone's great relief, the tuneless carol singers finally ceased their warbling.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used after an adjective to indicate its application.",
-                    "example": "similar to ..., relevant to ..., pertinent to ..., I was nice to him, he was cruel to her, I am used to walking."
+                    "example": "similar to ..., relevant to ..., pertinent to ..., I was nice to him, he was cruel to her, I am used to walking.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Denotes the end of a range.",
-                    "example": "It takes 2 to 4 weeks to process typical applications."
+                    "example": "It takes 2 to 4 weeks to process typical applications.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "As a.",
-                    "example": "With God to friend (with God as a friend);\u00a0\u00a0 with The Devil to fiend (with the Devil as a foe);\u00a0\u00a0 lambs slaughtered to lake (lambs slaughtered as a sacrifice);\u00a0\u00a0 took her to wife (took her as a wife);\u00a0\u00a0 was sold to slave (was sold as a slave)."
+                    "example": "With God to friend (with God as a friend);\u00a0\u00a0 with The Devil to fiend (with the Devil as a foe);\u00a0\u00a0 lambs slaughtered to lake (lambs slaughtered as a sacrifice);\u00a0\u00a0 took her to wife (took her as a wife);\u00a0\u00a0 was sold to slave (was sold as a slave).",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used to indicate a ratio or comparison.",
-                    "example": "I have ten dollars to your four."
+                    "example": "I have ten dollars to your four.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used to indicate that the preceding term is to be raised to the power of the following value; indicates exponentiation.",
-                    "example": "Three squared or three to the second power is nine."
+                    "example": "Three squared or three to the second power is nine.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "(time) Preceding.",
-                    "example": "ten to ten = 9:50; We're going to leave at ten to (the hour)."
+                    "example": "ten to ten = 9:50; We're going to leave at ten to (the hour).",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "Used to describe what something consists of or contains.",
-                    "example": "Anyone could do this job; there's nothing to it."
+                    "example": "Anyone could do this job; there's nothing to it.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "preposition",
                     "definition": "At.",
-                    "example": "Stay where you're to and I'll come find you, b'y."
+                    "example": "Stay where you're to and I'll come find you, b'y.",
+                    "synonyms": [],
+                    "antonyms": []
                 }
             ],
-            "synonyms": [],
             "examples": [
                 "Please push the door to.",
+                "",
                 "We are walking to the shop.",
                 "He devoted himself to education.",
                 "His face was beaten to a pulp.",
@@ -1317,20 +1390,9 @@
                 "Anyone could do this job; there's nothing to it.",
                 "Stay where you're to and I'll come find you, b'y."
             ],
-            "related_topics": [
-                "to",
-                "to",
-                "to",
-                "to",
-                "to"
-            ],
-            "references": {
-                "nouns": [
-                    "to"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "smallest": {
             "synonyms": [],
@@ -1884,22 +1946,21 @@
             }
         },
         "a": {
-            "synonyms": [],
-            "examples": [],
-            "related_topics": [
-                "a",
-                "is a container",
-                "A",
-                "the alphabet",
-                "a"
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The name of the Latin script letter A/a.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
             ],
-            "references": {
-                "nouns": [
-                    "a"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            "examples": [
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "uncovering": {
             "synonyms": [],
@@ -2116,47 +2177,57 @@
                 {
                     "partOfSpeech": "noun",
                     "definition": "An opportunity or possibility.",
-                    "example": "We had the chance to meet the president last week."
+                    "example": "We had the chance to meet the president last week.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "Random occurrence; luck.",
-                    "example": "Why leave it to chance when a few simple steps will secure the desired outcome?"
+                    "example": "Why leave it to chance when a few simple steps will secure the desired outcome?",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "The probability of something happening.",
-                    "example": "There is a 30 percent chance of rain tomorrow."
+                    "example": "There is a 30 percent chance of rain tomorrow.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "What befalls or happens to a person; their lot or fate.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "adjective",
                     "definition": "Happening by chance, casual.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "adverb",
                     "definition": "Perchance; perhaps.",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 }
             ],
-            "synonyms": [],
             "examples": [
                 "We had the chance to meet the president last week.",
                 "Why leave it to chance when a few simple steps will secure the desired outcome?",
-                "There is a 30 percent chance of rain tomorrow."
+                "There is a 30 percent chance of rain tomorrow.",
+                "",
+                "",
+                ""
             ],
-            "related_topics": [
-                "chance",
-                "luck",
-                "opportunity",
-                "chance",
-                "chance"
-            ]
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "momentary": {
             "definitions": [
@@ -2232,40 +2303,53 @@
                 {
                     "partOfSpeech": "noun",
                     "definition": "Something that happens to someone by chance, a chance occurrence, especially a favourable one.",
-                    "example": "Gilbert had some bad luck yesterday \u2014 he got pick-pocketed and lost fifty dollars."
+                    "example": "Gilbert had some bad luck yesterday \u2014 he got pick-pocketed and lost fifty dollars.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "A superstitious feeling that brings fortune or success.",
-                    "example": "He blew on the dice for luck."
+                    "example": "He blew on the dice for luck.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "Success.",
-                    "example": "He has a lot of luck with the ladies, perhaps it is because of his new motorbike."
+                    "example": "He has a lot of luck with the ladies, perhaps it is because of his new motorbike.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "noun",
                     "definition": "The results of a random number generator.",
-                    "example": "The creators of tool-assisted speedruns often manipulate a lot of luck to get the most favorable results in order to save the most time."
+                    "example": "The creators of tool-assisted speedruns often manipulate a lot of luck to get the most favorable results in order to save the most time.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To succeed by chance.",
-                    "example": "His plan lucked out."
+                    "example": "His plan lucked out.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To rely on luck.",
-                    "example": "No plan. We're just to going to have to luck through."
+                    "example": "No plan. We're just to going to have to luck through.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To carry out relying on luck.",
-                    "example": "Our plan is to luck it through."
+                    "example": "Our plan is to luck it through.",
+                    "synonyms": [],
+                    "antonyms": []
                 }
             ],
-            "synonyms": [],
             "examples": [
                 "Gilbert had some bad luck yesterday \u2014 he got pick-pocketed and lost fifty dollars.",
                 "He blew on the dice for luck.",
@@ -2275,13 +2359,9 @@
                 "No plan. We're just to going to have to luck through.",
                 "Our plan is to luck it through."
             ],
-            "related_topics": [
-                "luck",
-                "luck",
-                "luck",
-                "luck",
-                "luck"
-            ]
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "Happening at every moment; perpetual.": {
             "synonyms": [],
@@ -2991,6 +3071,2565 @@
             "synonyms": [],
             "examples": [],
             "related_topics": []
+        },
+        "words": {},
+        "sentences": {
+            "": {
+                "grammar_analysis": {
+                    "syntax": "Analyzed syntax",
+                    "parts_of_speech": "Analyzed parts of speech"
+                },
+                "vocabulary_analysis": {
+                    "word_meanings": "Analyzed word meanings",
+                    "contextual_usage": "Analyzed contextual usage"
+                },
+                "spelling_analysis": {
+                    "phonetic_spelling": "Analyzed phonetic spelling",
+                    "spelling_rules": "Analyzed spelling rules"
+                },
+                "punctuation_analysis": {
+                    "end_punctuation": "Analyzed end punctuation",
+                    "internal_punctuation": "Analyzed internal punctuation"
+                }
+            }
+        },
+        "murphy's law": {
+            "definitions": [],
+            "examples": [],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "percent": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A percentage, a proportion (especially per hundred).",
+                    "example": "only a small percent attain the top ranks",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One part per hundred; one percent.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "For every hundred (used with preceding numeral to form a noun phrase expressing a proportion).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "only a small percent attain the top ranks",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "last": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Final, ultimate, coming after all others of its kind.",
+                    "example": "\u201cEyes Wide Shut\u201d was the last film to be directed by Stanley Kubrick.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Most recent, latest, last so far.",
+                    "example": "I have received your note dated the 17th last, and am responding to say that [...]",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Farthest of all from a given quality, character, or condition; most unlikely, or least preferable.",
+                    "example": "He is the last person to be accused of theft.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Being the only one remaining of its class.",
+                    "example": "Japan is the last empire.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Supreme; highest in degree; utmost.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Lowest in rank or degree.",
+                    "example": "the last prize",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Most recently.",
+                    "example": "When we last met, he was based in Toronto.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(sequence) after everything else; finally",
+                    "example": "I'll go last.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "\u201cEyes Wide Shut\u201d was the last film to be directed by Stanley Kubrick.",
+                "I have received your note dated the 17th last, and am responding to say that [...]",
+                "He is the last person to be accused of theft.",
+                "Japan is the last empire.",
+                "",
+                "the last prize",
+                "When we last met, he was based in Toronto.",
+                "I'll go last."
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "president": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An act in the past which may be used as an example to help decide the outcome of similar instances in the future.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A decided case which is cited or used as an example to justify a judgment in a subsequent case.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An established habit or custom.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(with definite article) The aforementioned (thing).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The previous version.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A rough draught of a writing which precedes a finished copy.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The head of state of a republic.",
+                    "example": "The vast majority of presidents have been male.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "In presidential republics, the head of government and head of state.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Primary leader of a corporation. Not to be confused with CEO, which is a related but separate position that is sometimes held by a different person.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A person presiding over a meeting, chair, presiding officer, presider.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Occupying the first rank or chief place; having the highest authority; presiding.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "The vast majority of presidents have been male.",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "why": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Reason",
+                    "example": "A good article will cover the who, the what, the when, the where, the why and the how.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "For what cause, reason, or purpose (interrogative adverb).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "For which cause, reason, or purpose (relative adverb).",
+                    "example": "That's the reason why I did that.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "interjection",
+                    "definition": "An exclamation used to express indignation, mild surprise, or impatience.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "A good article will cover the who, the what, the when, the where, the why and the how.",
+                "",
+                "That's the reason why I did that.",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "tomorrow.": {
+            "definitions": [
+                {
+                    "definition": "adv\tOn the day after the present day. "
+                },
+                {
+                    "definition": "adv\tOn the day after the present day. "
+                },
+                {
+                    "definition": "adv\tObsolete form of tomorrow. [On the day after the present day.] "
+                },
+                {
+                    "definition": "adv\tArchaic spelling of tomorrow. [On the day after the present day.] "
+                }
+            ],
+            "examples": [],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "had": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To possess, own.",
+                    "example": "I have a house and a car.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To hold, as something at someone's disposal.",
+                    "example": "Do you have the key? (not necessarily one's own key)",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "Used to state the existence or presence of someone in a specified relationship with the subject.",
+                    "example": "I have a really mean boss.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To partake of (a particular substance, especially food or drink, or action or activity).",
+                    "example": "Can I have a look at that?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be scheduled to attend, undertake or participate in.",
+                    "example": "Fred won't be able to come to the party; he has a meeting that day.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To experience, go through, undergo.",
+                    "example": "He had surgery on his hip yesterday.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be afflicted with, suffer from.",
+                    "example": "He had a cold last week.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary verb, taking a past participle) Used in forming the perfect aspect.",
+                    "example": "I had already eaten.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "Used as an interrogative verb before a pronoun to form a tag question, echoing a previous use of 'have' as an auxiliary verb or, in certain cases, main verb. (For further discussion, see the appendix English tag questions.)",
+                    "example": "They haven't eaten dinner yet, have they?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary verb, taking a to-infinitive) See have to.",
+                    "example": "I have to go.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To give birth to.",
+                    "example": "My mother had me when she was 25.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To engage in sexual intercourse with.",
+                    "example": "He's always bragging about how many women he's had.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To accept as a romantic partner.",
+                    "example": "Despite my protestations of love, she would not have me.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with bare infinitive) To cause to, by a command, request or invitation.",
+                    "example": "They had me feed their dog while they were out of town.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with adjective or adjective-phrase complement) To cause to be.",
+                    "example": "He had him arrested for trespassing.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with bare infinitive) To be affected by an occurrence. (Used in supplying a topic that is not a verb argument.)",
+                    "example": "I've had three people today tell me my hair looks nice.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(transitive with adjective or adjective-phrase complement) To depict as being.",
+                    "example": "Their stories differed; he said he'd been at work when the incident occurred, but her statement had him at home that entire evening.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To defeat in a fight; take.",
+                    "example": "I could have him!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(obsolete outside Ireland) To be able to speak (a language).",
+                    "example": "I have no German.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To feel or be (especially painfully) aware of.",
+                    "example": "Dan certainly has arms today, probably from scraping paint off four columns the day before.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To trick, to deceive.",
+                    "example": "You had me alright! I never would have thought that was just a joke.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(often with present participle) To allow; to tolerate.",
+                    "example": "I asked my dad if I could go to the concert this Thursday, but he wouldn't have it since it's a school night.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(often used in the negative) To believe, buy, be taken in by.",
+                    "example": "I made up an excuse as to why I was out so late, but my wife wasn't having any of it.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To host someone; to take in as a guest.",
+                    "example": "Thank you for having me!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To get a reading, measurement, or result from an instrument or calculation.",
+                    "example": "I have two contacts on my scope.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(of a jury) To consider a court proceeding that has been completed; to begin deliberations on a case.",
+                    "example": "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make an observation of (a bird species).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "I have a house and a car.",
+                "Do you have the key? (not necessarily one's own key)",
+                "I have a really mean boss.",
+                "Can I have a look at that?",
+                "Fred won't be able to come to the party; he has a meeting that day.",
+                "He had surgery on his hip yesterday.",
+                "He had a cold last week.",
+                "I had already eaten.",
+                "They haven't eaten dinner yet, have they?",
+                "I have to go.",
+                "My mother had me when she was 25.",
+                "He's always bragging about how many women he's had.",
+                "Despite my protestations of love, she would not have me.",
+                "They had me feed their dog while they were out of town.",
+                "He had him arrested for trespassing.",
+                "I've had three people today tell me my hair looks nice.",
+                "Their stories differed; he said he'd been at work when the incident occurred, but her statement had him at home that entire evening.",
+                "I could have him!",
+                "I have no German.",
+                "Dan certainly has arms today, probably from scraping paint off four columns the day before.",
+                "You had me alright! I never would have thought that was just a joke.",
+                "I asked my dad if I could go to the concert this Thursday, but he wouldn't have it since it's a school night.",
+                "I made up an excuse as to why I was out so late, but my wife wasn't having any of it.",
+                "Thank you for having me!",
+                "I have two contacts on my scope.",
+                "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon.",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "leave": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To have a consequence or remnant.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To depart; to separate from.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To transfer something.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To remain (behind); to stay.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To stop, desist from; to \"leave off\" (+ noun / gerund).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "we": {
+            "definitions": [
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal) The speakers/writers, or the speaker/writer and at least one other person (not the person being addressed). (This is the exclusive we.)",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal) The speaker(s)/writer(s) and the person(s) being addressed. (This is the inclusive we.)",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal) The speaker/writer alone. (This use of we is the editorial we, used by writers and others, including royalty\u2014the royal we\u2014as a less personal substitute for I. The reflexive case of this sense of we is ourself.)",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal) The plural form of you, including everyone being addressed.",
+                    "example": "How are we all tonight?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal, often considered patronising) A second- or third-person pronoun for a person in the speaker's care.",
+                    "example": "How are we feeling this morning?",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "",
+                "How are we all tonight?",
+                "How are we feeling this morning?"
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "rain": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Condensed water falling from a cloud.",
+                    "example": "The rains came late that year.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Any matter moving or falling, usually through air, and especially if liquid or otherwise figuratively identifiable with raindrops.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An instance of particles or larger pieces of matter moving or falling through air.",
+                    "example": "A rain of mortar fire fell on our trenches.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To have rain fall from the sky.",
+                    "example": "It will rain today.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To fall as or like rain.",
+                    "example": "Bombs rained from the sky.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To issue (something) in large quantities.",
+                    "example": "The boxer rained punches on his opponent's head.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To reign.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "The rains came late that year.",
+                "",
+                "A rain of mortar fire fell on our trenches.",
+                "It will rain today.",
+                "Bombs rained from the sky.",
+                "The boxer rained punches on his opponent's head.",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "it": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One who is neither a he nor a she; a creature; a dehumanized being.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The person who chases and tries to catch the other players in the playground game of tag.",
+                    "example": "In the next game, Adam and Tom will be it\u2026",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The game of tag.",
+                    "example": "Let's play it at breaktime.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Sex appeal, especially that which goes beyond beauty.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Sexual activity.",
+                    "example": "caught them doing it",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A biological force that inhabits living beings, according to the vitalist approach of Georg Groddeck.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Most fashionable.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "The third-person singular personal pronoun that is normally used to refer to an inanimate object or abstract entity, also often used to refer to animals.",
+                    "example": "I heard the sound of the school bus - it was early today.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "A third-person singular personal pronoun used to refer to a child, especially of unknown gender.",
+                    "example": "She took the baby and held it in her arms.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Used to refer to someone being identified, often on the phone, but not limited to this situation.",
+                    "example": "Is it her?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "The impersonal pronoun, used without referent as the subject of an impersonal verb or statement. (known as the dummy pronoun or weather it)",
+                    "example": "It is nearly 10 o\u2019clock.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "The impersonal pronoun, used without referent in various short idioms.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "The impersonal pronoun, used as a placeholder for a delayed subject, or less commonly, object; known as the dummy pronoun or, more formally in linguistics, a syntactic expletive. The delayed subject is commonly a to-infinitive, a gerund, or a noun clause introduced by a .",
+                    "example": "He saw to it that everyone would vote for him. (with the noun clause introduced by that)",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "All or the end; something after which there is no more.",
+                    "example": "Are there more students in this class, or is this it?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "A third-person singular personal pronoun used to refer to an animate referent who is transgender or is neither female nor male.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Followed by an omitted and understood relative pronoun: That which; what.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "In the next game, Adam and Tom will be it\u2026",
+                "Let's play it at breaktime.",
+                "",
+                "caught them doing it",
+                "",
+                "",
+                "I heard the sound of the school bus - it was early today.",
+                "She took the baby and held it in her arms.",
+                "Is it her?",
+                "It is nearly 10 o\u2019clock.",
+                "",
+                "He saw to it that everyone would vote for him. (with the noun clause introduced by that)",
+                "Are there more students in this class, or is this it?",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "few": {
+            "definitions": [
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Few people, few things.",
+                    "example": "Many are called, but few are chosen.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "Many are called, but few are chosen."
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "steps": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An advance or movement made from one foot to the other; a pace.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A rest, or one of a set of rests, for the foot in ascending or descending, as a stair, or a rung of a ladder.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A distinct part of a process; stage; phase.",
+                    "example": "He improved step by step, or by steps.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A running board where passengers step to get on and off the bus.",
+                    "example": "The driver must have a clear view of the step in order to prevent accidents.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The space passed over by one movement of the foot in walking or running.",
+                    "example": "One step is generally about three feet, but may be more or less.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A small space or distance.",
+                    "example": "It is but a step.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A print of the foot; a footstep; a footprint; track.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A gait; manner of walking.",
+                    "example": "The approach of a man is often known by his step.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Proceeding; measure; action; act.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(plural) A walk; passage.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(plural) A portable framework of stairs, much used indoors in reaching to a high position.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A framing in wood or iron which is intended to receive an upright shaft; specifically, a block of wood, or a solid platform upon the keelson, supporting the heel of the mast.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(machines) One of a series of offsets, or parts, resembling the steps of stairs, as one of the series of parts of a cone pulley on which the belt runs.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(machines) A bearing in which the lower extremity of a spindle or a vertical shaft revolves.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The interval between two contiguous degrees of the scale.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(kinematics) A change of position effected by a motion of translation.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A constant difference between consecutive values in a series.",
+                    "example": "Printing from 0 to 9 with a step of 3 will display 0, 3, 6 and 9.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A stepsibling.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To move the foot in walking; to advance or recede by raising and moving one of the feet to another resting place, or by moving both feet in succession.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To walk; to go on foot; especially, to walk a little distance.",
+                    "example": "to step to one of the neighbors",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To walk slowly, gravely, or resolutely.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To move mentally; to go in imagination.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To set, as the foot.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To fix the foot of (a mast) in its step; to erect.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "He improved step by step, or by steps.",
+                "The driver must have a clear view of the step in order to prevent accidents.",
+                "One step is generally about three feet, but may be more or less.",
+                "It is but a step.",
+                "",
+                "The approach of a man is often known by his step.",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Printing from 0 to 9 with a step of 3 will display 0, 3, 6 and 9.",
+                "",
+                "",
+                "to step to one of the neighbors",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "secure": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make safe; to relieve from apprehensions of, or exposure to, danger; to guard; to protect.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To put beyond hazard of losing or of not receiving; to make certain; to assure; frequently with against or from, or formerly with of.",
+                    "example": "to secure a creditor against loss; to secure a debt by a mortgage",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make fast; to close or confine effectually; to render incapable of getting loose or escaping.",
+                    "example": "to secure a prisoner; to secure a door, or the hatches of a ship",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To get possession of; to make oneself secure of; to acquire certainly.",
+                    "example": "to secure an estate",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To plight or pledge.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Free from attack or danger; protected.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Free from the danger of theft; safe.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Free from the risk of eavesdropping, interception or discovery; secret.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Free from anxiety or doubt; unafraid.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Firm and not likely to fail; stable.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Free from the risk of financial loss; reliable.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Confident in opinion; not entertaining, or not having reason to entertain, doubt; certain; sure; commonly used with of.",
+                    "example": "secure of a welcome",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Overconfident; incautious; careless.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "to secure a creditor against loss; to secure a debt by a mortgage",
+                "to secure a prisoner; to secure a door, or the hatches of a ship",
+                "to secure an estate",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "secure of a welcome",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "30": {
+            "definitions": [
+                {
+                    "definition": "N\t(thirty) the natural number following 29 and preceding 31.  "
+                }
+            ],
+            "examples": [],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "week.": {
+            "definitions": [
+                {
+                    "definition": "n\tAny period of seven consecutive days. "
+                },
+                {
+                    "definition": "n\tA surname. "
+                }
+            ],
+            "examples": [],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "desired": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To want; to wish for earnestly.",
+                    "example": "I desire to speak with you.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To put a request to (someone); to entreat.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To want emotionally or sexually.",
+                    "example": "She has desired him since they first met.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To express a wish for; to entreat; to request.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To require; to demand; to claim.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To miss; to regret.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Wished-for, longed-for",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "I desire to speak with you.",
+                "",
+                "She has desired him since they first met.",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "when": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The time at which something happens.",
+                    "example": "A good article will cover the who, the what, the when, the where, the why and the how.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(interrogative) At what time? At which time? Upon which occasion or circumstance? Used to introduce direct or indirect questions about time.",
+                    "example": "Do you know when they arrived?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "At an earlier time and under different, usually less favorable, circumstances.",
+                    "example": "He's mister high and mighty now, but I remember him when.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(relative) At which, on which, during which: often omitted or replaced with that.",
+                    "example": "That was the day when the Twin Towers fell.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(interrogative) What time; which time.",
+                    "example": "Since when do I need your permission?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "The time that.",
+                    "example": "I recall when they were called the Greys.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "At (or as soon as) that time that; at the (or any and every) time that; if.",
+                    "example": "A player wins when [as soon as, or at any time that, if] she has four cards of the same suit.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "During the time that; at the time of the action of the following clause or participle phrase.",
+                    "example": "Be careful when crossing the street.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "At what time; at which time.",
+                    "example": "I am here till Friday, when [i.e. at which time] I leave for Senegal.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "Since; given the fact that; considering that.",
+                    "example": "I don't see the point of putting up Christmas decorations when I am the only person who is going to see them.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "conjunction",
+                    "definition": "Whereas; although; at the same time as; in spite of the fact that.",
+                    "example": "He keeps changing things when the existing system works perfectly well.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "interjection",
+                    "definition": "That's enough, a command to stop adding something, especially an ingredient of food or drink.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "interjection",
+                    "definition": "Expressing impatience. (Compare what.)",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "A good article will cover the who, the what, the when, the where, the why and the how.",
+                "Do you know when they arrived?",
+                "He's mister high and mighty now, but I remember him when.",
+                "That was the day when the Twin Towers fell.",
+                "Since when do I need your permission?",
+                "I recall when they were called the Greys.",
+                "A player wins when [as soon as, or at any time that, if] she has four cards of the same suit.",
+                "Be careful when crossing the street.",
+                "I am here till Friday, when [i.e. at which time] I leave for Senegal.",
+                "I don't see the point of putting up Christmas decorations when I am the only person who is going to see them.",
+                "He keeps changing things when the existing system works perfectly well.",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "will": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(now uncommon or literary) To wish, desire (something).",
+                    "example": "Do what you will.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(nowadays rare) To wish or desire (that something happen); to intend (that).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary) To habitually do (a given action).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary) To choose to (do something); used to express intention but without any temporal connotations (+ bare infinitive), often in negation.",
+                    "example": "I\u2019ve told him three times, but he won\u2019t take his medicine.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary) Used to express the future tense, sometimes with some implication of volition when used in the first person. Compare shall.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary) To be able to, to have the capacity to.",
+                    "example": "Unfortunately, only one of these gloves will actually fit over my hand.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(auxiliary) Expressing a present tense with some conditional or subjective weakening: \"will turn out to\", \"must by inference\".",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "Do what you will.",
+                "",
+                "",
+                "I\u2019ve told him three times, but he won\u2019t take his medicine.",
+                "",
+                "Unfortunately, only one of these gloves will actually fit over my hand.",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "there": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "That place.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "That status; that position.",
+                    "example": "You rinse and de-string the green beans; I'll take it from there.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(location) In a place or location (stated, implied or otherwise indicated) at some distance from the speaker (compare here).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "In that matter, relation, etc.; at that point, stage, etc., regarded as a distinct place.",
+                    "example": "He did not stop there, but continued his speech.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(location) To or into that place; thither.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Where, there where, in which place.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "In existence or in this world; see pronoun section below.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Used as an expletive subject of be in its sense of \u201cexist\u201d, with the semantic, usually indefinite subject being postponed or (occasionally) implied.",
+                    "example": "Is there an answer? [=Does an answer exist?]",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Used with other intransitive verbs of existence, in the same sense, or with other intransitive verbs, adding a sense of existence.",
+                    "example": "If x is a positive number, then there exists [=there is] a positive number y less than x.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Used with other verbs, when raised.",
+                    "example": "I expected there to be a simpler solution. [=I expected that there would be a simpler solution.]",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(in combination with certain prepositions, no longer productive) That.",
+                    "example": "therefor, thereat, thereunder",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Used to replace an unknown name, principally in greetings and farewells",
+                    "example": "Hi there, young fellow.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "interjection",
+                    "definition": "Used to offer encouragement or sympathy.",
+                    "example": "There, there. Everything is going to turn out all right.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "interjection",
+                    "definition": "Used to express victory or completion.",
+                    "example": "There! That knot should hold.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "You rinse and de-string the green beans; I'll take it from there.",
+                "",
+                "He did not stop there, but continued his speech.",
+                "",
+                "",
+                "",
+                "Is there an answer? [=Does an answer exist?]",
+                "If x is a positive number, then there exists [=there is] a positive number y less than x.",
+                "I expected there to be a simpler solution. [=I expected that there would be a simpler solution.]",
+                "therefor, thereat, thereunder",
+                "Hi there, young fellow.",
+                "There, there. Everything is going to turn out all right.",
+                "There! That knot should hold."
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "outcome?": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "That which is produced or occurs as a result of an event or process.",
+                    "example": "A quality automobile is the outcome of the work of skilled engineers and thousands of workers.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The result of a random trial. An element of a sample space.",
+                    "example": "Three is a possible outcome of tossing a six-sided die.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The anticipated or desired results or evidence of a learning experience (often used in the phrase learning outcomes).",
+                    "example": "The outcomes of this course are outlined in your syllabus.",
+                    "synonyms": [
+                        "learning objective"
+                    ],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The scoreline; the result.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "A quality automobile is the outcome of the work of skilled engineers and thousands of workers.",
+                "Three is a possible outcome of tossing a six-sided die.",
+                "The outcomes of this course are outlined in your syllabus.",
+                ""
+            ],
+            "synonyms": [
+                "learning objective"
+            ],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "meet": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A sports competition, especially for track and field (a track meet) or swimming (a swim meet).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A gathering of riders, horses and hounds for foxhunting; a field meet for hunting.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A meeting of two trains in opposite directions on a single track, when one is put into a siding to let the other cross.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A meeting.",
+                    "example": "OK, let's arrange a meet with Tyler and ask him.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The greatest lower bound, an operation between pairs of elements in a lattice, denoted by the symbol \u2227.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An act of French kissing someone.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make contact (with) while in proximity.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(Of groups) To come together.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make physical or perceptual contact.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To satisfy; to comply with.",
+                    "example": "This proposal meets my requirements. The company agrees to meet the cost of any repairs.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To balance or come out correct.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To perceive; to come to a knowledge of; to have personal acquaintance with; to experience; to suffer.",
+                    "example": "The eye met a horrid sight. He met his fate.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be mixed with, to be combined with aspects of.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "",
+                "OK, let's arrange a meet with Tyler and ask him.",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "This proposal meets my requirements. The company agrees to meet the cost of any repairs.",
+                "",
+                "The eye met a horrid sight. He met his fate.",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "of": {
+            "definitions": [
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing distance or motion.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing separation.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing origin.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing agency.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing composition, substance.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Introducing subject matter.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Having partitive effect.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing possession.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Forming the \"objective genitive\".",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing qualities or characteristics.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing a point in time.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "simple": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A herbal preparation made from one plant, as opposed to something made from more than one plant.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(by extension) A physician.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A simple or atomic proposition.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Something not mixed or compounded.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A drawloom.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Part of the apparatus for raising the heddles of a drawloom.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A feast which is not a double or a semidouble.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To gather simples, i.e. medicinal herbs.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Uncomplicated; taken by itself, with nothing added.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Without ornamentation; plain.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Free from duplicity; guileless, innocent, straightforward.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Undistinguished in social condition; of no special rank.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": [
+                        "gentle"
+                    ]
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Trivial; insignificant.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Feeble-minded; foolish.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(heading) Structurally uncomplicated.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Mere; not other than; being only.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [
+                "gentle"
+            ],
+            "related_topics": []
+        },
+        "he": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The game of tag, or it, in which the player attempting to catch the others is called \"he\".",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The player attempting to catch the others in this game.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A male.",
+                    "example": "Is your cat a he or a she?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal) A male person or animal already known or implied.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal, sometimes proscribed, see usage notes) A person whose gender is unknown or irrelevant.",
+                    "example": "The rulebook clearly states that \"if any student is caught cheating, he will be expelled\", and you were caught cheating, were you not, Anna?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "(personal) An animal whose gender is unknown.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "A genderless object regarded as masculine, such as certain stars (e.g. Sun, Mercury, Mars, Jupiter) or certain ships.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": [
+                        "it",
+                        "she"
+                    ]
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                "Is your cat a he or a she?",
+                "",
+                "The rulebook clearly states that \"if any student is caught cheating, he will be expelled\", and you were caught cheating, were you not, Anna?",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [
+                "it",
+                "she"
+            ],
+            "related_topics": []
+        },
+        "just": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Factually right, correct; factual.",
+                    "example": "It is a just assessment of the facts.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Rationally right, correct.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Morally right; upright, righteous, equitable; fair.",
+                    "example": "It looks like a just solution at first glance.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Proper, adequate.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Only, simply, merely.",
+                    "example": "He calls it vermilion, but it's just red to me.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(sentence adverb) Used to reduce the force of an imperative; simply.",
+                    "example": "Just follow the directions on the box.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Used to convey a less serious or formal tone",
+                    "example": "I just called to say \"hi\".",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Used to show humility.",
+                    "example": "Lord, we just want to thank You and praise Your Name.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(degree) absolutely, positively",
+                    "example": "It is just splendid!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Moments ago, recently.",
+                    "example": "They just left, but you may leave a message at the desk.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "By a narrow margin; closely; nearly.",
+                    "example": "The fastball just missed my head!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Exactly, precisely, perfectly.",
+                    "example": "He wants everything just right for the big day.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "interjection",
+                    "definition": "Expressing dismay or discontent.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "It is a just assessment of the facts.",
+                "",
+                "It looks like a just solution at first glance.",
+                "",
+                "He calls it vermilion, but it's just red to me.",
+                "Just follow the directions on the box.",
+                "I just called to say \"hi\".",
+                "Lord, we just want to thank You and praise Your Name.",
+                "It is just splendid!",
+                "They just left, but you may leave a message at the desk.",
+                "The fastball just missed my head!",
+                "He wants everything just right for the big day.",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "on": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To switch on",
+                    "example": "Can you on the light?",
+                    "synonyms": [
+                        "turn on"
+                    ],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "In the state of being active, functioning or operating.",
+                    "example": "All the lights are on, so they must be home.",
+                    "synonyms": [],
+                    "antonyms": [
+                        "off"
+                    ]
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Performing according to schedule; taking place.",
+                    "example": "Are we still on for tonight?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Fitted; covering; being worn.",
+                    "example": "I was trying to drink out of the bottle while the top was still on!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(usually negative) Acceptable, appropriate.",
+                    "example": "You can't do that; it's just not on.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Destined, normally in the context of a challenge being accepted; involved, doomed.",
+                    "example": "\"Five bucks says the Cavs win tonight.\" \u2015\"You're on!\"",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Having reached a base as a runner and being positioned there, awaiting further action from a subsequent batter.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Within the half of the field on the same side as the batsman's legs; the left side for a right-handed batsman.",
+                    "example": "Ponsonby-Smythe hit a thumping on drive.",
+                    "synonyms": [
+                        "leg"
+                    ],
+                    "antonyms": [
+                        "off"
+                    ]
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Menstruating.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "To an operating state.",
+                    "example": "turn the television on",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "So as to cover or be fitted.",
+                    "example": "Put on your hat and gloves.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Along, forwards (continuing an action).",
+                    "example": "drive on, rock on",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "In continuation, at length.",
+                    "example": "He rambled on and on.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(obsolete in the US) Later.",
+                    "example": "Ten years on, nothing had changed in the village.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Of betting odds, denoting a better-than-even chance. See also odds-on.",
+                    "example": "That horse is twenty-to-one on, so you need to stake twenty pounds just to win one pound.",
+                    "synonyms": [],
+                    "antonyms": [
+                        "against"
+                    ]
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Positioned at the upper surface of, touching from above.",
+                    "example": "A vase of flowers stood on the table.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Positioned at or resting against the outer surface of; attached to.",
+                    "example": "He had a scar on the side of his face.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Expressing figurative placement or attachment.",
+                    "example": "All of the responsibility is on him.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Denoting performance or action by contact with the surface, upper part, or outside of anything; hence, by means of; with.",
+                    "example": "to play on a violin or piano",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "At or in (a certain region or location).",
+                    "example": "The lighthouse that you can see is on the mainland.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Near; adjacent to; alongside.",
+                    "example": "Croton-on-Hudson, Rostov-on-Don, Southend-on-Sea",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Supported by (the specified part of itself).",
+                    "example": "A table can't stand on two legs.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "So as to impart force to.",
+                    "example": "tug on the rope; push hard on the door",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "So as to impact; against.",
+                    "example": "I stubbed my toe on an old tree stump.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Covering.",
+                    "example": "He wore old shoes on his feet.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "(with certain modes of transport, especially public transport) Inside (a vehicle) for the purpose of travelling.",
+                    "example": "on a bus, on a train, on a plane",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "At the date of.",
+                    "example": "Born on the 4th of July.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Some time during the day of.",
+                    "example": "Can I see you on a different day?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "At a given time after the start of something; at.",
+                    "example": "Smith scored again on twelve minutes, doubling Mudchester Rovers' lead.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Dealing with the subject of; about; concerning.",
+                    "example": "I have no opinion on this subject.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "In the possession of.",
+                    "example": "I haven't got any money on me.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Because of, or due to.",
+                    "example": "to arrest someone on suspicion of bribery",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Upon; at the time of (and often because of).",
+                    "example": "On Jack's entry, William got up to leave.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Paid for by.",
+                    "example": "I paid for the airfare and meals for my family, but the hotel room was on the company.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Indicating a means or medium.",
+                    "example": "Can't you see I'm on the phone?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Indicating the target of, or thing affected by, an event or action.",
+                    "example": "Her words made a lasting impression on my mind.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Toward; for; indicating the object of an emotion.",
+                    "example": "Have pity or compassion on him.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Indicating a means of subsistence.",
+                    "example": "The dog survived three weeks on rainwater.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Away or occupied with (e.g. a scheduled activity).",
+                    "example": "He's on his lunch break.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Regularly taking (a drug).",
+                    "example": "He's acting so strangely, I think he must be on something.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Under the influence of (a drug).",
+                    "example": "He's acting crazy because he's on crack right now.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Having identical domain and codomain.",
+                    "example": "a function on",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Having V^n as domain and V as codomain, for some set V and integer n.",
+                    "example": "an operator on",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Generated by.",
+                    "example": "the free group on four letters",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "In addition to; besides; indicating multiplication or succession in a series.",
+                    "example": "heaps on heaps of food",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Of",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Indicating dependence or reliance; with confidence in.",
+                    "example": "He will promise on certain conditions.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "At the peril of, or for the safety of.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "In the service of; connected with; of the number of.",
+                    "example": "He is on a newspaper; I am on the committee.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "By virtue of; with the pledge of.",
+                    "example": "He affirmed or promised on his word, or on his honour.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "To the account or detriment of; denoting imprecation or invocation, or coming to, falling, or resting upon.",
+                    "example": "A curse on him!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "(especially when numbers of combatants or competitors are specified) Against; in opposition to.",
+                    "example": "The fight was three on one, and he never stood a chance.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "Can you on the light?",
+                "All the lights are on, so they must be home.",
+                "Are we still on for tonight?",
+                "I was trying to drink out of the bottle while the top was still on!",
+                "You can't do that; it's just not on.",
+                "\"Five bucks says the Cavs win tonight.\" \u2015\"You're on!\"",
+                "",
+                "Ponsonby-Smythe hit a thumping on drive.",
+                "",
+                "turn the television on",
+                "Put on your hat and gloves.",
+                "drive on, rock on",
+                "He rambled on and on.",
+                "Ten years on, nothing had changed in the village.",
+                "That horse is twenty-to-one on, so you need to stake twenty pounds just to win one pound.",
+                "A vase of flowers stood on the table.",
+                "He had a scar on the side of his face.",
+                "All of the responsibility is on him.",
+                "to play on a violin or piano",
+                "The lighthouse that you can see is on the mainland.",
+                "Croton-on-Hudson, Rostov-on-Don, Southend-on-Sea",
+                "A table can't stand on two legs.",
+                "tug on the rope; push hard on the door",
+                "I stubbed my toe on an old tree stump.",
+                "He wore old shoes on his feet.",
+                "on a bus, on a train, on a plane",
+                "Born on the 4th of July.",
+                "Can I see you on a different day?",
+                "Smith scored again on twelve minutes, doubling Mudchester Rovers' lead.",
+                "I have no opinion on this subject.",
+                "I haven't got any money on me.",
+                "to arrest someone on suspicion of bribery",
+                "On Jack's entry, William got up to leave.",
+                "I paid for the airfare and meals for my family, but the hotel room was on the company.",
+                "Can't you see I'm on the phone?",
+                "Her words made a lasting impression on my mind.",
+                "Have pity or compassion on him.",
+                "The dog survived three weeks on rainwater.",
+                "He's on his lunch break.",
+                "He's acting so strangely, I think he must be on something.",
+                "He's acting crazy because he's on crack right now.",
+                "a function on",
+                "an operator on",
+                "the free group on four letters",
+                "heaps on heaps of food",
+                "",
+                "He will promise on certain conditions.",
+                "",
+                "He is on a newspaper; I am on the committee.",
+                "He affirmed or promised on his word, or on his honour.",
+                "A curse on him!",
+                "The fight was three on one, and he never stood a chance."
+            ],
+            "synonyms": [
+                "turn on",
+                "leg"
+            ],
+            "antonyms": [
+                "off",
+                "off",
+                "against"
+            ],
+            "related_topics": []
         }
     },
     "filtered_data": {
@@ -3036,6 +5675,78 @@
                 "ephemeral",
                 "ephemeral"
             ]
+        }
+    },
+    "dynamic_memory": {
+        "resilience": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The mental ability to recover quickly from depression, illness or misfortune.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The physical property of material that can resume its shape after being stretched or deformed; elasticity.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The positive capacity of an organizational system or company to adapt and return to equilibrium due to the consequences of a crisis or failure caused by any type of disruption, including: an outage, natural disasters, man-made disasters, terrorism, or similar (particularly IT systems, archives).",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "serendipity": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A combination of events which have come together by chance to make a surprisingly good or wonderful outcome.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": [
+                        "Murphy's law",
+                        "perfect storm"
+                    ]
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An unsought, unintended, and/or unexpected, but fortunate, discovery and/or learning experience that happens by accident.",
+                    "example": "",
+                    "synonyms": [
+                        "chance",
+                        "luck"
+                    ],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                ""
+            ],
+            "synonyms": [
+                "chance",
+                "luck"
+            ],
+            "antonyms": [
+                "Murphy's law",
+                "perfect storm"
+            ],
+            "related_topics": []
         }
     }
 }

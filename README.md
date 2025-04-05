@@ -17,6 +17,8 @@ Welcome to the **Hangman AI Game**, a reimagined twist on the classic word-guess
 ### 🧩 AI-Powered Enhancements
 - **AI-Generated Words and Riddles**: The AI dynamically generates words and riddles for gameplay.
 - **Dynamic Learning**: The AI learns from riddles and words during gameplay and updates its knowledge base.
+- **Rampage Learning**: The AI recursively researches words, definitions, synonyms, antonyms, and examples using multiple APIs.
+- **Dynamic Categorization**: Words and riddles are categorized dynamically based on their definitions and context.
 - **Research Topics**: Ask the AI about a topic, and it will provide information or research it dynamically.
 - **Fallback Responses**: If the AI cannot find detailed information, it provides related knowledge or a graceful fallback response.
 
@@ -60,11 +62,23 @@ This project uses the following APIs to enhance gameplay and AI functionality. W
    - Supplies random riddles for the "Riddle Time" game mode.
    - Dynamically fetches riddles to keep the gameplay fresh and engaging.
 
-3. **[Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)**
+3. **[Datamuse API](https://www.datamuse.com/api/)**
+   - Suggests related words, synonyms, and definitions.
+   - Helps the AI expand its vocabulary and improve contextual understanding.
+
+4. **[Wordnik API](https://developer.wordnik.com/)**
+   - Offers detailed word data, including etymology and usage examples.
+   - Used for advanced word research and fallback definitions.
+
+5. **[Oxford Dictionaries API](https://developer.oxforddictionaries.com/)**
+   - Fetches high-quality linguistic data, including definitions and translations.
+   - Enhances the AI's ability to provide accurate and detailed answers.
+
+6. **[Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)**
    - Fetches summaries and information about topics for the AI's research functionality.
    - Used to provide detailed answers to user queries.
 
-4. **[ConceptNet API](https://conceptnet.io/)**
+7. **[ConceptNet API](https://conceptnet.io/)**
    - Provides related topics and semantic relationships for words and concepts.
    - Used for fallback responses and expanding the AI's knowledge graph.
 
@@ -80,6 +94,13 @@ The AI in this project is designed to enhance the classic Hangman game by introd
   - Dynamic word categorization using dictionary definitions.
   - Training on riddles and words during gameplay.
   - Periodic retraining to incorporate new knowledge.
+
+### Rampage Learning
+- **Reasoning**: The AI mimics human learning by recursively researching words and their relationships.
+- **Implementation**:
+  - Fetches definitions, synonyms, antonyms, and examples for words using multiple APIs.
+  - Recursively explores related terms to build a network of interconnected knowledge.
+  - Dynamically categorizes words and riddles based on their context.
 
 ### Intelligent Responses
 - **Reasoning**: Players may ask the AI questions about words, riddles, or topics. The AI needs to provide meaningful answers, even if it has limited knowledge.
@@ -246,6 +267,5 @@ Hangman has grown up. No longer just a stickman on a rope — it's an AI playgro
 **Ready to code the next clue? Let's hang.**
 
 ---
-
 © 2025 DJ – Powered by Python, caffeine, and late-night "Eureka!" moments.
 
