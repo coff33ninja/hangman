@@ -8,7 +8,7 @@ import os
 import requests
 from threading import Thread
 import logging
-import time  # Add for rate limiting
+import time  # Ensure time is used for rate limiting
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -562,6 +562,7 @@ class AIManager:
 
         # Recursively research each related term
         for term in related_terms:
+            time.sleep(0.5)  # Add delay to avoid hitting API rate limits
             self.research_rampage(term, depth=depth - 1, visited=visited)
 
         return research_results
