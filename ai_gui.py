@@ -8,6 +8,7 @@ import sys
 from ai_manager import AIManager
 import re  # Import regex for sanitizing words
 from threading import Thread
+import json  # Import JSON for serialization
 
 
 class ResearchThread(QThread):
@@ -19,8 +20,12 @@ class ResearchThread(QThread):
         self.topic = topic
 
     def run(self):
+        """
+        Perform research on the topic and emit the results as a string.
+        """
         results = self.ai_manager.research_topic(self.topic)
-        self.result_ready.emit(results)  # Emit the results to the main thread
+        # Ensure the results are serialized to a string before emitting
+        self.result_ready.emit(json.dumps(results, indent=4))
 
 
 class AIGui(QMainWindow):
@@ -138,7 +143,7 @@ class AIGui(QMainWindow):
 
     def ask_ai_question(self):
         """
-        Ask the AI a question, display pulled data, and start learning in the background.
+        Ask the AI a question, display pulled data, and start training in the background.
         """
         question = self.question_input.text().strip()
         if not question:
@@ -173,10 +178,18 @@ class AIGui(QMainWindow):
                 answer += f"No existing data found for '{word}'. Starting research...\n\n"
         self.answer_display.setText(answer)
 
-        # Step 6: Start learning/researching in the background
+        # Step 6: Start training in the background
         for word, data in pulled_data.items():
-            if not data:  # Only research if no existing data is found
-                Thread(target=self.learn_and_update, args=(word,)).start()
+            Thread(target=self.train_word, args=(word, data)).start()
+
+    def train_word(self, word, data):
+        """
+        Train the AI on the word and its data.
+        """
+        if not data:
+            data = self.ai_manager.research_topic(word)
+        self.ai_manager.train_on_word(word, data)
+        print(f"Training completed for '{word}'.")
 
     def format_pulled_data(self, data):
         """
@@ -205,13 +218,6 @@ class AIGui(QMainWindow):
         if related_topics:
             formatted_data += f"Related Topics: {', '.join(related_topics)}\n"
         return formatted_data
-
-    def learn_and_update(self, word):
-        """
-        Learn or research a word and update the UI with the results.
-        """
-        research_result = self.ai_manager.research_topic(word)
-        self.answer_display.append(f"Research on '{word}':\n{research_result}\n\n")
 
     def research_topic(self):
         """
