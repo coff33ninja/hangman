@@ -2,11 +2,15 @@ import json
 import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 from collections import Counter
-from content_manager import fetch_word_definition, categorize_entry
-import random
+from content_manager import fetch_word_definition, categorize_entry  # Ensure categorize_entry is used
+import random  # Ensure random is used
 import os
 import requests
 from threading import Thread
+import logging
+
+# Initialize logging
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 class AIManager:
     def __init__(self, training_file="data/training_data.json"):
@@ -25,35 +29,6 @@ class AIManager:
         self.letter_frequency = Counter("etaoinshrdlcumwfgypbvkjxqz")  # English letter frequency
         self.training_file = training_file
         self.training_data = {"riddles": [], "definitions": [], "categories": [], "research": []}
-        self.category_keywords = {
-            "animals": ["animal", "mammal", "bird", "fish", "reptile", "insect"],
-            "vehicles": ["vehicle", "car", "truck", "bike", "airplane", "ship"],
-            "objects": ["object", "tool", "device", "item", "thing"],
-            "places": ["place", "city", "country", "location", "region"],
-            "people": ["person", "human", "name", "character", "individual"],
-        }
-        self.category_hierarchy = {
-            "solarsystem": {
-                "stars": [],
-                "planets": {
-                    "earth": {
-                        "continents": {
-                            "countries": []
-                        }
-                    }
-                }
-            },
-            "animals": {
-                "mammals": [],
-                "birds": [],
-                "reptiles": [],
-            },
-            "places": {
-                "continents": {
-                    "countries": []
-                }
-            }
-        }
 
         try:
             self.text_generator = pipeline("text-generation", model="gpt2", device=0 if self.device == "cuda" else -1)
@@ -78,7 +53,14 @@ class AIManager:
                 self.training_data = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             print("No existing training data found. Starting fresh.")
+            self.training_data = {"riddles": [], "definitions": [], "categories": [], "research": []}
             self.save_training_data()  # Create an empty training data file
+
+        # Ensure all required keys are present
+        self.training_data.setdefault("riddles", [])
+        self.training_data.setdefault("definitions", [])
+        self.training_data.setdefault("categories", [])
+        self.training_data.setdefault("research", [])
 
     def save_training_data(self):
         """
@@ -90,219 +72,12 @@ class AIManager:
         except IOError as e:
             print(f"Error saving training data: {e}")
 
-    def suggest_next_letter(self, word, guessed_letters):
-        """
-        Suggest the next letter to guess based on letter frequency and unguessed letters.
-        """
-        unguessed = [letter for letter in word if letter not in guessed_letters]
-        if unguessed:
-            return max(unguessed, key=lambda letter: self.letter_frequency[letter])
-        return None
-
-    def rephrase_riddle(self, riddle):
-        """
-        Rephrase a riddle using a transformer model.
-        """
-        if self.custom_tokenizer and self.custom_model:
-            try:
-                inputs = self.custom_tokenizer(f"Rephrase: {riddle}", return_tensors="pt", max_length=512, truncation=True)
-                outputs = self.custom_model.generate(inputs.input_ids, max_length=50, num_beams=5, early_stopping=True)
-                return self.custom_tokenizer.decode(outputs[0], skip_special_tokens=True)
-            except Exception as e:
-                print(f"Error rephrasing riddle: {e}")
-        return riddle
-
-    def generate_hint(self, word):
-        """
-        Generate a hint for the word using a transformer model.
-        """
-        if self.custom_tokenizer and self.custom_model:
-            try:
-                inputs = self.custom_tokenizer(f"Hint for the word '{word}':", return_tensors="pt", max_length=512, truncation=True)
-                outputs = self.custom_model.generate(inputs.input_ids, max_length=50, num_beams=5, early_stopping=True)
-                return self.custom_tokenizer.decode(outputs[0], skip_special_tokens=True)
-            except Exception as e:
-                print(f"Error generating hint: {e}")
-        return f"The word has {len(word)} letters."
-
-    def generate_riddle(self, word):
-        """
-        Generate a riddle for a given word using a transformer model.
-        """
-        if self.custom_tokenizer and self.custom_model:
-            try:
-                inputs = self.custom_tokenizer(f"Create a riddle for the word '{word}':", return_tensors="pt", max_length=512, truncation=True)
-                outputs = self.custom_model.generate(inputs.input_ids, max_length=50, num_beams=5, early_stopping=True)
-                riddle = self.custom_tokenizer.decode(outputs[0], skip_special_tokens=True)
-                self.training_data["riddles"].append({"word": word, "riddle": riddle})
-                self.save_training_data()
-                return riddle
-            except Exception as e:
-                print(f"Error generating riddle: {e}")
-        return f"I am something you call a '{word}'. What am I?"
-
-    def lookup_word_meaning(self, word):
-        """
-        Use the dictionary API to fetch the meaning of a word and save it to training data.
-        """
-        definition_data = fetch_word_definition(word)
-        if definition_data and "definitions" in definition_data:
-            self.training_data["definitions"].append(definition_data)
-            self.save_training_data()
-            definitions = definition_data["definitions"]
-            if definitions:
-                return f"{word.capitalize()} ({definitions[0]['partOfSpeech']}): {definitions[0]['definition']}"
-        return f"Could not find a definition for '{word}'."
-
-    def classify_word(self, word, candidate_labels):
-        """
-        Classify a word into one of the candidate labels using zero-shot classification.
-        """
-        if self.text_classifier:
-            try:
-                result = self.text_classifier(word, candidate_labels)
-                return result["labels"][0]  # Return the top label
-            except Exception as e:
-                print(f"Error classifying word: {e}")
-        return "uncategorized"
-
-    def generate_synonyms(self, word):
-        """
-        Generate synonyms for a word using a transformer model.
-        """
-        if self.custom_tokenizer and self.custom_model:
-            try:
-                inputs = self.custom_tokenizer(f"Generate synonyms for: {word}", return_tensors="pt", max_length=512, truncation=True)
-                outputs = self.custom_model.generate(inputs.input_ids, max_length=50, num_beams=5, early_stopping=True)
-                return self.custom_tokenizer.decode(outputs[0], skip_special_tokens=True).split(", ")
-            except Exception as e:
-                print(f"Error generating synonyms: {e}")
-        return []
-
-    def add_to_hierarchy(self, word, hierarchy_path):
-        """
-        Add a word to the category hierarchy at the specified path.
-        :param word: The word to add.
-        :param hierarchy_path: A list representing the path in the hierarchy (e.g., ["solarsystem", "planets", "earth"]).
-        """
-        current_level = self.category_hierarchy
-        for level in hierarchy_path:
-            if level not in current_level:
-                current_level[level] = {}
-            current_level = current_level[level]
-
-        # Add the word to the final level
-        if isinstance(current_level, list):
-            if word not in current_level:
-                current_level.append(word)
-        else:
-            print(f"Error: Cannot add word '{word}' to a non-list category.")
-
-    def train_categories_with_hierarchy(self, word, definition_data):
-        """
-        Train the AI to dynamically adjust categories and subcategories based on new words and definitions.
-        :param word: The word to categorize.
-        :param definition_data: The definition data for the word.
-        """
-        if not definition_data or "definitions" not in definition_data:
-            return ["uncategorized"]
-
-        # Use categorize_entry to determine the category
-        category = categorize_entry(word, definition_data)
-        if category != "uncategorized":
-            self.add_to_hierarchy(word, [category])
-            print(f"Categorized '{word}' under category: {category}.")
-            return [category]
-
-        # If no category matches, create a new subcategory under "uncategorized"
-        best_hierarchy_path = ["uncategorized", f"new_category_{len(self.category_hierarchy) + 1}"]
-        self.add_to_hierarchy(word, best_hierarchy_path)
-        print(f"Created new subcategory '{best_hierarchy_path[-1]}' for word '{word}'.")
-        return best_hierarchy_path
-
-    def train_on_words(self, words):
-        """
-        Train the AI on a list of words by categorizing them and adding them to the training data.
-        """
-        for word in words:
-            if word not in self.training_data["categories"]:
-                # Fetch the definition to categorize the word
-                definition_data = fetch_word_definition(word)
-                hierarchy_path = self.train_categories_with_hierarchy(word, definition_data)
-                if hierarchy_path not in self.training_data["categories"]:
-                    self.training_data["categories"].append(hierarchy_path)
-        self.save_training_data()
-
-    def train_on_riddles(self, riddles):
-        """
-        Train the AI on riddles by extracting answers and categorizing them.
-        :param riddles: A dictionary of riddles categorized by difficulty or type.
-        """
-        for category, riddle_list in riddles.items():
-            for riddle, answer in riddle_list:
-                if answer not in self.training_data["categories"]:
-                    definition_data = fetch_word_definition(answer)
-                    category = categorize_entry(answer, definition_data)
-                    if category not in self.training_data["categories"]:
-                        self.training_data["categories"].append(category)
-                    print(f"Trained on riddle answer '{answer}' categorized as '{category}'.")
-        self.save_training_data()
-
-    def generate_word(self):
-        """
-        Generate a new word based on the training data.
-        """
-        if not self.training_data["categories"]:
-            print("No training data available to generate words.")
-            return None
-
-        # Use the text generator to create a new word-like output
-        if self.text_generator:
-            try:
-                prompt = "Generate a new word based on training data:"
-                result = self.text_generator(prompt, max_length=10, num_return_sequences=1, do_sample=True)
-                generated_text = result[0]["generated_text"].strip()
-                # Filter out non-alphabetic characters and return the word
-                return ''.join(filter(str.isalpha, generated_text)).upper()
-            except Exception as e:
-                print(f"Error generating word: {e}")
-        return random.choice(self.training_data["categories"]).upper()
-
-    def learn_from_riddles(self, riddles):
-        """
-        Learn from riddles by extracting words and fetching their definitions.
-        :param riddles: A dictionary of riddles categorized by difficulty or type.
-        """
-        new_words = set()
-        for category, riddle_list in riddles.items():
-            for riddle, answer in riddle_list:
-                # Add the answer to the vocabulary
-                new_words.add(answer.upper())
-                # Split the riddle into words and add them to the vocabulary
-                new_words.update(word.upper() for word in riddle.split())
-
-        # Fetch definitions for new words and update training data
-        for word in new_words:
-            if word not in self.training_data["categories"]:
-                definition_data = fetch_word_definition(word)
-                if definition_data:
-                    self.training_data["definitions"].append(definition_data)
-                    self.training_data["categories"].append(word)
-                    print(f"Learned new word: {word} with definition: {definition_data}")
-                else:
-                    print(f"Failed to fetch definition for: {word}")
-
-        # Save the updated training data
-        self.save_training_data()
-
     def retrain(self):
         """
         Retrain the AI dynamically based on the updated training data.
         """
         print("Retraining AI with updated vocabulary...")
-        # Example: Use the text generator to fine-tune on new data (if supported)
-        # This is a placeholder for actual retraining logic, which depends on the model's capabilities.
-        # For now, we simply acknowledge the updated training data.
+        # Placeholder for actual retraining logic
         print(f"Training data now contains {len(self.training_data['categories'])} words.")
 
     def retrain_async(self):
@@ -312,85 +87,15 @@ class AIManager:
         retrain_thread = Thread(target=self.retrain)
         retrain_thread.start()
 
-    def generate_riddle_async(self, word, callback):
+    def generate_files(self):
         """
-        Generate a riddle for a word in a separate thread and call the callback with the result.
-        :param word: The word to generate a riddle for.
-        :param callback: A function to call with the generated riddle.
+        Generate all necessary files dynamically.
         """
-        def generate():
-            riddle = self.generate_riddle(word)
-            callback(riddle)
-
-        generate_thread = Thread(target=generate)
-        generate_thread.start()
-
-    def answer_question(self, question, context=None):
-        """
-        Answer a question based on the provided context or training data.
-        :param question: The question to answer.
-        :param context: The context to use for answering the question. If None, use training data.
-        :return: The answer to the question.
-        """
-        if not self.question_answering_model:
-            return "Question-answering model is not available."
-
-        if not context:
-            # Use definitions from training data as context
-            context = " ".join(
-                [definition["definition"] for definition in self.training_data.get("definitions", [])]
-            )
-
-        try:
-            result = self.question_answering_model(question=question, context=context)
-            return result["answer"]
-        except Exception as e:
-            print(f"Error answering question: {e}")
-            return "I couldn't find an answer to that question."
-
-    def ask_question(self):
-        """
-        Dynamically generate a question based on the training data.
-        :return: A generated question.
-        """
-        if not self.training_data["categories"]:
-            return "I don't have enough data to ask a question."
-
-        # Example: Ask about a random word from the training data
-        word = random.choice(self.training_data["categories"])
-        return f"What is the meaning of the word '{word}'?"
-
-    def fetch_word_examples(self, word):
-        """
-        Fetch example sentences for a word using the dictionary API.
-        :param word: The word to fetch examples for.
-        :return: A list of example sentences.
-        """
-        definition_data = fetch_word_definition(word)
-        if definition_data and "definitions" in definition_data:
-            examples = [
-                definition.get("example", "")
-                for definition in definition_data["definitions"]
-                if "example" in definition
-            ]
-            return [example for example in examples if example]
-        return []
-
-    def fetch_word_synonyms(self, word):
-        """
-        Fetch synonyms for a word using the dictionary API.
-        :param word: The word to fetch synonyms for.
-        :return: A list of synonyms.
-        """
-        definition_data = fetch_word_definition(word)
-        if definition_data and "definitions" in definition_data:
-            synonyms = [
-                synonym
-                for definition in definition_data["definitions"]
-                for synonym in definition.get("synonyms", [])
-            ]
-            return list(set(synonyms))  # Remove duplicates
-        return []
+        print("Generating AI files...")
+        self.generate_config_file()
+        self.save_model_weights()
+        self.save_tokenizer_files()
+        print("All files generated successfully.")
 
     def generate_config_file(self, config_path="data/config.json"):
         """
@@ -441,46 +146,33 @@ class AIManager:
         except IOError as e:
             print(f"Error saving tokenizer files: {e}")
 
-    def generate_files(self):
+    def research_language_factors(self, word):
         """
-        Generate all necessary files dynamically.
-        """
-        print("Generating AI files...")
-        self.generate_config_file()
-        self.save_model_weights()
-        self.save_tokenizer_files()
-        print("All files generated successfully.")
-
-    def research_topic(self, topic):
-        """
-        Research a topic using multiple APIs and expand the AI's knowledge.
-        :param topic: The topic to research.
+        Research language-based factors for a word and dynamically learn from the results.
+        :param word: The word to research.
         :return: A summary of the research.
         """
-        print(f"Researching topic: {topic}")
         research_results = []
 
-        # Fetch definitions from the dictionary API
-        definition_data = fetch_word_definition(topic)
+        # Fetch definitions, synonyms, and examples
+        definition_data = fetch_word_definition(word)
         if definition_data:
-            definitions = [d["definition"] for d in definition_data.get("definitions", [])]
-            research_results.extend(definitions)
-            print(f"Definitions for '{topic}': {definitions}")
+            research_results.append(f"Definitions: {', '.join(d['definition'] for d in definition_data['definitions'])}")
+            research_results.append(f"Synonyms: {', '.join(d['synonyms'] for d in definition_data['definitions'] if d['synonyms'])}")
+            research_results.append(f"Examples: {', '.join(d['example'] for d in definition_data['definitions'] if d['example'])}")
+            self.training_data["definitions"].append(definition_data)
 
-        # Fetch additional information from a Wikipedia-like API
-        wikipedia_summary = self.fetch_wikipedia_summary(topic)
+        # Fetch etymology and related topics
+        wikipedia_summary = self.fetch_wikipedia_summary(word)
         if wikipedia_summary:
-            research_results.append(wikipedia_summary)
-            print(f"Wikipedia summary for '{topic}': {wikipedia_summary}")
+            research_results.append(f"Etymology: {wikipedia_summary}")
 
-        # Fetch related topics using a knowledge graph API
-        related_topics = self.fetch_related_topics(topic)
+        related_topics = self.fetch_related_topics(word)
         if related_topics:
-            research_results.append(f"Related topics: {', '.join(related_topics)}")
-            print(f"Related topics for '{topic}': {related_topics}")
+            research_results.append(f"Related Topics: {', '.join(related_topics)}")
 
-        # Save the research results to training data
-        self.training_data["research"].append({"topic": topic, "results": research_results})
+        # Save the research results
+        self.training_data["research"].append({"word": word, "results": research_results})
         self.save_training_data()
 
         return "\n".join(research_results)
@@ -519,80 +211,55 @@ class AIManager:
             print(f"Error fetching related topics for '{topic}': {e}")
             return None
 
-    def ask_follow_up_question(self, topic):
+    def train_categories_with_hierarchy(self, word, definition_data):
         """
-        Dynamically ask a follow-up question about a topic.
-        :param topic: The topic to ask about.
-        :return: A follow-up question.
+        Train the AI to dynamically adjust categories and subcategories based on new words and definitions.
+        :param word: The word to categorize.
+        :param definition_data: The definition data for the word.
         """
-        return f"What about {topic}? Can you tell me more?"
+        if not definition_data or "definitions" not in definition_data:
+            return ["uncategorized"]
 
-    def ask_about_topic(self, topic):
-        """
-        Ask the AI about a topic and provide a response.
-        :param topic: The topic to ask about.
-        :return: A response string.
-        """
-        print(f"Thinking about '{topic}'...")
-        if topic in self.training_data["research"]:
-            # If the topic is already in research data, return what we know
-            known_data = next((entry["results"] for entry in self.training_data["research"] if entry["topic"] == topic), [])
-            if known_data:
-                return f"I know the following about '{topic}':\n" + "\n".join(known_data)
-            else:
-                return f"I have limited knowledge about '{topic}', but I will try to gather more information."
+        # Use categorize_entry to determine the category
+        category = categorize_entry(word, definition_data)
+        if category != "uncategorized":
+            self.training_data["categories"].append(category)
+            print(f"Categorized '{word}' under category: {category}.")
+            return [category]
 
-        print(f"Gathering data about '{topic}'...")
-        research_results = self.research_topic(topic)
-        if research_results:
-            return f"Here is what I found about '{topic}':\n{research_results}"
-        else:
-            fallback = self.get_fallback_knowledge(topic)
-            return f"I couldn't find detailed information about '{topic}', but I do know this:\n{fallback}"
+        # If no category matches, create a new subcategory under "uncategorized"
+        new_category = f"new_category_{random.randint(1000, 9999)}"  # Use random for unique category names
+        self.training_data["categories"].append(new_category)
+        print(f"Created new category '{new_category}' for word '{word}'.")
+        return [new_category]
 
-    def get_fallback_knowledge(self, topic):
+    def train_on_words(self, words):
         """
-        Provide fallback knowledge about a topic if detailed information is unavailable.
-        :param topic: The topic to provide fallback knowledge for.
-        :return: A fallback response string.
+        Train the AI on a list of words by categorizing them and adding them to the training data.
         """
-        related_topics = self.fetch_related_topics(topic)
-        if related_topics:
-            return f"I know these related topics: {', '.join(related_topics)}."
-        return "I currently have no additional knowledge about this topic."
+        for word in words:
+            if word not in self.training_data["categories"]:
+                # Fetch the definition to categorize the word
+                definition_data = fetch_word_definition(word)
+                self.train_categories_with_hierarchy(word, definition_data)
+        self.save_training_data()
 
-    def update_topics_dynamically(self, topic, data):
+    def generate_word(self):
         """
-        Dynamically update topics in the words section and save them logically.
-        :param topic: The topic to update.
-        :param data: The data associated with the topic.
+        Generate a new word based on the training data.
         """
-        topic_path = f"data/topics/{topic.replace(' ', '_')}.json"
-        os.makedirs(os.path.dirname(topic_path), exist_ok=True)
-        try:
-            with open(topic_path, "w") as f:
-                json.dump(data, f, indent=4)
-            print(f"Topic '{topic}' has been saved to {topic_path}.")
-        except IOError as e:
-            print(f"Error saving topic '{topic}': {e}")
+        if not self.training_data["categories"]:
+            print("No training data available to generate words.")
+            return None
 
-        # Add the topic to the training data dynamically
-        if topic not in self.training_data["categories"]:
-            self.training_data["categories"].append(topic)
-            self.save_training_data()
-
-    def research_topic_async(self, topic, callback):
-        """
-        Research a topic in a separate thread and call the callback with the results.
-        :param topic: The topic to research.
-        :param callback: A function to call with the research results.
-        """
-        def research():
-            print(f"Gathering data about '{topic}' asynchronously...")
-            results = self.research_topic(topic)
-            if results:
-                self.update_topics_dynamically(topic, {"results": results})
-            callback(results)
-
-        research_thread = Thread(target=research)
-        research_thread.start()
+        # Use the text generator to create a new word-like output
+        if self.text_generator:
+            try:
+                prompt = "Generate a new word based on training data:"
+                result = self.text_generator(prompt, max_length=10, num_return_sequences=1, do_sample=True)
+                generated_text = result[0]["generated_text"].strip()
+                # Filter out non-alphabetic characters and return the word
+                return ''.join(filter(str.isalpha, generated_text)).upper()
+            except Exception as e:
+                print(f"Error generating word: {e}")
+        return random.choice(self.training_data["categories"]).upper()  # Use random to select a category

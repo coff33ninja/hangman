@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QVBoxLayout, QLabel, QLineEdit,
     QPushButton, QTextEdit, QWidget, QComboBox, QMessageBox, QInputDialog
 )
+from PyQt6.QtGui import QFont, QPalette, QColor
 from PyQt6.QtCore import QThread, pyqtSignal
 import sys
 from ai_manager import AIManager
@@ -17,7 +18,7 @@ class ResearchThread(QThread):
 
     def run(self):
         results = self.ai_manager.research_topic(self.topic)
-        self.result_ready.emit(results)
+        self.result_ready.emit(results)  # Emit the results to the main thread
 
 
 class AIGui(QMainWindow):
@@ -29,10 +30,13 @@ class AIGui(QMainWindow):
         # Initialize AI Manager
         self.ai_manager = AIManager()
 
-        # Main layout
+        # Set up the main layout
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
         self.layout = QVBoxLayout(self.central_widget)
+
+        # Apply custom styles
+        self.apply_styles()
 
         # Question and Answer Section
         self.question_label = QLabel("Ask the AI a question:")
@@ -90,6 +94,46 @@ class AIGui(QMainWindow):
         self.add_category_button.clicked.connect(self.add_category)
         self.layout.addWidget(self.add_category_button)
 
+    def apply_styles(self):
+        """
+        Apply custom styles to the GUI.
+        """
+        # Set font
+        font = QFont("Arial", 12)
+        self.setFont(font)
+
+        # Set background color
+        palette = QPalette()
+        palette.setColor(QPalette.ColorRole.Window, QColor("#e0e0e0"))  # Light gray background
+        palette.setColor(QPalette.ColorRole.WindowText, QColor("#000000"))  # Black text
+        self.setPalette(palette)
+
+        # Style buttons
+        button_style = """
+            QPushButton {
+                background-color: #007BFF;  /* Blue button */
+                color: white;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            QPushButton:hover {
+                background-color: #0056b3;  /* Darker blue on hover */
+            }
+        """
+        self.setStyleSheet(button_style)
+
+        # Style text inputs and displays
+        input_style = """
+            QLineEdit, QTextEdit {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: #ffffff;  /* White background */
+                color: #000000;  /* Black text */
+            }
+        """
+        self.setStyleSheet(self.styleSheet() + input_style)
+
     def ask_ai_question(self):
         """
         Ask the AI a question and display its answer.
@@ -113,11 +157,17 @@ class AIGui(QMainWindow):
 
         self.research_button.setEnabled(False)  # Disable the button while researching
 
-        def display_results(results):
-            self.research_display.setText(results)
-            self.research_button.setEnabled(True)  # Re-enable the button
+        # Create and start the research thread
+        self.research_thread = ResearchThread(self.ai_manager, topic)
+        self.research_thread.result_ready.connect(self.display_research_results)
+        self.research_thread.start()
 
-        self.ai_manager.research_topic_async(topic, display_results)
+    def display_research_results(self, results):
+        """
+        Display the research results in the main thread.
+        """
+        self.research_display.setText(results)
+        self.research_button.setEnabled(True)  # Re-enable the button
 
     def submit_feedback(self):
         """
@@ -128,15 +178,19 @@ class AIGui(QMainWindow):
             QMessageBox.warning(self, "Input Error", "Please enter feedback.")
             return
 
-        # Example: Save feedback to training data
+        # Save feedback to training data
         self.ai_manager.training_data.setdefault("feedback", []).append(feedback)
         self.ai_manager.save_training_data()
+
+        # Dynamically retrain the AI with new feedback
+        self.ai_manager.retrain()
+
         QMessageBox.information(self, "Feedback Submitted", "Thank you for your feedback!")
         self.feedback_input.clear()
 
     def update_category_dropdown(self):
         """
-        Update the category dropdown with current categories.
+        Update the category dropdown with current categories, including dynamically created ones.
         """
         self.category_dropdown.clear()
         categories = self.ai_manager.training_data.get("categories", [])
@@ -144,7 +198,7 @@ class AIGui(QMainWindow):
 
     def add_category(self):
         """
-        Add a new category to the AI's training data.
+        Add a new category to the AI's training data dynamically.
         """
         new_category, ok = QInputDialog.getText(self, "Add Category", "Enter new category name:")
         if ok and new_category.strip():

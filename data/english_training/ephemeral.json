@@ -1,0 +1,67 @@
+{
+    "definitions": [
+        {
+            "partOfSpeech": "noun",
+            "definition": "Something which lasts for a short period of time.",
+            "example": "",
+            "synonyms": [
+                "ephemeron"
+            ],
+            "antonyms": []
+        },
+        {
+            "partOfSpeech": "adjective",
+            "definition": "Lasting for a short period of time.",
+            "example": "",
+            "synonyms": [
+                "evanescent",
+                "fleeting",
+                "momentary",
+                "short",
+                "short-lived",
+                "temporary",
+                "transitory",
+                "volatile"
+            ],
+            "antonyms": [
+                "eternal",
+                "everlasting",
+                "permanent",
+                "timeless"
+            ]
+        },
+        {
+            "partOfSpeech": "adjective",
+            "definition": "Existing for only one day, as with some flowers, insects, and diseases.",
+            "example": "",
+            "synonyms": [],
+            "antonyms": []
+        },
+        {
+            "partOfSpeech": "adjective",
+            "definition": "(of a body of water) Usually dry, but filling with water for brief periods during and after precipitation.",
+            "example": "",
+            "synonyms": [],
+            "antonyms": []
+        }
+    ],
+    "synonyms": [
+        "ephemeron",
+        "temporary",
+        "short-lived",
+        "evanescent",
+        "volatile",
+        "short",
+        "momentary",
+        "fleeting",
+        "transitory"
+    ],
+    "examples": [],
+    "related_topics": [
+        "short-lived",
+        "ephemeral",
+        "ephemeral",
+        "ephemeral",
+        "ephemeral"
+    ]
+}
