@@ -6,3 +6,4 @@ SpeechRecognition
 requests
 pillow
 hf_xet
+PyQt6

@@ -6,6 +6,7 @@ from content_manager import fetch_word_definition, categorize_entry
 import random
 import os
 import requests
+from threading import Thread
 
 class AIManager:
     def __init__(self, training_file="data/training_data.json"):
@@ -288,6 +289,13 @@ class AIManager:
         # This is a placeholder for actual retraining logic, which depends on the model's capabilities.
         # For now, we simply acknowledge the updated training data.
         print(f"Training data now contains {len(self.training_data['categories'])} words.")
+
+    def retrain_async(self):
+        """
+        Retrain the AI in a separate thread.
+        """
+        retrain_thread = Thread(target=self.retrain)
+        retrain_thread.start()
 
     def answer_question(self, question, context=None):
         """

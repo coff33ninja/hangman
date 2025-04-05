@@ -2,6 +2,7 @@
 import pygame
 import os
 from config import WIDTH, HEIGHT, WHITE, BLACK, GRAY
+from threading import Thread
 
 class Button:
     def __init__(self, x, y, width, height, text, font, color, hover_color, action=None):
@@ -44,7 +45,7 @@ class UIManager:
         self.bg_music = None
         self.correct_sound = None
         self.wrong_sound = None
-        self.load_theme_assets()
+        self.load_theme_assets_async()
 
     def load_hangman_images(self):
         """
@@ -84,6 +85,13 @@ class UIManager:
             self.bg_music = None
             self.correct_sound = None
             self.wrong_sound = None
+
+    def load_theme_assets_async(self):
+        """
+        Load theme-specific assets in a separate thread.
+        """
+        load_thread = Thread(target=self.load_theme_assets)
+        load_thread.start()
 
     def play_sound(self, correct):
         """

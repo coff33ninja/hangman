@@ -1,6 +1,7 @@
 import os
 import shutil
 from asset_manager import AssetManager
+from threading import Thread
 
 class ThemeManager:
     def __init__(self, theme_folder="assets/themes", default_theme="default"):
@@ -83,6 +84,13 @@ class ThemeManager:
                     else:
                         print(f"Missing asset: {asset_path}. Placeholder not generated for this type.")
                 self.asset_manager.generate_assets(tasks)
+
+    def generate_themes_async(self):
+        """
+        Generate themes in a separate thread.
+        """
+        generate_thread = Thread(target=self.generate_themes)
+        generate_thread.start()
 
     def copy_default_assets(self, src_folder, dest_folder):
         """

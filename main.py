@@ -8,6 +8,7 @@ from time import time
 from theme_manager import ThemeManager
 from voice_input import VoiceInput
 from ai_manager import AIManager
+from threading import Thread
 
 try:
     pygame.init()
@@ -23,8 +24,9 @@ player_name = ""  # Store the player's name
 difficulty = 1
 game = None
 theme_manager = ThemeManager()
-theme_manager.generate_themes()  # Generate default themes and placeholder assets if not exist
-ui = UIManager(screen, theme_manager)  # Pass theme_manager as the second argument
+Thread(target=theme_manager.generate_themes_async).start()  # Generate themes in a separate thread
+ui = UIManager(screen, theme_manager)
+Thread(target=ui.load_theme_assets_async).start()  # Load theme assets in a separate thread
 voice_input = VoiceInput()
 ai_manager = AIManager()  # Initialize AIManager with training data support
 words = load_words(ai_manager=ai_manager)  # Train AI on loaded words
