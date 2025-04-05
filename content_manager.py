@@ -4,32 +4,67 @@ import random
 import requests
 
 
-def load_words(filepath="data/words.txt"):
+def categorize_entry(entry, dictionary_data):
+    """
+    Categorize an entry (word or riddle answer) based on its dictionary definition.
+    :param entry: The word or answer to categorize.
+    :param dictionary_data: The dictionary data fetched for the entry.
+    :return: A category string (e.g., 'animals', 'vehicles', etc.).
+    """
+    if not dictionary_data or "definitions" not in dictionary_data:
+        return "uncategorized"
+
+    definitions = dictionary_data["definitions"]
+    keywords = {
+        "animals": ["animal", "mammal", "bird", "fish", "reptile", "insect"],
+        "vehicles": ["vehicle", "car", "truck", "bike", "airplane", "ship"],
+        "objects": ["object", "tool", "device", "item", "thing"],
+        "places": ["place", "city", "country", "location", "region"],
+        "people": ["person", "human", "name", "character", "individual"],
+    }
+
+    for category, category_keywords in keywords.items():
+        for definition in definitions:
+            if any(keyword in definition["definition"].lower() for keyword in category_keywords):
+                return category
+
+    return "uncategorized"
+
+
+def load_words(filepath="data/words.txt", ai_manager=None):
     """
     Load words from a file into a dictionary by category.
-    Format: category,word (e.g., animals,lion)
+    Dynamically categorize words using the dictionary API.
+    Optionally train the AI on the loaded words.
     """
     words = {"default": ["PYTHON", "GAME", "HANGMAN"]}  # Ensure a default category exists
+    all_words = []  # Collect all words for AI training
     try:
         with open(filepath, "r") as f:
             for line in f:
                 try:
                     category, word = line.strip().split(",", 1)
-                    words.setdefault(category, []).append(word.upper())
+                    word = word.upper()
+                    dictionary_data = fetch_word_definition(word)
+                    dynamic_category = categorize_entry(word, dictionary_data)
+                    words.setdefault(dynamic_category, []).append(word)
+                    all_words.append(word)
                 except ValueError:
                     print(f"Malformed line in words file: {line}")
     except FileNotFoundError:
         print(f"Words file not found. Using default words: {words['default']}")
+
+    # Train the AI on the loaded words
+    if ai_manager:
+        ai_manager.train_on_words(all_words)
+
     return {category: random.sample(words, len(words)) for category, words in words.items()}
 
 
 def load_riddles(difficulty=None, difficulty_files=None):
     """
     Load riddles from separate files for each difficulty level.
-    If no files are provided, default to 'data/riddles_<difficulty>.txt'.
-    :param difficulty: The difficulty level to load ('easy', 'medium', 'hard').
-    :param difficulty_files: A dictionary mapping difficulty levels to file paths.
-    :return: A dictionary of riddles categorized by difficulty or riddles for a specific difficulty.
+    Dynamically categorize riddle answers using the dictionary API.
     """
     if difficulty_files is None:
         difficulty_files = {
@@ -45,7 +80,10 @@ def load_riddles(difficulty=None, difficulty_files=None):
                 for line in f:
                     try:
                         riddle, answer = line.strip().split(",", 1)
-                        riddles.setdefault(level, []).append((riddle, answer.upper()))
+                        answer = answer.upper()
+                        dictionary_data = fetch_word_definition(answer)
+                        dynamic_category = categorize_entry(answer, dictionary_data)
+                        riddles.setdefault(dynamic_category, []).append((riddle, answer))
                     except ValueError:
                         print(f"Malformed line in {filepath}: {line}")
         except FileNotFoundError:
@@ -110,7 +148,7 @@ def fetch_word_definition(word):
     """
     url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=5)
         response.raise_for_status()
         data = response.json()
         if isinstance(data, list) and len(data) > 0:

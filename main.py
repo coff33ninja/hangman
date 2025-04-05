@@ -1,8 +1,7 @@
 # main.py
 import pygame
-import os
 from config import WIDTH, HEIGHT, FPS
-from game_logic import HangmanGame
+from game_logic import HangmanGame, load_words
 from ui_manager import UIManager
 from powerup_manager import PowerUpManager
 from time import time
@@ -28,6 +27,7 @@ theme_manager.generate_themes()  # Generate default themes and placeholder asset
 ui = UIManager(screen, theme_manager)  # Pass theme_manager as the second argument
 voice_input = VoiceInput()
 ai_manager = AIManager()  # Initialize AIManager with training data support
+words = load_words(ai_manager=ai_manager)  # Train AI on loaded words
 paused = False
 
 start_time = time()

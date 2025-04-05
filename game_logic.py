@@ -168,13 +168,12 @@ class HangmanGame:
         Reset game state with a new word or riddle.
 
         """
-
         if self.mode == "word_guess":
-
-            category = random.choice(list(self.words.keys()))
-
-            self.current_word = random.choice(self.words[category])
-
+            # Use AI-generated word if available
+            self.current_word = self.ai_manager.generate_word()
+            if not self.current_word:
+                category = random.choice(list(self.words.keys()))
+                self.current_word = random.choice(self.words[category])
             self.current_riddle = None
 
             # Use fetch_word_definition for training and gameplay
@@ -183,6 +182,9 @@ class HangmanGame:
                 self.ai_manager.training_data["definitions"].append(definition_data)
                 self.ai_manager.save_training_data()
             self.current_definition = definition_data
+
+            self.ai_manager.learn_from_riddles(self.riddles)  # Learn from riddles dynamically
+            self.ai_manager.retrain()  # Retrain the AI with new vocabulary
 
         elif self.mode == "riddle_time":
 
@@ -201,6 +203,9 @@ class HangmanGame:
                 )
 
             self.current_definition = None
+
+            self.ai_manager.learn_from_riddles(self.riddles)  # Learn from riddles dynamically
+            self.ai_manager.retrain()  # Retrain the AI with new vocabulary
 
         self.guessed_letters.clear()
 
@@ -447,3 +452,24 @@ class HangmanGame:
             return random.choice(self.riddles[category])
 
         return None
+
+    def ask_ai_question(self):
+        """
+        Ask the AI a question and get its answer.
+        """
+        question = input("Ask the AI a question: ")
+        answer = self.ai_manager.answer_question(question)
+        print(f"AI's answer: {answer}")
+
+    def ai_asks_question(self):
+        """
+        Let the AI ask a question and check the player's answer.
+        """
+        question = self.ai_manager.ask_question()
+        print(f"AI asks: {question}")
+        player_answer = input("Your answer: ")
+        correct_answer = self.ai_manager.answer_question(question)
+        if player_answer.lower() == correct_answer.lower():
+            print("Correct!")
+        else:
+            print(f"Wrong! The correct answer was: {correct_answer}")

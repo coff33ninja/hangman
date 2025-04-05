@@ -72,6 +72,11 @@ class ThemeManager:
                         tasks.append((self.asset_manager.generate_hangman_images, (asset_path, 10)))  # 10 stages
                     elif asset_type == "sounds" and not os.path.exists(asset_path):
                         os.makedirs(asset_path)
+                        # Create placeholder sound files
+                        for sound_file in ["background.wav", "correct.wav", "wrong.wav"]:
+                            sound_path = os.path.join(asset_path, sound_file)
+                            with open(sound_path, "wb") as f:
+                                f.write(b"")  # Write an empty file as a placeholder
                         print(f"Generated placeholder sounds folder for theme '{theme_name}'.")
                     elif os.path.exists(asset_path):
                         self.copy_default_assets(asset_path, theme_path)

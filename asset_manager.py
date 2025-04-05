@@ -32,7 +32,6 @@ class AssetManager:
         """
         base_x, base_y = width // 2, int(height * 0.8)
         pole_height = int(height * 0.6)
-        head_radius = int(width * 0.1)
 
         # Draw the gallows
         if stage >= 1:

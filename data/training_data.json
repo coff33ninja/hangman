@@ -1,0 +1,43 @@
+{
+    "riddles": [],
+    "definitions": [
+        {
+            "word": "japan",
+            "phonetics": [
+                {
+                    "text": "/d\u0292\u0259\u02c8p\u00e6n/",
+                    "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/japan-us.mp3",
+                    "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=2454116",
+                    "license": {
+                        "name": "BY-SA 3.0",
+                        "url": "https://creativecommons.org/licenses/by-sa/3.0"
+                    }
+                }
+            ],
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A hard black enamel varnish containing asphalt.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Lacquerware.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To varnish with japan.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ]
+        }
+    ],
+    "categories": []
+}
