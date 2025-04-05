@@ -93,32 +93,36 @@ class UIManager:
 
     def draw_game(self, game):
         """
-        Draw the current game state, including hints and incorrect guesses.
+        Draw the current game state, including riddles, hints, and incorrect guesses.
         """
         self.screen.fill(WHITE)
         # Draw Hangman
         hangman_img = self.image_sets[game.difficulty][game.hangman_stage]
         img_width, img_height = hangman_img.get_size()
-        self.screen.blit(hangman_img, ((WIDTH - img_width) // 2, int(HEIGHT * 0.1)))
+        self.screen.blit(hangman_img, ((WIDTH - img_width) // 2, int(HEIGHT * 0.3)))
 
-        # Draw riddle (if applicable)
+        # Draw riddle (if applicable) above the Hangman
         if game.current_riddle:
-            self.draw_wrapped_text(game.current_riddle, self.font, BLACK, int(HEIGHT * 0.4), line_spacing=10)
+            self.draw_wrapped_text(game.current_riddle, self.font, BLACK, int(HEIGHT * 0.1), line_spacing=10)
 
-        # Draw word
-        word_text = self.font.render(game.get_display_word(), True, BLACK)
-        self.screen.blit(word_text, ((WIDTH - word_text.get_width()) // 2, int(HEIGHT * 0.5)))
+        # Draw word (answer) dynamically adjusted to fit within the screen
+        word_text = self.get_wrapped_text(game.get_display_word(), self.font, WIDTH * 0.8)
+        y_start = int(HEIGHT * 0.6)
+        for line in word_text:
+            line_surface = self.font.render(line, True, BLACK)
+            self.screen.blit(line_surface, ((WIDTH - line_surface.get_width()) // 2, y_start))
+            y_start += self.font.get_height() + 5
 
         # Draw incorrect guesses
         incorrect_guesses = [letter for letter in game.guessed_letters if letter not in game.current_word]
         incorrect_text = self.small_font.render(f"Incorrect: {', '.join(incorrect_guesses)}", True, (255, 0, 0))
-        self.screen.blit(incorrect_text, (int(WIDTH * 0.1), int(HEIGHT * 0.7)))
+        self.screen.blit(incorrect_text, (int(WIDTH * 0.1), int(HEIGHT * 0.8)))
 
         # Draw attempts and hints
         attempts_text = self.font.render(f"Attempts: {game.attempts_left}", True, BLACK)
         hints_text = self.font.render(f"Hints: {game.hint_count}", True, BLACK)
-        self.screen.blit(attempts_text, (int(WIDTH * 0.1), int(HEIGHT * 0.8)))
-        self.screen.blit(hints_text, (int(WIDTH * 0.7), int(HEIGHT * 0.8)))
+        self.screen.blit(attempts_text, (int(WIDTH * 0.1), int(HEIGHT * 0.85)))
+        self.screen.blit(hints_text, (int(WIDTH * 0.7), int(HEIGHT * 0.85)))
 
         # Draw last hint (if any)
         if self.last_hint:
@@ -127,6 +131,31 @@ class UIManager:
 
         # Draw buttons
         self.draw_buttons()
+
+    def get_wrapped_text(self, text, font, max_width):
+        """
+        Wrap text to fit within the specified width.
+        :param text: The text to wrap.
+        :param font: The font used to render the text.
+        :param max_width: The maximum width for the text.
+        :return: A list of wrapped lines.
+        """
+        words = text.split(" ")
+        lines = []
+        current_line = ""
+
+        for word in words:
+            test_line = f"{current_line} {word}".strip()
+            if font.size(test_line)[0] <= max_width:
+                current_line = test_line
+            else:
+                lines.append(current_line)
+                current_line = word
+
+        if current_line:
+            lines.append(current_line)
+
+        return lines
 
     def draw_wrapped_text(self, text, font, color, y_start, line_spacing=5):
         """

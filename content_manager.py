@@ -59,7 +59,7 @@ def load_riddles(difficulty=None, difficulty_files=None):
 def fetch_online_riddles(num_riddles=5, filepath="data/riddles.txt"):
     """
     Fetch random riddles from riddles-api.vercel.app and store them in riddles_<difficulty>.txt.
-    Categorize riddles based on the length of the answer.
+    Categorize riddles based on the number of words in the answer.
     """
     riddles = []
     try:
@@ -79,16 +79,16 @@ def fetch_online_riddles(num_riddles=5, filepath="data/riddles.txt"):
     if not riddles:  # Fallback
         riddles = [("What is always running but never moves?", "CLOCK")]
 
-    # Categorize and store riddles in difficulty-specific files
+    # Categorize riddles dynamically
     categorized_riddles = {"easy": [], "medium": [], "hard": []}
     for riddle, answer in riddles:
         word_count = len(answer.split())
-        if word_count > 5:
-            category = "hard"
-        elif 1 <= word_count <= 5:
+        if word_count == 1:
+            category = "easy"
+        elif 5 <= word_count <= 10:
             category = "medium"
         else:
-            category = "easy"
+            category = "hard"
         categorized_riddles[category].append((riddle, answer))
 
     for category, riddles_list in categorized_riddles.items():
