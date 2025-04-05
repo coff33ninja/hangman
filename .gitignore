@@ -1,4 +1,38 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folders
+env/
+venv/
+
+# Ignore dynamic data files
+data/training_data.json
 data/english_model.pth
-data/training_data.json
-/data
-data/training_data.json
+data/achievements.json
+data/game_state.json
+data/topics/
+data/riddles_*.txt
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore model files
+*.safetensors
+*.pth
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+

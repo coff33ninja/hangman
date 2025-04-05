@@ -2,7 +2,7 @@ import json
 import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 from collections import Counter
-from content_manager import fetch_word_definition, categorize_entry  # Ensure categorize_entry is used
+from content_manager import fetch_word_definition, categorize_entry, append_word_to_file, save_topic_to_file  # Ensure categorize_entry is used
 import random  # Ensure random is used
 import os
 import requests
@@ -542,6 +542,21 @@ class AIManager:
 
         # Update memory with new data
         self.update_memory(word, research_results)
+
+        # Save the word to words.txt
+        category = categorize_entry(word, research_results)
+        append_word_to_file(word, category)
+
+        # Save related terms as a topic
+        topic_data = {
+            "word": word,
+            "definitions": research_results.get("definitions", []),
+            "examples": research_results.get("examples", []),
+            "synonyms": research_results.get("synonyms", []),
+            "antonyms": research_results.get("antonyms", []),
+            "related_topics": research_results.get("related_topics", []),
+        }
+        save_topic_to_file(word, topic_data)
 
         # Extract related terms for recursive research
         related_terms = set()

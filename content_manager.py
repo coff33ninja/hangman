@@ -247,3 +247,35 @@ def fetch_word_definition(word):
     # If all APIs fail
     print(f"All APIs failed for '{word}'.")
     return None
+
+
+def append_word_to_file(word, category, filepath="data/words.txt"):
+    """
+    Append a new word to the words.txt file under the specified category.
+    :param word: The word to add.
+    :param category: The category of the word.
+    :param filepath: The path to the words.txt file.
+    """
+    try:
+        with open(filepath, "a") as f:
+            f.write(f"{category},{word.upper()}\n")
+        print(f"Added word '{word}' to category '{category}' in {filepath}.")
+    except IOError as e:
+        print(f"Error appending word to file: {e}")
+
+
+def save_topic_to_file(topic_name, data, folder="data/topics"):
+    """
+    Save a topic's data to a JSON file in the topics folder.
+    :param topic_name: The name of the topic.
+    :param data: The data to save.
+    :param folder: The folder where topic files are stored.
+    """
+    os.makedirs(folder, exist_ok=True)
+    filepath = os.path.join(folder, f"{topic_name.replace(' ', '_')}.json")
+    try:
+        with open(filepath, "w") as f:
+            json.dump(data, f, indent=4)
+        print(f"Saved topic '{topic_name}' to {filepath}.")
+    except IOError as e:
+        print(f"Error saving topic to file: {e}")

@@ -739,140 +739,193 @@
                 {
                     "partOfSpeech": "verb",
                     "definition": "To possess, own.",
-                    "example": "I have a house and a car."
+                    "example": "I have a house and a car.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To hold, as something at someone's disposal.",
-                    "example": "Do you have the key? (not necessarily one's own key)"
+                    "example": "Do you have the key? (not necessarily one's own key)",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "Used to state the existence or presence of someone in a specified relationship with the subject.",
-                    "example": "I have a really mean boss."
+                    "example": "I have a really mean boss.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To partake of (a particular substance, especially food or drink, or action or activity).",
-                    "example": "Can I have a look at that?"
+                    "example": "Can I have a look at that?",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To be scheduled to attend, undertake or participate in.",
-                    "example": "Fred won't be able to come to the party; he has a meeting that day."
+                    "example": "Fred won't be able to come to the party; he has a meeting that day.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To experience, go through, undergo.",
-                    "example": "He had surgery on his hip yesterday."
+                    "example": "He had surgery on his hip yesterday.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To be afflicted with, suffer from.",
-                    "example": "He had a cold last week."
+                    "example": "He had a cold last week.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(auxiliary verb, taking a past participle) Used in forming the perfect aspect.",
-                    "example": "I had already eaten."
+                    "example": "I had already eaten.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "Used as an interrogative verb before a pronoun to form a tag question, echoing a previous use of 'have' as an auxiliary verb or, in certain cases, main verb. (For further discussion, see the appendix English tag questions.)",
-                    "example": "They haven't eaten dinner yet, have they?"
+                    "example": "They haven't eaten dinner yet, have they?",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(auxiliary verb, taking a to-infinitive) See have to.",
-                    "example": "I have to go."
+                    "example": "I have to go.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To give birth to.",
-                    "example": "My mother had me when she was 25."
+                    "example": "My mother had me when she was 25.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To engage in sexual intercourse with.",
-                    "example": "He's always bragging about how many women he's had."
+                    "example": "He's always bragging about how many women he's had.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To accept as a romantic partner.",
-                    "example": "Despite my protestations of love, she would not have me."
+                    "example": "Despite my protestations of love, she would not have me.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(transitive with bare infinitive) To cause to, by a command, request or invitation.",
-                    "example": "They had me feed their dog while they were out of town."
+                    "example": "They had me feed their dog while they were out of town.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(transitive with adjective or adjective-phrase complement) To cause to be.",
-                    "example": "He had him arrested for trespassing."
+                    "example": "He had him arrested for trespassing.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(transitive with bare infinitive) To be affected by an occurrence. (Used in supplying a topic that is not a verb argument.)",
-                    "example": "I've had three people today tell me my hair looks nice."
+                    "example": "I've had three people today tell me my hair looks nice.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(transitive with adjective or adjective-phrase complement) To depict as being.",
-                    "example": "Their stories differed; he said he'd been at work when the incident occurred, but her statement had him at home that entire evening."
+                    "example": "Their stories differed; he said he'd been at work when the incident occurred, but her statement had him at home that entire evening.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To defeat in a fight; take.",
-                    "example": "I could have him!"
+                    "example": "I could have him!",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(obsolete outside Ireland) To be able to speak (a language).",
-                    "example": "I have no German."
+                    "example": "I have no German.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To feel or be (especially painfully) aware of.",
-                    "example": "Dan certainly has arms today, probably from scraping paint off four columns the day before."
+                    "example": "Dan certainly has arms today, probably from scraping paint off four columns the day before.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To trick, to deceive.",
-                    "example": "You had me alright! I never would have thought that was just a joke."
+                    "example": "You had me alright! I never would have thought that was just a joke.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(often with present participle) To allow; to tolerate.",
-                    "example": "I asked my dad if I could go to the concert this Thursday, but he wouldn't have it since it's a school night."
+                    "example": "I asked my dad if I could go to the concert this Thursday, but he wouldn't have it since it's a school night.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(often used in the negative) To believe, buy, be taken in by.",
-                    "example": "I made up an excuse as to why I was out so late, but my wife wasn't having any of it."
+                    "example": "I made up an excuse as to why I was out so late, but my wife wasn't having any of it.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To host someone; to take in as a guest.",
-                    "example": "Thank you for having me!"
+                    "example": "Thank you for having me!",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To get a reading, measurement, or result from an instrument or calculation.",
-                    "example": "I have two contacts on my scope."
+                    "example": "I have two contacts on my scope.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "(of a jury) To consider a court proceeding that has been completed; to begin deliberations on a case.",
-                    "example": "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon."
+                    "example": "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon.",
+                    "synonyms": [],
+                    "antonyms": []
                 },
                 {
                     "partOfSpeech": "verb",
                     "definition": "To make an observation of (a bird species).",
-                    "example": ""
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
                 }
             ],
-            "synonyms": [],
             "examples": [
                 "I have a house and a car.",
                 "Do you have the key? (not necessarily one's own key)",
@@ -899,22 +952,12 @@
                 "I made up an excuse as to why I was out so late, but my wife wasn't having any of it.",
                 "Thank you for having me!",
                 "I have two contacts on my scope.",
-                "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon."
+                "We'll schedule closing arguments for Thursday, and the jury will have the case by that afternoon.",
+                ""
             ],
-            "related_topics": [
-                "has",
-                "has",
-                "has",
-                "has",
-                "has"
-            ],
-            "references": {
-                "nouns": [
-                    "has"
-                ],
-                "acronyms": [],
-                "verbs": []
-            }
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
         },
         "desirable": {
             "definitions": [
@@ -5812,6 +5855,700 @@
                 "a ship lost at sea; a woman lost to virtue; a lost soul",
                 "lost to shame; lost to all sense of honour",
                 "to be lost in thought"
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "some": {
+            "definitions": [
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "Of a measurement: approximately, roughly.",
+                    "example": "I guess he must have weighed some 90 kilos.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "A certain number, at least two.",
+                    "example": "Some enjoy spicy food, others prefer it milder.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "An indefinite quantity.",
+                    "example": "Can I have some of them?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "An indefinite amount, a part.",
+                    "example": "Everyone is wrong some of the time.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "I guess he must have weighed some 90 kilos.",
+                "Some enjoy spicy food, others prefer it milder.",
+                "Can I have some of them?",
+                "Everyone is wrong some of the time."
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "his": {
+            "definitions": [
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "Honorific alternative letter-case form of his, sometimes used when referring to God or another important figure who is understood from context.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "pronoun",
+                    "definition": "That which belongs to him; the possessive case of he, used without a following noun.",
+                    "example": "The decision was his to live with.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "The decision was his to live with."
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "motorbike.": {
+            "definitions": [
+                {
+                    "definition": "n\t(UK, Australia) A motorcycle. "
+                },
+                {
+                    "definition": "n\t(UK, Australia) A motorcycle. "
+                },
+                {
+                    "definition": "n\tA motorcyclist. "
+                }
+            ],
+            "examples": [],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "no": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A negating expression; an answer that shows disagreement or disapproval",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A vote not in favor, or opposing a proposition",
+                    "example": "The workers voted on whether to strike, and there were thirty \"yeses\" and two \"nos\".",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adverb",
+                    "definition": "(now only used with different, with comparatives more and less, and informally with certain other adjectives such as good and fun) Not, not at all.",
+                    "example": "I just want to find out whether she's coming or no. (Scotland)",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Without",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "preposition",
+                    "definition": "Like",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "The workers voted on whether to strike, and there were thirty \"yeses\" and two \"nos\".",
+                "I just want to find out whether she's coming or no. (Scotland)",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "results": {
+            "definitions": [
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "That which results; the conclusion or end to which any course or condition of things leads, or which is obtained by any process or operation; consequence or effect.",
+                    "example": "the result of a course of action;\u2003 the result of a mathematical operation",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The fruit, beneficial or tangible effect(s) achieved by effort.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The decision or determination of a council or deliberative assembly; a resolve; a decree.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A flying back; resilience.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The final score in a game.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(by extension) A positive or favourable outcome for someone.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To proceed, spring up or rise, as a consequence, from facts, arguments, premises, combination of circumstances, consultation, thought or endeavor.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(followed by \"in\") To have as a consequence; to lead to; to bring about",
+                    "example": "This measure will result in good or in evil.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To return to the proprietor (or heirs) after a reversion.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To leap back; to rebound.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "the result of a course of action;\u2003 the result of a mathematical operation",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "This measure will result in good or in evil.",
+                "",
+                ""
+            ],
+            "synonyms": [],
+            "antonyms": [],
+            "related_topics": []
+        },
+        "blew": {
+            "definitions": [
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To produce an air current.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To propel by an air current.",
+                    "example": "Blow the dust off that book and open it up.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be propelled by an air current.",
+                    "example": "The leaves blow through the streets in the fall.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To create or shape by blowing; as in to blow bubbles, to blow glass.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To force a current of air upon with the mouth, or by other means.",
+                    "example": "to blow the fire",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To clear of contents by forcing air through.",
+                    "example": "to blow an egg",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause to make sound by blowing, as a musical instrument.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make a sound as the result of being blown.",
+                    "example": "In the harbor, the ships' horns blew.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(of a cetacean) To exhale visibly through the spout the seawater which it has taken in while feeding.",
+                    "example": "There she blows! (i.e. \"I see a whale spouting!\")",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To explode.",
+                    "example": "Get away from that burning gas tank! It's about to blow!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(with \"up\" or with prep phrase headed by \"to\") To cause to explode, shatter, or be utterly destroyed.",
+                    "example": "The aerosol can was blown to bits.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To cause sudden destruction of.",
+                    "example": "He blew the tires and the engine.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To suddenly fail destructively.",
+                    "example": "He tried to sprint, but his ligaments blew and he was barely able to walk to the finish line.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "(used to express displeasure or frustration) Damn.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To be very undesirable. (See also suck.)",
+                    "example": "This blows!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To recklessly squander.",
+                    "example": "I blew $35 thou on a car.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To fellate; to perform oral sex on (usually a man)",
+                    "example": "Who did you have to blow to get those backstage passes?",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To leave, especially suddenly or in a hurry.",
+                    "example": "Let's blow this joint.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To make flyblown, to defile, especially with fly eggs.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To spread by report; to publish; to disclose.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To inflate, as with pride; to puff up.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To breathe hard or quick; to pant; to puff.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To put out of breath; to cause to blow from fatigue.",
+                    "example": "to blow a horse",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To talk loudly; to boast; to storm.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To sing.",
+                    "example": "That girl has a wonderful voice; just listen to her blow!",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To leave the Church of Scientology in an unauthorized manner.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "verb",
+                    "definition": "To blossom; to cause to bloom or blossom.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The colour of the clear sky or the deep sea, between green and violet in the visible spectrum, and one of the primary additive colours for transmitted light; the colour obtained by subtracting red and green from white light using magenta and cyan filters; or any colour resembling this.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A blue dye or pigment.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Any of several processes to protect metal against rust.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Blue clothing",
+                    "example": "The boys in blue marched to the pipers.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "(in the plural) A blue uniform. See blues.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A member of law enforcement",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The sky, literally or figuratively.",
+                    "example": "His request for leave came out of the blue.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The ocean; deep waters.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "The far distance; a remote or distant place.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Anything blue, especially to distinguish it from similar objects differing only in color.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A dog or cat with a slaty gray coat.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One of the colour balls used in snooker, with a value of five points.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "Any of the butterflies of the subfamily Polyommatinae in the family Lycaenidae, most of which have blue on their wings.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A bluefish.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "An argument.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A liquid with an intense blue colour, added to a laundry wash to prevent yellowing of white clothes.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A type of firecracker.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "A bluestocking.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "noun",
+                    "definition": "One of the three color charges for quarks.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Of the colour blue.",
+                    "example": "the deep blue sea",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Depressed, melancholic, sad.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Pale, without redness or glare; said of a flame.",
+                    "example": "The candle burns blue.",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Supportive of, run by (a member of), pertaining to, or dominated by a political party represented by the colour blue.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Of the higher-frequency region of the part of the electromagnetic spectrum which is relevant in the specific observation.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of steak) Extra rare; left very raw and cold.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of a dog or cat) Having a coat of fur of a slaty gray shade.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Severe or overly strict in morals; gloomy.",
+                    "example": "blue and sour religionists;\u2003 blue laws",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(of women) literary; bluestockinged.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "Having a color charge of blue.",
+                    "example": "",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(entertainment) Risque or obscene",
+                    "example": "His material is too blue for prime-time",
+                    "synonyms": [],
+                    "antonyms": []
+                },
+                {
+                    "partOfSpeech": "adjective",
+                    "definition": "(entertainment) Pornographic or profane.",
+                    "example": "The air was blue with oaths.",
+                    "synonyms": [],
+                    "antonyms": []
+                }
+            ],
+            "examples": [
+                "",
+                "Blow the dust off that book and open it up.",
+                "The leaves blow through the streets in the fall.",
+                "",
+                "to blow the fire",
+                "to blow an egg",
+                "",
+                "In the harbor, the ships' horns blew.",
+                "There she blows! (i.e. \"I see a whale spouting!\")",
+                "Get away from that burning gas tank! It's about to blow!",
+                "The aerosol can was blown to bits.",
+                "He blew the tires and the engine.",
+                "He tried to sprint, but his ligaments blew and he was barely able to walk to the finish line.",
+                "",
+                "This blows!",
+                "I blew $35 thou on a car.",
+                "Who did you have to blow to get those backstage passes?",
+                "Let's blow this joint.",
+                "",
+                "",
+                "",
+                "",
+                "to blow a horse",
+                "",
+                "That girl has a wonderful voice; just listen to her blow!",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "The boys in blue marched to the pipers.",
+                "",
+                "",
+                "His request for leave came out of the blue.",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "the deep blue sea",
+                "",
+                "The candle burns blue.",
+                "",
+                "",
+                "",
+                "",
+                "blue and sour religionists;\u2003 blue laws",
+                "",
+                "",
+                "His material is too blue for prime-time",
+                "The air was blue with oaths."
             ],
             "synonyms": [],
             "antonyms": [],
