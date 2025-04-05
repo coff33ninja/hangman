@@ -391,7 +391,7 @@ class AIManager:
                     for definition in self.training_data.get("definitions", [])
                     if definition.get("synonyms")
                 ] + [
-                    f"Related Topics: {', '.join(entry.get("results", []))}"
+                    f"Related Topics: {', '.join(entry.get('results', []))}"
                     for entry in self.training_data.get("research", [])
                 ]
             )
