@@ -1,6 +1,7 @@
 import json
 import uuid
 import sqlite3
+import os  # Import os to check for database existence
 
 class ScoreManager:
     def __init__(self, filepath="data/scores.json", db_path="data/scores.db"):
@@ -31,7 +32,11 @@ class ScoreManager:
 
     def add_score(self, player_name, score):
         self.scores.append({"name": player_name, "score": score, "hardware_id": self.hardware_id})
-        self.scores = sorted(self.scores, key=lambda x: x["score"], reverse=True)[:10]
+        # Sort scores and handle ties
+        self.scores = sorted(self.scores, key=lambda x: x["score"], reverse=True)
+        top_scores = self.scores[:10]
+        # Include ties
+        self.scores = [s for s in self.scores if s["score"] >= top_scores[-1]["score"]]
         self.save_scores()
 
     def get_top_scores(self):
@@ -41,18 +46,19 @@ class ScoreManager:
         """
         Setup SQLite database for score tracking.
         """
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS scores (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                player_name TEXT,
-                score INTEGER,
-                hardware_id TEXT
-            )
-        """)
-        conn.commit()
-        conn.close()
+        if not os.path.exists(self.db_path):  # Check if the database already exists
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            cursor.execute(""" 
+                CREATE TABLE IF NOT EXISTS scores (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    player_name TEXT,
+                    score INTEGER,
+                    hardware_id TEXT
+                )
+            """)
+            conn.commit()
+            conn.close()
 
     def add_score_to_db(self, player_name, score):
         """
@@ -60,7 +66,7 @@ class ScoreManager:
         """
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
-        cursor.execute("""
+        cursor.execute(""" 
             INSERT INTO scores (player_name, score, hardware_id)
             VALUES (?, ?, ?)
         """, (player_name, score, self.hardware_id))
@@ -73,7 +79,7 @@ class ScoreManager:
         """
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
-        cursor.execute("""
+        cursor.execute(""" 
             SELECT player_name, score FROM scores
             ORDER BY score DESC
             LIMIT ?

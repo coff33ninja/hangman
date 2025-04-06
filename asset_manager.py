@@ -6,15 +6,19 @@ class AssetManager:
     def __init__(self, asset_folder="assets"):
         self.asset_folder = asset_folder
 
-    def generate_placeholder_image(self, filepath, size=(800, 600), color=(200, 200, 200), text="Placeholder"):
+
+    def generate_placeholder_image(
+        self, filepath, size=(800, 600), color=(200, 200, 200), text="Placeholder"
+    ):
         """
         Generate a placeholder image with the specified size and color.
         """
         img = Image.new("RGB", size, color)
         draw = ImageDraw.Draw(img)
-        text_bbox = draw.textbbox((0, 0), text)
-        text_width = text_bbox[2] - text_bbox[0]
-        text_height = text_bbox[3] - text_bbox[1]
+
+        # Calculate text size using draw.textsize for compatibility
+        text_width, text_height = draw.textsize(text)
+
         draw.text(
             ((size[0] - text_width) // 2, (size[1] - text_height) // 2),
             text,
