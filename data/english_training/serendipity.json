@@ -1,0 +1,37 @@
+{
+    "definitions": [
+        {
+            "partOfSpeech": "noun",
+            "definition": "A combination of events which have come together by chance to make a surprisingly good or wonderful outcome.",
+            "example": "",
+            "synonyms": [],
+            "antonyms": [
+                "Murphy's law",
+                "perfect storm"
+            ]
+        },
+        {
+            "partOfSpeech": "noun",
+            "definition": "An unsought, unintended, and/or unexpected, but fortunate, discovery and/or learning experience that happens by accident.",
+            "example": "",
+            "synonyms": [
+                "chance",
+                "luck"
+            ],
+            "antonyms": []
+        }
+    ],
+    "examples": [
+        "",
+        ""
+    ],
+    "synonyms": [
+        "chance",
+        "luck"
+    ],
+    "antonyms": [
+        "Murphy's law",
+        "perfect storm"
+    ],
+    "related_topics": []
+}
